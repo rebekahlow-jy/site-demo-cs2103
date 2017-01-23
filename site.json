@@ -8,6 +8,7 @@
   "ignore": [
     "_site/*",
     ".idea/*",
-    ".gitignore"
+    ".gitignore",
+    "README.md"
   ]
 }
