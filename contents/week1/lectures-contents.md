@@ -3,7 +3,7 @@
 <table class="padded-borderless lecture-content-table">
   <tr>
     <td>
-      <img src="../images/brooks.png">
+      <img src="images/brooks.png">
     </td>
     <td>
   [<a target="_blank"  href="../files/slides/L1P1. Software Engineering Rocks.pptx">Slides</a>] <span class="dim">{link to be added soon after the lecture}</span>
@@ -32,7 +32,7 @@ Resources: {'Resources' listed in this document are non-examinable unless stated
 <table class="padded-borderless lecture-content-table">
   <tr>
     <td>
-      <img src="../images/fire.png">
+      <img src="images/fire.png">
     </td>
     <td>
       <p>
@@ -68,7 +68,7 @@ Resources:
 <table class="padded-borderless lecture-content-table">
   <tr>
     <td>
-      <img src="../images/eclipse.png" width="200">
+      <img src="images/eclipse.png" width="200">
     </td>
     <td>
       <p>
@@ -106,7 +106,7 @@ Resources:
 <table class="padded-borderless lecture-content-table">
   <tr>
     <td>
-      <img src="../images/chaos.png">
+      <img src="images/chaos.png">
     </td>
     <td>
       <p>
