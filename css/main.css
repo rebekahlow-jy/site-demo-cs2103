@@ -1,0 +1,17 @@
+.padded-borderless > tbody > tr > td {
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+.lecture-content-table > tbody > tr > td:nth-child(1) {
+    width: 200px;
+}
+
+.lecture-content-table > tbody > tr > td:nth-child(1) > img {
+    width: 175px;
+}
+
+.lecture-content-table > tbody > tr > td:nth-child(2) {
+    vertical-align: initial;
+    text-align: left;
+}
