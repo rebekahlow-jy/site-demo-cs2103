@@ -3,5 +3,5 @@
 ### CS2103 Module Website
 
 <include src="contents/overview/index.html" />
-
 <include src="contents/week1/index.html" />
+<include src="contents/week2/index.html" />
