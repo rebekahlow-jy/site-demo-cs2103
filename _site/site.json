@@ -2,13 +2,14 @@
   "pages": [
     {
       "src": "index.md",
-      "title": "Hello World"
+      "title": "CS2103/T Website"
     }
   ],
   "ignore": [
     "_site/*",
     ".idea/*",
     ".gitignore",
-    "README.md"
+    "README.md",
+    "contents/handbook/*"
   ]
 }

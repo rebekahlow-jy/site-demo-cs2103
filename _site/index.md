@@ -1,7 +1,14 @@
 <link rel="stylesheet" href="css/main.css">
 
-### CS2103 Module Website
+<navbar placement="top" type="default">
+  <a slot="brand" href="/" title="Home" class="navbar-brand">CS2103/T</a>
+  <li><a href="/">Schedule</a></li>
+  <li><a href="#">Textbook</a></li>
+  <li><a href="#">Handbook</a></li>
+</navbar>
 
+<div class="website-content">
 <include src="contents/overview/index.html" />
-
 <include src="contents/week1/index.html" />
+<include src="contents/week2/index.html" />
+</div>
