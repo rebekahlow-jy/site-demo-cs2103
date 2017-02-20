@@ -1,14 +1,15 @@
-<Panel header="Week 2 [Jan 16]" expandable>
-  <Panel header="Things to do" expandable>
+<Panel header="Week 2 [Jan 16]" expandable class="overview" ctrl-lvl="-1">
+  <Panel header="Things to do" expandable class="todo" ctrl-lvl="1">
     <include src="todo.md" />
   </Panel>
-  <Panel header="Pre-Tutorial Learning Activities" expandable>
+
+  <Panel header="Pre-Tutorial Learning Activities" expandable class="activity" ctrl-lvl="1">
     <include src="activities.md" />
   </Panel>
-  <Panel header="Tutorial 1: IDE Usage" expandable>
-    <!-- <include src="tutorial.md" /> -->
+  <Panel header="Tutorial 1: IDE Usage" expandable class="tutorial" ctrl-lvl="1">
+     <include src="../topics/tutorial/tutorial1.md" />
   </Panel>
-  <Panel header="Lecture 1: Starting from where we left off. Let's write a small program" expandable>
+  <Panel header="Lecture 1: Starting from where we left off. Let's write a small program" expandable class="lecture" ctrl-lvl="1">
     <Panel header="[20 minutes] Part 1 - Software engineering rocks! : Introduction to Software Engineering" expandable>
       <include src="../topics/se/lecture/introduction-to-se.md" />
     </Panel>

@@ -10,37 +10,48 @@ Apart from this Schedule page, there are two other important sources of informat
 * The 'module handbook' specifies the course requirements of CS2103/T and is very comprehensive. There is no need to read everything; we will point you to the correct sections in due time.
 
 Handbook sections to read around this time:    
-General: Preliminaries | Text Books | Programming Language | Module Principles    
-Project: The Product | Project Scope | Project Constraints     
-FAQ: Why the workload is so high? | Why so much bean counting? | Why you force me to visit a separate website instead of using IVLE?
 
-<Panel header="General" expandable>
+<tabs>
 
+<tab header="General" class="book">
+  
   <include src="../handbook/handbook-preliminaries.html" name="Preliminaries" dynamic />
   <include src="../handbook/handbook-textBooks.html" name="Text Books" dynamic />
   <include src="../handbook/handbook-programmingLanguages.html" name="Programming Language" dynamic />
   <include src="../handbook/handbook-appendixA-principles.html" name="Module Principles" dynamic />
 
-</Panel>
-<Panel header="Project" expandable>
+</tab>
 
+<tab header="Project" class="book">
+  
   <include src="../handbook/handbook-project-product.html" name="The Product" dynamic />
   <include src="../handbook/handbook-project-scope.html" name="Project Scope" dynamic />
   <include src="../handbook/handbook-project-constraints.html" name="Project Constraints" dynamic />
 
-</Panel>
+</tab>
+
+<tab header="FAQ" class="book">
+  
+  <include src="../handbook/handbook-appendixC-faq.html#handbook-faq-highWorkload" name="Why the workload is so high?" dynamic />
+  <include src="../handbook/handbook-appendixC-faq.html#handbook-faq-beanCounting" name="Why so much bean counting?" dynamic />
+  <include src="../handbook/handbook-appendixC-faq.html#handbook-faq-separateWebsite" name="Why you force me to visit a separate website instead of using IVLE?" dynamic />
+
+</tab>
+
+</tabs>
+
 </Panel>
 <Panel header="Brush up your Java" expandable>
 
 You are going to start programming soon.
 
 Brush up your Java programming skills. This module requires you to write Java code almost every week.
+
 Advanced: Have a look at Java 8 new features.
 
 </Panel>
 
-<Panel expandable>
-  <strong slot="header">Attend Lecture 1 <mark>(compulsory)</mark></strong>
+<Panel header="Attend Lecture 1 ==(compulsory)==" expandable>
 
 More about lectures
 
