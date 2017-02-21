@@ -2,7 +2,11 @@
   "pages": [
     {
       "src": "index.md",
-      "title": "CS2103/T Website"
+      "title": "CS2103/T Website - Schedule"
+    },
+    {
+      "src": "handbook.md",
+      "title": "CS2103/T Website - Handbook"
     }
   ],
   "ignore": [

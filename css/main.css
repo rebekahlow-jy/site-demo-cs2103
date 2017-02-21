@@ -1,5 +1,6 @@
 .website-content {
-    margin-top: 12px;
+    margin: 12px auto 0 auto;
+    overflow: hidden;
 }
 
 .website-content > div {
@@ -8,6 +9,10 @@
 
 mark {
     background-color: yellow;
+}
+
+.dimmed {
+    color: gray;
 }
 
 .important {
@@ -31,6 +36,15 @@ mark {
 .lecture-content-table > tbody > tr > td:nth-child(2) {
     vertical-align: initial;
     text-align: left;
+}
+
+table.two-column-content {
+    border-collapse: collapse;
+}
+
+table.two-column-content td {
+    padding: 10px;
+    vertical-align: top;
 }
 
 /* Panel content body */
