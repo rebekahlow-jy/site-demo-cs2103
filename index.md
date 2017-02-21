@@ -4,7 +4,7 @@
   <a slot="brand" href="/" title="Home" class="navbar-brand">CS2103/T</a>
   <li><a href="/">Schedule</a></li>
   <li><a href="#">Textbook</a></li>
-  <li><a href="#">Handbook</a></li>
+  <li><a href="handbook.html">Handbook</a></li>
 </navbar>
 
 <div class="website-content">
