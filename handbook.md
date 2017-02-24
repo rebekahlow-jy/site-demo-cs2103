@@ -174,13 +174,19 @@
 </div>
 
 # Forming Teams
-<div id="handbook-teams"></div>
+<div id="handbook-teams">
+<include src="contents/handbook-md/teams.md" />
+</div>
 
 # Peer Evaluations
-<div id="handbook-peerEvaluations"></div>
+<div id="handbook-peerEvaluations">
+<include src="contents/handbook-md/peer-evaluations.md" />
+</div>
 
 # Project Tools
-<div id="handbook-tools"></div>
+<div id="handbook-tools">
+<include src="contents/handbook-md/tools.md" />
+</div>
 
 # Exams
 <div id="handbook-exams"></div>
