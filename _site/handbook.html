@@ -11,10 +11,10 @@
 <div id="app" class="container">
     <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/handbook.css">
-<navbar placement="top" type="default"><a slot="brand" href="/" title="Home" class="navbar-brand">CS2103/T</a>
+<navbar placement="top" type="default"><a slot="brand" href="index.html" title="Home" class="navbar-brand">CS2103/T</a>
   <li><a href="index.html">Schedule</a>
   </li>
-  <li><a href="#">Textbook</a>
+  <li><a href="textbook.html">Textbook</a>
   </li>
   <li><a href="handbook.html">Handbook</a>
   </li>
@@ -1616,11 +1616,219 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
     </div>
   </div>
   <h1>Forming Teams</h1>
-  <div id="handbook-teams"></div>
+  <div id="handbook-teams">
+    <div>
+      <table class="two-column-content">
+        <tbody>
+          <tr>
+            <td>
+              <p><strong>The two teams</strong>:
+                <br>You will be in two different teams at different times of the semester.</p>
+              <ul>
+                <li>Week 1 - 5: Phase A team</li>
+                <li>Week 6 - 13: Phase B team (i.e. Project team)</li>
+              </ul>
+              <p>Phase A (Weeks 1 - 5) is the period for strengthening individual competencies.
+                By working with different classmates during this period you get to know
+                and learn from more classmates. The project is done in phase B. That means
+                your Phase B team is also your project team.</p>
+            </td>
+            <td width="310px">
+              <img src="images/team.png" width="300px">
+              <p><span class="dimmed">[Picture: The team that was at the top of early Google]</span>
+              </p>
+              <p></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        <mark>There cannot be any overlap between your 2 teams</mark>. For example,
+        any member from your Phase A team cannot be a member of your Phase B team.</p>
+      <p><strong>When to form teams</strong>
+      </p>
+      <ul>
+        <li>CS2103T: Your phase A team will be formed by CS2101 side in week 1. Your
+          phase B team (applicable to CS2101 too) will be formed by CS2103T side
+          on week 5.</li>
+        <li>CS2103: Form tentative Phase A teams in week 2 (during the tutorial).
+          Finalize phase A team in the subsequent tutorial. Form phase B team on
+          week 5.</li>
+      </ul>
+      <p><strong>Team size</strong>: The default
+        <mark>team size is four</mark>. Please do not form teams with five or more.</p>
+      <p><strong>Team ID</strong>: This will be given to you after forming teams
+        in each phase. It has the form <code>TUTORIAL_ID-PHASE+TEAM_NUMBER</code> e.g, <code>W14-A2</code> means
+        you are in tutorial W14 (i.e., Wed 1400-1500), phase A, team 2.</p>
+      <p><strong>Team composition</strong>
+      </p>
+      <p>We allow some freedom in choosing team members, subject to these constraints:</p>
+      <ul>
+        <li>
+          <p>Teams of
+            <mark>single nationality are not allowed</mark>(rationale: to train you to work
+            in multicultural teams). However, we allow same nationality teams if the
+            only language common among all team members is English. e.g. an all-Singaporean
+            team that include both Chinese and Malay students.</p>
+        </li>
+        <li>
+          <p>No more than one exchange students per team (rationale: to increase interaction
+            between exchange students and NUS students).</p>
+        </li>
+        <li>
+          <p>All team members should be in the same tutorial.
+            <mark>Delay forming teams until your place in a tutorial is confirmed.</mark>We
+            do not allow changing tutorials to team up with your preferred team mates.</p>
+        </li>
+        <li>
+          <p>Also note that we may modify teams when circumstances call for it. There
+            is no avenue for you to object. Staying with your preferred team is not
+            guaranteed.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
   <h1>Peer Evaluations</h1>
-  <div id="handbook-peerEvaluations"></div>
+  <div id="handbook-peerEvaluations">
+    <div>
+      <p>We use the <a href="http://teammatesv4.appspot.com/">TEAMMATES</a> online
+        peer evaluation system to conduct several rounds of peer-evaluations. All
+        peer evaluations will be taken into account when determining your participation
+        marks. The system also allows you to give anonymous feedback to your teammates.</p>
+      <span
+      id="extra-requirements">
+        <p><strong>Extra Requirements:</strong> [considered for participation marks]</p>
+        <ul>
+          <li>Submitting peer evaluations is compulsory.
+            <mark>If you routinely miss submitting peer evaluations, you forfeit your participation
+              marks.</mark>
+          </li>
+          <li>TEAMMATES normally allows students to access it without using Google login.
+            In this module, we
+            <mark>require you to login to TEAMMATES using your Google account</mark>. and
+            update your</li>
+          <li>After you login to TEAMMATES, please complete the profile . CS2103 is
+            a big class. This profile helps us to remember you better, even after the
+            module is over.</li>
+          <li>In the profile, you are encouraged (but not compulsory) to provide your
+            long term contact email (not school email) as the contact email. This contact
+            email is for keeping in touch after graduation.
+<s><a href="mailto:john@comp.nus.edu.sg">john@comp.nus.edu.sg</a></s>
+            <a
+            href="mailto:john@gmail.com">john@gmail.com</a>
+          </li>
+          <li>Please upload a suitable profile photo.</li>
+        </ul>
+        <panel header="Choosing a profile photo" class="book" expandable="">
+          <p>The purpose of the profile photo is for the teaching team to identify
+            you. Therefore, you should choose a recent individual photo showing your
+            face clearly. Some examples can be seen in the 'Teaching team' page. Given
+            below are some examples of good and bad profile photos.</p>
+          <img src="images/profilephotos.png"
+          style="width: 365.33px">
+          <p></p>
+        </panel>
+        </span><span id="giving-peer-feedback"><p>Giving constructive feedback to others is a valuable skill for software engineers. It is also an intended learning outcome of this module. <mark>Those who give ineffective feedback will be penalized.</mark></p><p>Here are some things to keep in mind:</p><ul><li>Assume you are giving feedback to a colleague, not a friend. Keep the tone of your feedback reasonably professional. Do not use offensive language or slang.</li><li>The feedback should be honest and consistent. Giving positive qualitative feedback (e.g. <code>Thanks for all the hard work!</code> and negative ratings (e.g. <code>Equal share - 40%</code>) to the same team member is not being honest.</li><li>State your expectations early. All too often students give positive/neutral feedback early (hoping that the team member will improve later) and trash the team member in the final evaluation (because the he/she did not improve as expected). However, this could be confusing to the recipient. It is better to give negative feedback early so that the team member gets a clear signal that he/she needs to improve.</li></ul></span>
+        <p>The final peer evaluation will be used to determine the level of contribution
+          from each member to the project. In that peer-evaluation you will be asked
+          to
+          <mark>estimate the contribution of each team member</mark>(including yourself)
+          to the project so far.</p>
+        <img src="images/peer evaluations.png" width="70%">
+        <p>
+          <mark>Final peer evaluation affects your grade</mark>in the following way:</p>
+        <ul>
+          <li>If there is a general consensus about how much each one contributed, we
+            award grades based on the contribution levels submitted through the peer
+            evaluation. i.e., if everyone agrees you did more than others, you get
+            more marks.</li>
+          <li>If there are significant discrepancies in the peer evaluations (e.g.,
+            you say you did an [equal share + 20%] while your team says you did an
+            [equal share - 10%]), we will investigate further before finalizing project
+            marks. For such teams, we are likely to request some or all members to
+            <mark>submit an additional individual report</mark>to itemize and quantify the
+            contribution to the project.
+            <mark>Overclaimers will be penalized.</mark>Please do not claim high just to
+            ‘see how’.</li>
+        </ul>
+        <p>Peer evaluations are
+          <mark>not visible to undergraduate tutors.</mark>
+        </p>
+        <p>
+          <mark>If you disagree with the team’s opinion</mark>, i.e., you think the perceived
+          contribution is significantly different from what you actually contributed,
+          you can help us grade you fairly by submitting an individual report (‘individual
+          report’ is explained under V0.5 deliverables).</p>
+        <p>Keep in mind the contribution numbers reported by TEAMMATES are based
+          on team member perceptions and may not reflect your real contribution.
+          <mark>We use those numbers primarily to identify cases that need further investigation.</mark>
+        </p>
+        <p>You may
+          <mark>ignore minor variations</mark>in the contribution numbers reported by
+          TEAMMATES. For example, the difference between [Equal share] and [Equal
+          share - 2%] is not significant and can very well be due to rounding off
+          within the system.</p>
+        <p>Also keep in mind that it is human nature for one to downplay the value
+          of contributions from others when one’s own contribution is being compared
+          to that of others. As a result, it is common for the ‘perceived contribution’
+          to be somewhat lower than what you actually did.</p>
+        <p>If you are unhappy about the peer-feedback received and would like to
+          make your views known to the team, please allow at least one day to lapse
+          before you fire off a response email. You are likely to respond more rationally
+          when you had some time to think it over. Also keep in mind that we do take
+          note of how well you handle such a situation. You need to act professionally
+          when facing conflicting views, opposition, and even deliberate sabotage.</p>
+        <table
+        class="two-column-content">
+          <tbody>
+            <tr>
+              <td>
+                <p>A final note on this issue :</p>
+                <p>
+                  <mark>Please be sincere about how much you can do from the beginning</mark>,
+                  rather than let your team members figure it out over the long run. Tell
+                  them how much you can do and what kind of work you are willing to do. If
+                  you are not open about it, they will still figure it out at the end; they
+                  will still report it (via the peer-evaluations), and your score will be
+                  adjusted all the same. Being open about it on the other hand can save everyone
+                  a lot of frustrations, unpleasantness, and bitterness.</p>
+              </td>
+              <td width="410px">
+                <img src="images/png_peer.png" width="400px">
+              </td>
+            </tr>
+          </tbody>
+          </table>
+          <p></p>
+    </div>
+  </div>
   <h1>Project Tools</h1>
-  <div id="handbook-tools"></div>
+  <div id="handbook-tools">
+    <div>
+      <img src="images/tools.png" style="width: 700px">
+      <p><strong>Communication</strong>:</p>
+      <p>Keeping a record of communications among your team can help you, and us,
+        in many ways. We encourage you to do at least some of the project communication
+        in written medium (e.g., GitHub Issue Tracker) to practice how to communicate
+        technical things in written form.</p>
+      <p><strong>Collaboration platform</strong>: We are going to
+        <mark>use GitHub as the hosting and collaboration platform</mark>of your project
+        (i.e., to hold the Code repository, Issue Tracker, etc.). See <a href="#handbook-appendixE-github">Appendix E</a> for
+        more info on how to setup and use GitHub for your project.</p>
+      <p><strong>IDE</strong>: We
+        <mark>require you to use <a href="http://www.eclipse.org/downloads/">Eclipse</a>
+        </mark>(latest stable release) for module related programming work. Because all
+        team members will work on the same code base and project tutors too have
+        to go through the code for testing and evaluation, it is troublesome to
+        use multiple IDEs. Furthermore, when everyone uses the same tool, it creates
+        a bigger collective know-how about the tool which makes troubleshooting
+        easier and the productivity higher.</p>
+      <p><strong>Revision control</strong>:</p>
+      <p>You are required to use Git. Other revision control software are not allowed.
+        <br>The recommended GUI client for Git is <a href="https://www.sourcetreeapp.com/">SourceTree</a> (which
+        comes bundled with Git), but you may use any other, or none.</p>
+    </div>
+  </div>
   <h1>Exams</h1>
   <div id="handbook-exams"></div>
   <h1>Grade Breakdown</h1>

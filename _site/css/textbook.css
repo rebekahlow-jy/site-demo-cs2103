@@ -1,0 +1,10 @@
+.website-content {
+    max-width: 70%;
+    text-align:justify
+}
+
+.image-container {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
