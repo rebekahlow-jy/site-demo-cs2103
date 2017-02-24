@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/textbook.css">
 
 <navbar placement="top" type="default">
     <a slot="brand" href="index.html" title="Home" class="navbar-brand">CS2103/T</a>
@@ -8,7 +9,5 @@
 </navbar>
 
 <div class="website-content">
-<include src="contents/overview/index.html" />
-<include src="contents/week1/index.html" />
-<include src="contents/week2/index.html" />
+<include src="contents/textbook/L1P1.md" />
 </div>

@@ -2,10 +2,10 @@
 <link rel="stylesheet" href="css/handbook.css">
 
 <navbar placement="top" type="default">
-  <a slot="brand" href="/" title="Home" class="navbar-brand">CS2103/T</a>
-  <li><a href="index.html">Schedule</a></li>
-  <li><a href="#">Textbook</a></li>
-  <li><a href="handbook.html">Handbook</a></li>
+    <a slot="brand" href="index.html" title="Home" class="navbar-brand">CS2103/T</a>
+    <li><a href="index.html">Schedule</a></li>
+    <li><a href="textbook.html">Textbook</a></li>
+    <li><a href="handbook.html">Handbook</a></li>
 </navbar>
 
 <div class="website-content">
@@ -174,13 +174,19 @@
 </div>
 
 # Forming Teams
-<div id="handbook-teams"></div>
+<div id="handbook-teams">
+<include src="contents/handbook-md/teams.md" />
+</div>
 
 # Peer Evaluations
-<div id="handbook-peerEvaluations"></div>
+<div id="handbook-peerEvaluations">
+<include src="contents/handbook-md/peer-evaluations.md" />
+</div>
 
 # Project Tools
-<div id="handbook-tools"></div>
+<div id="handbook-tools">
+<include src="contents/handbook-md/tools.md" />
+</div>
 
 # Exams
 <div id="handbook-exams"></div>
