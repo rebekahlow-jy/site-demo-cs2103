@@ -4,7 +4,11 @@
       <img src="images/brooks.png">
     </td>
     <td>
-  [<a target="_blank"  href="../files/slides/L1P1. Software Engineering Rocks.pptx">Slides</a>] <span class="dim">{link to be added soon after the lecture}</span>
+   <Morph title="Slides">
+
+@[slideshare](aViiBclhe38n4W)
+
+   </Morph>
 
   **Overview**: As a Software Engineer you can do great things.
     </td>
