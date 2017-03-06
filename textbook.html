@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="markbind/css/bootstrap.min.css">
 </head>
 <body>
-<div id="app" class="container">
+<div id="app" class="container-fluid">
     <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/textbook.css">
 <navbar placement="top" type="default"><a slot="brand" href="index.html" title="Home" class="navbar-brand">CS2103/T</a>
@@ -21,30 +21,34 @@
 </navbar>
 <div class="website-content">
   <div>
-    <h2>[L1P1] Software Engineering Rocks!</h2>
-    <blockquote>
-      <p><strong>How to use these handouts?</strong> Refrain from using the handouts
-        to follow the lectures. Handouts contain reference materials that supplement
-        the lectures, rather than substitute. You are advised to make your own
-        notes during each lecture and read the associated handout later. This helps
-        you gain a deeper understanding of the topics discussed in class. Moreover,
-        handouts may explain things in slightly different ways so as to offer you
-        differing perspectives.</p>
-      <p><strong>Why are sub-headings not numbered?</strong> Handouts are meant
-        to be independent of each other. Numbering them would otherwise have introduced
-        an artificial ordering, as well as clutter.</p>
-      <p><strong>What does L1P1 in the title mean?</strong> It means Lecture 1,
-        Part 1.</p>
-    </blockquote>
+    <h2 id="l1p1-software-engineering-rocks">[L1P1] Software Engineering Rocks!</h2>
+    <div class="bg-info">
+      <blockquote>
+        <p><strong>How to use these handouts?</strong> Refrain from using the handouts
+          to follow the lectures. Handouts contain reference materials that supplement
+          the lectures, rather than substitute. You are advised to make your own
+          notes during each lecture and read the associated handout later. This helps
+          you gain a deeper understanding of the topics discussed in class. Moreover,
+          handouts may explain things in slightly different ways so as to offer you
+          differing perspectives.</p>
+        <p><strong>Why are sub-headings not numbered?</strong> Handouts are meant
+          to be independent of each other. Numbering them would otherwise have introduced
+          an artificial ordering, as well as clutter.</p>
+        <p><strong>What does L1P1 in the title mean?</strong> It means Lecture 1,
+          Part 1.</p>
+      </blockquote>
+    </div>
     <p>The following description of the Joys (and Woes) of the Programming Craft
       was taken from Chapter 1 of The <em>Mythical Man-Month</em>, by Frederick
-      P. Brooks.</p><span class="image-container"><img src="contents/textbook/images/img1.png" height="320px"><img src="contents/textbook/images/img2.jpeg" height="320px"></span>
+      P. Brooks.</p><span class="image-container"><img src="contents/textbook/images/img1.png" height="320px" v-closeable=""><img src="contents/textbook/images/img2.jpeg" height="320px" v-closeable=""></span>
     <p><strong>The Joys of the Craft</strong>
     </p>
-    <div class="block-embed block-embed-service-youtube">
-      <iframe type="text/html" src="//www.youtube.com/embed/qNleOXs6fJc" frameborder="0"
-      width="640" height="390" webkitallowfullscreen="" mozallowfullscreen=""
-      allowfullscreen></iframe>
+    <div v-closeable="">
+      <div class="block-embed block-embed-service-youtube">
+        <iframe type="text/html" src="//www.youtube.com/embed/qNleOXs6fJc" frameborder="0"
+        width="640" height="390" webkitallowfullscreen="" mozallowfullscreen=""
+        allowfullscreen></iframe>
+      </div>
     </div>
     <p>Why is programming fun? What delights may its practitioner expect as his
       reward?</p>
@@ -235,7 +239,7 @@
         </question>
       </div>
     </morph>
-    <h2>Practice question</h2>
+    <h2 id="practice-question">Practice question</h2>
     <morph title="Dummy Question 1" src="L1P1-Q1._include_.html"></morph>
     <morph title="Dummy Question 2" src="L1P1-Q2._include_.html"></morph>
   </div>
@@ -245,8 +249,10 @@
 <script src="markbind/js/vue.min.js"></script>
 <script src="markbind/js/vue-strap.min.js"></script>
 <script type="text/javascript">
+  Vue.directive('closeable', VueStrap.closeable);
   var vm = new Vue({
     components: {
+      affix: VueStrap.affix,
       accordion: VueStrap.accordion,
       panel: VueStrap.panel,
       navbar: VueStrap.navbar,
