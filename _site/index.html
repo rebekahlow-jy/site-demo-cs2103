@@ -29,7 +29,7 @@
               <li>This is your main source of information for CS2103/T. You will need to
                 refer to it weekly.</li>
               <li>Important bits of information are
-                <mark>highlighted</mark>. Less important additional information are dimmed out.</li>
+                <mark>highlighted</mark>. <span class="dimmed">Less important additional information are dimmed out</span>.</li>
               <li>Details for the upcoming weeks will be added as the weeks progress.</li>
               <li>It also contains a lot of links to additional resources. It’s fine if
                 you don’t have time to read them now. They are for your future reference
@@ -65,7 +65,7 @@
         </panel>
         <panel header="Tutorial Schedule" expandable="">
           <div>
-            <table class="table">
+            <table class="markbind-table table">
               <thead>
                 <tr>
                   <th>Module</th>
@@ -185,32 +185,31 @@
             <p>Handbook sections to read around this time:</p>
             <tabs>
               <tab header="General" class="book">
-                <dynamic-panel src="handbook-preliminaries._include_.html" name="Preliminaries"
+                <dynamic-panel src="preliminaries._include_.html" name="Preliminaries"
                 header="Preliminaries" isOpen="false"></dynamic-panel>
-                <dynamic-panel src="handbook-textBooks._include_.html"
-                name="Text Books" header="Text Books" isOpen="false"></dynamic-panel>
-                <dynamic-panel src="handbook-programmingLanguages._include_.html"
+                <dynamic-panel src="textBooks._include_.html" name="Text Books"
+                header="Text Books" isOpen="false"></dynamic-panel>
+                <dynamic-panel src="programming-languages._include_.html"
                 name="Programming Language" header="Programming Language" isOpen="false"></dynamic-panel>
-                <dynamic-panel src="handbook-appendixA-principles._include_.html"
+                <dynamic-panel src="appendixA-principles._include_.html"
                 name="Module Principles" header="Module Principles" isOpen="false"></dynamic-panel>
               </tab>
               <tab header="Project" class="book">
-                <dynamic-panel src="handbook-project-product._include_.html" name="The Product"
+                <dynamic-panel src="project-product._include_.html" name="The Product"
                 header="The Product" isOpen="false"></dynamic-panel>
-                <dynamic-panel src="handbook-project-scope._include_.html"
-                name="Project Scope" header="Project Scope" isOpen="false"></dynamic-panel>
-                <dynamic-panel src="handbook-project-constraints._include_.html"
+                <dynamic-panel src="project-scope._include_.html" name="Project Scope"
+                header="Project Scope" isOpen="false"></dynamic-panel>
+                <dynamic-panel src="project-constraints._include_.html"
                 name="Project Constraints" header="Project Constraints" isOpen="false"></dynamic-panel>
               </tab>
               <tab header="FAQ" class="book">
-                <dynamic-panel src="handbook-appendixC-faq._include_.html" name="Why the workload is so high?"
+                <dynamic-panel src="appendixC-faq._include_.html" name="Why the workload is so high?"
                 fragment="handbook-faq-highWorkload" header="Why the workload is so high?"
                 isOpen="false"></dynamic-panel>
-                <dynamic-panel src="handbook-appendixC-faq._include_.html"
-                name="Why so much bean counting?" fragment="handbook-faq-beanCounting"
-                header="Why so much bean counting?" isOpen="false"></dynamic-panel>
-                <dynamic-panel src="handbook-appendixC-faq._include_.html"
-                name="Why you force me to visit a separate website instead of using IVLE?"
+                <dynamic-panel src="appendixC-faq._include_.html" name="Why so much bean counting?"
+                fragment="handbook-faq-beanCounting" header="Why so much bean counting?"
+                isOpen="false"></dynamic-panel>
+                <dynamic-panel src="appendixC-faq._include_.html" name="Why you force me to visit a separate website instead of using IVLE?"
                 fragment="handbook-faq-separateWebsite" header="Why you force me to visit a separate website instead of using IVLE?"
                 isOpen="false"></dynamic-panel>
               </tab>
@@ -238,10 +237,15 @@
                 <td>
                   <img src="images/brooks.png">
                 </td>
-                <td>[<a target="_blank" href="../files/slides/L1P1. Software Engineering Rocks.pptx">Slides</a>]
-                  <span
-                  class="dim">{link to be added soon after the lecture}</span>
-                    <p><strong>Overview</strong>: As a Software Engineer you can do great things.</p>
+                <td>
+                  <morph title="Slides">
+                    <div class="block-embed block-embed-service-slideshare">
+                      <iframe type="text/html" src="//www.slideshare.net/slideshow/embed_code/key/aViiBclhe38n4W"
+                      frameborder="0" width="599" height="487" webkitallowfullscreen="" mozallowfullscreen=""
+                      allowfullscreen></iframe>
+                    </div>
+                  </morph>
+                  <p><strong>Overview</strong>: As a Software Engineer you can do great things.</p>
                 </td>
               </tr>
             </table>
@@ -266,7 +270,7 @@
               so that we can share it with the class}</p>
           </div>
         </panel>
-        <panel header="[35 minutes] ... Detour {CS2103/T : Introduction to the module}"
+        <panel header="[35 minutes] ... Detour [CS2103/T : Introduction to the module]"
         expandable="">
           <div>
             <table class="padded-borderless lecture-content-table">
@@ -386,25 +390,24 @@
         <panel header="Handbook sections to read" expandable="">
           <tabs>
             <tab header="Project" class="book">
-              <dynamic-panel src="handbook-teams._include_.html" name="Forming Teams"
-              header="Forming Teams" isOpen="false"></dynamic-panel>
-              <dynamic-panel src="handbook-peerEvaluations._include_.html"
-              name="Peer Evaluations" header="Peer Evaluations" isOpen="false"></dynamic-panel>
-              <dynamic-panel src="handbook-participation._include_.html"
-              name="Participation marks" header="Participation marks" isOpen="false"></dynamic-panel>
-              <dynamic-panel src="handbook-tools._include_.html" name="Tools"
+              <dynamic-panel src="teams._include_.html" name="Forming Teams" header="Forming Teams"
+              isOpen="false"></dynamic-panel>
+              <dynamic-panel src="peer-evaluations._include_.html" name="Peer Evaluations"
+              header="Peer Evaluations" isOpen="false"></dynamic-panel>
+              <dynamic-panel src="participation._include_.html" name="Participation marks"
+              header="Participation marks" isOpen="false"></dynamic-panel>
+              <dynamic-panel src="tools._include_.html" name="Tools"
               header="Tools" isOpen="false"></dynamic-panel>
             </tab>
             <tab header="FAQ" class="book">
-              <dynamic-panel src="handbook-appendixC-faq._include_.html" name="Why slides are not detailed enough, handouts are wordy?"
+              <dynamic-panel src="appendixC-faq._include_.html" name="Why slides are not detailed enough, handouts are wordy?"
               fragment="handbook-faq-slideFormat" header="Why slides are not detailed enough, handouts are wordy?"
               isOpen="false"></dynamic-panel>
-              <dynamic-panel src="handbook-appendixC-faq._include_.html"
-              name="Why so much self-study?" fragment="handbook-faq-selfStudy" header="Why so much self-study?"
+              <dynamic-panel src="appendixC-faq._include_.html" name="Why so much self-study?"
+              fragment="handbook-faq-selfStudy" header="Why so much self-study?" isOpen="false"></dynamic-panel>
+              <dynamic-panel src="appendixC-faq._include_.html" name="Why I'm not allowed to use my favorite OS/IDE/etc?"
+              fragment="handbook-faq-favoriteTool" header="Why I'm not allowed to use my favorite OS/IDE/etc?"
               isOpen="false"></dynamic-panel>
-              <dynamic-panel src="handbook-appendixC-faq._include_.html"
-              name="Why I'm not allowed to use my favorite OS/IDE/etc?" fragment="handbook-faq-favoriteTool"
-              header="Why I'm not allowed to use my favorite OS/IDE/etc?" isOpen="false"></dynamic-panel>
             </tab>
           </tabs>
         </panel>
@@ -532,156 +535,17 @@
         </panel>
       </div>
     </panel>
-    <panel header="Lecture 1: Starting from where we left off. Let's write a small program"
-    expandable="" class="lecture" ctrl-lvl="1">
-      <panel header="[20 minutes] Part 1 - Software engineering rocks! : Introduction to Software Engineering"
-      expandable="">
-        <div>
-          <table class="padded-borderless lecture-content-table">
-            <tr>
-              <td>
-                <img src="images/brooks.png">
-              </td>
-              <td>[<a target="_blank" href="../files/slides/L1P1. Software Engineering Rocks.pptx">Slides</a>]
-                <span
-                class="dim">{link to be added soon after the lecture}</span>
-                  <p><strong>Overview</strong>: As a Software Engineer you can do great things.</p>
-              </td>
-            </tr>
-          </table>
-          <p>Resources: {'Resources' listed in this document are non-examinable unless
-            stated otherwise}</p>
-          <ul>
-            <li>Interesting readings:
-              <ul>
-                <li>[Article] Why Software Is Eating The World (An article in The Wall Street
-                  Journal)</li>
-                <li>[Video] Steve jobs on the joy of creation</li>
-                <li>[Developer blog post] Why no one's looking for 'rockstar programmers'</li>
-                <li>[Book excerpt] Any time you write code, you could be saving lives, as
-                  this anecdote from from Walter Isaacson's Steve Jobs Biography tells us.</li>
-                <li>[Quora post] What do the top 1% of software engineers do that the other
-                  99% do not?</li>
-                <li>[Blog post] We code; We rule the world!</li>
-              </ul>
-            </li>
-          </ul>
-          <p>{If you know more useful resources, please let us know using this link
-            so that we can share it with the class}</p>
-        </div>
-      </panel>
-      <panel header="[35 minutes] ... Detour {CS2103/T : Introduction to the module}"
-      expandable="">
-        <div>
-          <table class="padded-borderless lecture-content-table">
-            <tr>
-              <td>
-                <img src="images/fire.png">
-              </td>
-              <td>
-                <p>[no handout] [<a target="_blank" href="../files/slides/L1.D Introduction to CS2103.pptx">Slides</a>]</p>
-                <div
-                class="dim">
-                  <p><strong>Overview:</strong> This is a killer module. What doesn't kill you
-                    will make you stronger.</p>
-                  <p><strong>Topics:</strong> Module outcomes. Project intro.</p>
-        </div>
-        </td>
-        </tr>
-        </table>
-        <p>Resources:</p>
-        <ul>
-          <li>Interesting readings:
-            <ul>
-              <li>[Blog post] Hackers and Software Engineers</li>
-              <li>[Web article] How to Get a Job at Google - Read this to learn how Google
-                values 'ability to learn' over expertise.</li>
-              <li>[Web article] The Craiglist penis effect - How you can be average and
-                still do better than most</li>
-              <li>[Web article] Computer Science: Lessons Learned - How to Succeed at a
-                CS Education</li>
-              <li>We are not going to give you lot of help in this module. Here is why.</li>
-              <li>[Post from Google inc.] The tech skills and courses Google recommends
-                for Software Engineers</li>
-              <li>[Web article] If You're the Best One in the Room, You're in the Wrong
-                Room - This is why you should not always team up with the same group of
-                people, especially friends.</li>
-            </ul>
-          </li>
-        </ul>
-</div>
-</panel>
-<panel header="[15 minutes] Part 2 - Prime your primary weapon : Introducing IDEs"
-expandable="">
-  <div>
-    <table class="padded-borderless lecture-content-table">
-      <tr>
-        <td>
-          <img src="images/eclipse.png" width="200">
-        </td>
-        <td>
-          <p>[<a href="http://www.comp.nus.edu.sg/~cs2103/AY1617S2/files/handouts/%5bL1P2%5d%20Prime%20Your%20Primary%20Weapon%20-%20Introducing%20IDEs.pdf">Handout</a>]
-            [<a href="../files/slides/L1P2.%5C%20Prime%5C%20Your%5C%20Primary%5C%20Weapon%5C%20-%5C%20Introducing%5C%20IDEs.pptx">Slides</a>]</p>
-          <p><strong>Overview:</strong> The
-            <tooltip content="integrated development environment"><a>IDE</a>
-            </tooltip>is one of the primary tools in your trade and you should know how to use
-            it well.</p>
-          <p><strong>Topics:</strong> IDEs, debugging</p>
-        </td>
-      </tr>
-    </table>
-    <p>Resources:</p>
-    <ul>
-      <li>Eclipse resources
-        <ul>
-          <li>[Slides] Getting started with Eclipse</li>
-          <li>[Slides] Debugging with Eclipse</li>
-          <li>[Article] Eclipse tips and tricks (There are many other similar resources
-            on the Web. Find more on your own)</li>
-          <li>[Article] Eclipse keyboard shortcuts</li>
-        </ul>
-      </li>
-      <li>Interesting side reading
-        <ul>
-          <li>[Dev opinion] Does relying on an IDE for development make you a bad programmer?</li>
-          <li>[Dev opinion] Programmer, know thy tools!</li>
-          <li>[Humor] The six stages of debugging</li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</panel>
-<panel header="[15 minutes] Part 3 - Stop butterflies from causing tornadoes: preventing regressions"
-expandable="">
-  <div>
-    <table class="padded-borderless lecture-content-table">
-      <tr>
-        <td>
-          <img src="images/chaos.png">
-        </td>
-        <td>
-          <p>[<a href="http://www.comp.nus.edu.sg/~cs2103/AY1617S2/files/handouts/%5bL1P3%5d%20Stop%20Butterflies%20from%20Causing%20Tornadoes%20-%20Preventing%20Regressions.pdf"
-            target="_blank">
-        Handout</a>] [<a target="_blank" href="../files/slides/L1P3. Stop butterflies from causing tornadoes - preventing regressions.pptx">Slides</a>]</p>
-          <div
-          class="dim">
-            <p>Overview: Any modifications to existing code should be followed by
-              <tooltip>regression</tooltip>testing to ensure the code still works. Frequent regression
-              testing is practical only if they are automated.</p>
-            <p>Topics: testing, Scripted vs Exploratory testing, regression testing,
-              test automation (Text UIs)</p>
-  </div>
-  </td>
-  </tr>
-  </table>
-  <p>Resources:</p>
-  <ul>
-    <li>[Humor] Another example of the 'butterfly effect'</li>
-  </ul>
-  </div>
-</panel>
-</panel>
-</panel>
+    <panel header="Lecture 2: The program can be small, but the code need not be smelly.
+" expandable="" class="lecture" ctrl-lvl="1">
+      <panel header="L1 recap" expandable=""></panel>
+      <panel header="Part 1 - Good code, bad code: Toward production quality code"
+      expandable=""></panel>
+      <panel header="Part 2 - Refactoring: from Turkey to Peacock in thousand steps"
+      expandable=""></panel>
+      <panel header="Part 3 - Your own private time machine: Introduction to revision control"
+      expandable=""></panel>
+    </panel>
+  </panel>
 </div>
 </div>
 </div>

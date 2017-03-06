@@ -25,6 +25,10 @@ mark {
     text-align: center;
 }
 
+.lecture-content-table {
+    width: 100%;
+}
+
 .lecture-content-table > tbody > tr > td:nth-child(1) {
     width: 200px;
 }
@@ -130,4 +134,19 @@ table.two-column-content td {
     background-color: #7A629B!important;
     border-color: #7A629B!important;;
     color: #ffffff!important;;
+}
+
+
+.question-wrapper .radio-list,
+.question-wrapper .task-list {
+    list-style: none;
+    padding-left:0;
+}
+
+.radio-list-input, .task-list-item-checkbox {
+    margin-right: 10px!important;
+}
+
+.block-embed {
+    text-align: center;
 }

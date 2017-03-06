@@ -41,13 +41,11 @@
       P. Brooks.</p><span class="image-container"><img src="contents/textbook/images/img1.png" height="320px"><img src="contents/textbook/images/img2.jpeg" height="320px"></span>
     <p><strong>The Joys of the Craft</strong>
     </p>
-    <p>
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" id="youtubeplayer" type="text/html"
-        width="640" height="390" src="//www.youtube.com/embed/qNleOXs6fJc" frameborder="0"
-        webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe>
-      </div>
-    </p>
+    <div class="block-embed block-embed-service-youtube">
+      <iframe type="text/html" src="//www.youtube.com/embed/qNleOXs6fJc" frameborder="0"
+      width="640" height="390" webkitallowfullscreen="" mozallowfullscreen=""
+      allowfullscreen></iframe>
+    </div>
     <p>Why is programming fun? What delights may its practitioner expect as his
       reward?</p>
     <p>First is the sheer joy of making things. As the child delights in his
@@ -134,8 +132,8 @@
     <p><strong>Worked examples</strong>
     </p>
     <morph title="Question 1">
-      <question>
-        <div slot="body">
+      <div>
+        <question has-input="true">
           <ol>
             <li>Compare Software Engineering with Civil Engineering in terms of how work
               products in CE (i.e. buildings) differ from those of SE (i.e. software).</li>
@@ -145,102 +143,101 @@
               activity. You may use a comparison (or an analogy) of Software engineering
               versus Civil Engineering to prove this point.</li>
           </ol>
-        </div>
-        <div slot="hint">
-          <p>Justify your answers carefully.</p>
-        </div>
-        <div slot="answer">
-          <p>(a)</p>
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Buildings</th>
-                <th>Software</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Visible, tangible</td>
-                <td>Invisible, intangible</td>
-              </tr>
-              <tr>
-                <td>Wears out over time</td>
-                <td>Does not wear out</td>
-              </tr>
-              <tr>
-                <td>Change is limited by physical restrictions (e.g. difficult to remove a
-                  floor from a high rise building)</td>
-                <td>Change is not limited by such restrictions. Just change the code and recompile.</td>
-              </tr>
-              <tr>
-                <td>Creating an exact copy of a building is impossible. Creating a near copy
-                  is almost as costly as creating the original.</td>
-                <td>Any number of exact copies can be made with near zero cost.</td>
-              </tr>
-              <tr>
-                <td>Difficult to move.</td>
-                <td>Easily delivered from one place to another.</td>
-              </tr>
-              <tr>
-                <td>Many low-skilled workers following tried-and-tested procedures.</td>
-                <td>No low-skilled workers involved. Workers have more freedom to follow their
-                  own procedures.</td>
-              </tr>
-              <tr>
-                <td>Easier to assure quality (just follow accepted procedure).</td>
-                <td>Not easy to assure quality.</td>
-              </tr>
-              <tr>
-                <td>Majority of the work force has to be on location.</td>
-                <td>Can be built by people who are not even in the same country.</td>
-              </tr>
-              <tr>
-                <td>Raw materials are costly, costly equipment required.</td>
-                <td>Almost free raw materials and relatively cheap equipment.</td>
-              </tr>
-              <tr>
-                <td>Once construction is started, it is hard to do drastic changes to the
-                  design.</td>
-                <td>Building process is very flexible. Drastic design changes can be done,
-                  although costly.</td>
-              </tr>
-              <tr>
-                <td>A lot of manual and menial labor involved.</td>
-                <td>Most work involves highly-skilled labor.</td>
-              </tr>
-              <tr>
-                <td>Generally robust. E.g. removing a single brick is unlikely to destroy
-                  a building.</td>
-                <td>More fragile than buildings. A single misplaced semicolon can render the
-                  whole system useless.</td>
-              </tr>
-            </tbody>
-          </table>
-          <p>(b) Depends on the size of the software. Manpower required for software
-            is very costly. On the other hand, we can create a very valuable software
-            (e.g. an iPhone application that can make million dollars in a month) with
-            a just a PC and a few days of work!</p>
-          <p>(c) Arguments to support this statement:</p>
-          <ul>
-            <li>If coding is a manufacturing activity, we should be able to do it using
-              robotic machines (just like in the car industry) or low-skilled laborers
-              (like in the construction industry).</li>
-            <li>If coding is a manufacturing activity, we wouldn't be changing it so much
-              after we code software. But if the code is in fact a 'design', yes, we
-              would fiddle with it until we get it right.</li>
-            <li>Manufacturing is the process of building a finished product based on the
-              design. Code is the design. Manufacturing is what is done by the compiler
-              (fully automated).</li>
-          </ul>
-          <p>However, the type of 'design' that occurs during coding is at a much lower
-            level than the 'design' that occurs before coding.</p>
-        </div>
-      </question>
+          <div slot="hint">
+            <p>Justify your answers carefully.</p>
+          </div>
+          <div slot="answer">
+            <p>(a)</p>
+            <table class="markbind-table table">
+              <thead>
+                <tr>
+                  <th>Buildings</th>
+                  <th>Software</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Visible, tangible</td>
+                  <td>Invisible, intangible</td>
+                </tr>
+                <tr>
+                  <td>Wears out over time</td>
+                  <td>Does not wear out</td>
+                </tr>
+                <tr>
+                  <td>Change is limited by physical restrictions (e.g. difficult to remove a
+                    floor from a high rise building)</td>
+                  <td>Change is not limited by such restrictions. Just change the code and recompile.</td>
+                </tr>
+                <tr>
+                  <td>Creating an exact copy of a building is impossible. Creating a near copy
+                    is almost as costly as creating the original.</td>
+                  <td>Any number of exact copies can be made with near zero cost.</td>
+                </tr>
+                <tr>
+                  <td>Difficult to move.</td>
+                  <td>Easily delivered from one place to another.</td>
+                </tr>
+                <tr>
+                  <td>Many low-skilled workers following tried-and-tested procedures.</td>
+                  <td>No low-skilled workers involved. Workers have more freedom to follow their
+                    own procedures.</td>
+                </tr>
+                <tr>
+                  <td>Easier to assure quality (just follow accepted procedure).</td>
+                  <td>Not easy to assure quality.</td>
+                </tr>
+                <tr>
+                  <td>Majority of the work force has to be on location.</td>
+                  <td>Can be built by people who are not even in the same country.</td>
+                </tr>
+                <tr>
+                  <td>Raw materials are costly, costly equipment required.</td>
+                  <td>Almost free raw materials and relatively cheap equipment.</td>
+                </tr>
+                <tr>
+                  <td>Once construction is started, it is hard to do drastic changes to the
+                    design.</td>
+                  <td>Building process is very flexible. Drastic design changes can be done,
+                    although costly.</td>
+                </tr>
+                <tr>
+                  <td>A lot of manual and menial labor involved.</td>
+                  <td>Most work involves highly-skilled labor.</td>
+                </tr>
+                <tr>
+                  <td>Generally robust. E.g. removing a single brick is unlikely to destroy
+                    a building.</td>
+                  <td>More fragile than buildings. A single misplaced semicolon can render the
+                    whole system useless.</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>(b) Depends on the size of the software. Manpower required for software
+              is very costly. On the other hand, we can create a very valuable software
+              (e.g. an iPhone application that can make million dollars in a month) with
+              a just a PC and a few days of work!</p>
+            <p>(c) Arguments to support this statement:</p>
+            <ul>
+              <li>If coding is a manufacturing activity, we should be able to do it using
+                robotic machines (just like in the car industry) or low-skilled laborers
+                (like in the construction industry).</li>
+              <li>If coding is a manufacturing activity, we wouldn't be changing it so much
+                after we code software. But if the code is in fact a 'design', yes, we
+                would fiddle with it until we get it right.</li>
+              <li>Manufacturing is the process of building a finished product based on the
+                design. Code is the design. Manufacturing is what is done by the compiler
+                (fully automated).</li>
+            </ul>
+            <p>However, the type of 'design' that occurs during coding is at a much lower
+              level than the 'design' that occurs before coding.</p>
+          </div>
+        </question>
+      </div>
     </morph>
     <h2>Practice question</h2>
-    <morph title="Dummy Question 1" src="what-is-software-engineering._include_.html"></morph>
-    <morph title="Dummy Question 2" src="what-is-software-engineering._include_.html"></morph>
-    <morph title="Dummy Question 3" src="what-is-software-engineering._include_.html"></morph>
+    <morph title="Dummy Question 1" src="L1P1-Q1._include_.html"></morph>
+    <morph title="Dummy Question 2" src="L1P1-Q2._include_.html"></morph>
   </div>
 </div>
 </div>
