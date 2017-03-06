@@ -14,27 +14,27 @@ Handbook sections to read around this time:
 <tabs>
 
 <tab header="General" class="book">
-  
-  <include src="../handbook/handbook-preliminaries.html" name="Preliminaries" dynamic />
-  <include src="../handbook/handbook-textBooks.html" name="Text Books" dynamic />
-  <include src="../handbook/handbook-programmingLanguages.html" name="Programming Language" dynamic />
-  <include src="../handbook/handbook-appendixA-principles.html" name="Module Principles" dynamic />
+
+  <include src="../handbook-md/preliminaries.md" name="Preliminaries" dynamic />
+  <include src="../handbook-md/textBooks.md" name="Text Books" dynamic />
+  <include src="../handbook-md/programming-languages.md" name="Programming Language" dynamic />
+  <include src="../handbook-md/appendixA-principles.md" name="Module Principles" dynamic />
 
 </tab>
 
 <tab header="Project" class="book">
-  
-  <include src="../handbook/handbook-project-product.html" name="The Product" dynamic />
-  <include src="../handbook/handbook-project-scope.html" name="Project Scope" dynamic />
-  <include src="../handbook/handbook-project-constraints.html" name="Project Constraints" dynamic />
+
+  <include src="../handbook-md/project-product.md" name="The Product" dynamic />
+  <include src="../handbook-md/project-scope.md" name="Project Scope" dynamic />
+  <include src="../handbook-md/project-constraints.md" name="Project Constraints" dynamic />
 
 </tab>
 
 <tab header="FAQ" class="book">
-  
-  <include src="../handbook/handbook-appendixC-faq.html#handbook-faq-highWorkload" name="Why the workload is so high?" dynamic />
-  <include src="../handbook/handbook-appendixC-faq.html#handbook-faq-beanCounting" name="Why so much bean counting?" dynamic />
-  <include src="../handbook/handbook-appendixC-faq.html#handbook-faq-separateWebsite" name="Why you force me to visit a separate website instead of using IVLE?" dynamic />
+
+  <include src="../handbook-md/appendixC-faq.md#handbook-faq-highWorkload" name="Why the workload is so high?" dynamic />
+  <include src="../handbook-md/appendixC-faq.md#handbook-faq-beanCounting" name="Why so much bean counting?" dynamic />
+  <include src="../handbook-md/appendixC-faq.md#handbook-faq-separateWebsite" name="Why you force me to visit a separate website instead of using IVLE?" dynamic />
 
 </tab>
 
