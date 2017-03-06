@@ -93,7 +93,7 @@
   <include src="contents/handbook-md/programming-languages.md" />
 </div>
 
-# Project 
+# Project
 <div id="handbook-project">
 <include src="contents/handbook-md/project.md" />
 </div>
@@ -189,34 +189,42 @@
 </div>
 
 # Exams
-<div id="handbook-exams"></div>
+<div id="handbook-exams">
+<include src="contents/handbook-md/exams.md" /></div>
 
 # Grade Breakdown
-<div id="handbook-gradeBreakdown"></div>
+<div id="handbook-gradeBreakdown">
+<include src="contents/handbook-md/gradeBreakdown.md" /></div>
 
 # Participation Marks
-<div id="handbook-participation"></div>
+<div id="handbook-participation">
+<include src="contents/handbook-md/participation.md" /></div>
 
 # Appendix A: Module Principles
-<div id="handbook-appendixA-principles"></div>
+<div id="handbook-appendixA-principles">
+<include src="contents/handbook-md/appendixA-principles.md" /></div>
 
 # Appendix B: Module Policies
-<div id="handbook-appendixB-policies"></div>
+<div id="handbook-appendixB-policies">
+<include src="contents/handbook-md/appendixB-policies.md" /></div>
 <div id="handbook-policy"></div>
 
 # Appendix C: Frequently Asked Questions
-<div id="handbook-appendixC-faq"></div>
+<div id="handbook-appendixC-faq">
+<include src="contents/handbook-md/appendixC-faq.md" /></div>
 
 # Appendix D: How to get help in CS2103/T
-<div id="handbook-appendixD-help"></div>
+<div id="handbook-appendixD-help">
+<include src="contents/handbook-md/appendixD-help.md" /></div>
 
 # Appendix E: Using GitHub Project Hosting
-<div id="handbook-appendixE-github"></div>
+<div id="handbook-appendixE-github">
+<include src="contents/handbook-md/appendixE-github.md" /></div>
 
 # Appendix F: What to do if there are teamwork issues
-<div id="handbook-appendixF-teamworkIssues"></div>
+<div id="handbook-appendixF-teamworkIssues">
+<include src="contents/handbook-md/appendixF-teamworkIssues.md" /></div>
 
-</div>
 
 <div id="disqus_thread"></div>
 
@@ -230,3 +238,5 @@ s.setAttribute('data-timestamp', +new Date());
 </script>
 
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>

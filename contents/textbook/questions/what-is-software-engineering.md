@@ -1,17 +1,27 @@
 <Question>
-<div slot="body">
 
 What is software engineering?
+- ( ) A game people play for fun.
+- ( ) A course you have to take for graduate
 
-</div>
+What can Software Engineer do?
+- [ ] Play Games
+- [ ] Become Billionaire
+
 <div slot="hint">
 
-You can ask Google about it.
+Use your instinct.
 
 </div>
 <div slot="answer">
 
-Software engineering (SWE) is the application of engineering to the development of software in a systematic method.
+What is software engineering?
+- ( ) A game people play for fun.
+- (X) A course you have to take for graduate
+
+What can Software Engineer do?
+- [X] Play Games
+- [X] Become Billionaire
 
 </div>
 </Question>
