@@ -44,7 +44,7 @@ Update the following pages:
     Here are some typical roles:
 
     *   _Team lead_: Responsible for overall project coordination.
-    *   _Documentation_em> (short for ‘in charge of documentation’): Responsible for the quality of various project documents.
+    *   _Documentation_ (short for ‘in charge of documentation’): Responsible for the quality of various project documents.
     *   _Testing_: Ensures the testing of the project is done properly and on time.
     *   _Code quality_: Looks after code quality, ensures adherence to coding standards, etc.
     *   _Deliverables and deadlines_: Ensure project deliverables are done on time and in the right format.

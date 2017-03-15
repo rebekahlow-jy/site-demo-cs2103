@@ -8,3 +8,9 @@
     justify-content: center;
     align-items:center;
 }
+
+@media print {
+    .website-content {
+        max-width: 100%;
+    }
+}

@@ -150,3 +150,7 @@ table.two-column-content td {
 .block-embed {
     text-align: center;
 }
+
+.closeable-show {
+    padding: 4px;
+}

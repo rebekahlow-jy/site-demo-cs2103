@@ -15,6 +15,14 @@
     {
       "src": "textbook.md",
       "title": "CS2103/T Website - Textbook"
+    },
+    {
+      "src": "book/introduction/index.md",
+      "title": "CS2103/T Textbook - Software Engineering Rocks"
+    },
+    {
+      "src": "book/se-pattern/index.md",
+      "title": "CS2103/T Textbook - Design Patterns"
     }
   ],
   "ignore": [
