@@ -1,6 +1,5 @@
-<link rel="stylesheet" href="/css/main.css">
-<link rel="stylesheet" href="/css/textbook.css">
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/github.min.css">
+<link rel="stylesheet" href="{{baseUrl}}/css/main.css">
+<link rel="stylesheet" href="{{baseUrl}}/css/textbook.css">
 
 <include src="../../common/header.md" />
 
