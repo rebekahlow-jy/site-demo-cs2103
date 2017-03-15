@@ -6,7 +6,7 @@
 <div class="website-content">
 
 # Table of Contents
-* [Software Engineering Rocks](/book/introduction/)
-* [Software Engineering Design Patterns](/book/se-pattern/)
+* [Software Engineering Rocks](book/introduction/)
+* [Software Engineering Design Patterns](book/se-pattern/)
 
 </div>
