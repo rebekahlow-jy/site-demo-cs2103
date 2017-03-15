@@ -11,7 +11,7 @@ Functionality expectations: This version should have decent implementations of a
 1.  Download `Collate-TUI.jar` from the [Collate Tool project](https://github.com/se-edu/collate).
 2.  Mark your code with a `//@@author matric-number`. Note the double `@`. The comment syntax may vary based on file type e.g. for markdown, fxml, html
     ```
-    &lt;!-- @@author matric-number --&gt;
+    <!-- @@author matric-number -->
     ```
 
     Here is a sample code file:

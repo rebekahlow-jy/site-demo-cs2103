@@ -11,14 +11,16 @@
 <div id="app" class="container-fluid">
     <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/handbook.css">
-<navbar placement="top" type="default"><a slot="brand" href="index.html" title="Home" class="navbar-brand">CS2103/T</a>
-  <li><a href="index.html">Schedule</a>
-  </li>
-  <li><a href="textbook.html">Textbook</a>
-  </li>
-  <li><a href="handbook.html">Handbook</a>
-  </li>
-</navbar>
+<div>
+  <navbar placement="top" type="default"><a slot="brand" href="index.html" title="Home" class="navbar-brand">CS2103/T</a>
+    <li><a href="/index.html">Schedule</a>
+    </li>
+    <li><a href="/textbook.html">Textbook</a>
+    </li>
+    <li><a href="/handbook.html">Handbook</a>
+    </li>
+  </navbar>
+</div>
 <div class="row">
   <div class="col-md-9">
     <h1 id="preliminaries">Preliminaries</h1>
@@ -338,8 +340,8 @@
             specific times.</li>
           <li>Entering an event in a calendar is a pain because it takes several clicks.
             He prefers a ‘one shot’ approach. e.g., to be able to type in commands
-            such as "<code>add July 10, 5-6, project meeting</code>" (such as allowed
-            by <a href="http://gappstips.com/google-calendar/use-quick-add-to-speed-up-google-calendar-entries/">GCal’s ‘quick add’ feature</a>).</li>
+            such as &quot;<code>add July 10, 5-6, project meeting</code>&quot; (such
+            as allowed by <a href="http://gappstips.com/google-calendar/use-quick-add-to-speed-up-google-calendar-entries/">GCal’s ‘quick add’ feature</a>).</li>
           <li>While it is good that all Jim’s todo items are currently online and available
             to access from any computer, he always uses his own laptop or office PC
             to access them and sometimes from places where there is no ready Internet
@@ -789,7 +791,7 @@
               consistency etc. Here are some typical roles:
               <ul>
                 <li><em>Team lead</em>: Responsible for overall project coordination.</li>
-                <li>_Documentation_em> (short for ‘in charge of documentation’): Responsible
+                <li><em>Documentation</em> (short for ‘in charge of documentation’): Responsible
                   for the quality of various project documents.</li>
                 <li><em>Testing</em>: Ensures the testing of the project is done properly
                   and on time.</li>
@@ -1292,7 +1294,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
                       <br>Avoid skits, re-enactments, dramatizations etc. This is not a sales pitch
                       or an informercial. While you need to show how a user use the product to
                       get value, but you don’t need to act like an imaginary user. For example,
-                      [Instead of this]<code>Jim get’s a call from boss. "Ring ring", "hello", "oh hi Jim, can we postpone the meeting?" "Sure". Jim hang up and curses the boss under his breath. Now he starts typing ..etc.</code>
+                      [Instead of this]<code>Jim get’s a call from boss. &quot;Ring ring&quot;, &quot;hello&quot;, &quot;oh hi Jim, can we postpone the meeting?&quot; &quot;Sure&quot;. Jim hang up and curses the boss under his breath. Now he starts typing ..etc.</code>
                       <br>[do this] <code>If Jim needs to postpone the meeting, he can type …</code>
                       <br>It’s not that dramatization is bad or we don’t like it. We simply don’t
                       have enough time for it.
@@ -1312,7 +1314,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
                       the target audience knows that the product is a task manager targeting
                       Jim-like users. That means no need to explain those things again.
                       <br>Also assume the target audience knows who you are. That means no need
-                      to say things like "We are students from NUS, SoC".</p>
+                      to say things like &quot;We are students from NUS, SoC&quot;.</p>
                   </li>
                   <li>
                     <p>Bring sufficient amount of sample data and know how to load them to the
@@ -1983,7 +1985,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
               me along the corridor, said 'Hi Damith, good morning' and I walked away
               without saying anything back. Not responding to a personal email is just
               as bad. Always take a few seconds to at least acknowledge such emails.
-               It doesn't take long to type "Noted. Thanks" and hit 'send'.</p>
+               It doesn't take long to type &quot;Noted. Thanks&quot; and hit 'send'.</p>
             <p>The promptness of a reply is even more important when the email is requesting
               you for something that you cannot provide. Imagine you wrote to me requesting
               a reference letter and I did not respond at all because I didn't want to
@@ -2223,7 +2225,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
         <h3 id="why-project-requirements-are-so-vague">Why project requirements are so vague?</h3>
         <div id="handbook-faq-vagueRequirements">
           <img src="images/vague requirement.png" width="737" height="210">
-          <p>"You tell me exactly what to do - I do that - you pay me (in grades)"
+          <p>&quot;You tell me exactly what to do - I do that - you pay me (in grades)&quot;
             is a model for contract work, not for learning. Being able to survive in
             imprecise, uncertain, volatile problem contexts is precisely what we are
             trying to teach you.</p>
@@ -2410,22 +2412,23 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
                   do your research' person in a public forum.</p>
               </li>
               <li>
-                <p>Learn to isolate the problem. "My code doesn't work" isn't going to help
-                  even if you post the whole code online. Others don't have time to go through
-                  all of your code. Isolate the part that doesn't work and strip it down
-                  to the bare minimum that is enough reproduce the error. Sometimes, this
-                  process actually helps you to figure out the problem yourself. If not,
-                  at least it increases the chance of someone else being able to help you.
+                <p>Learn to isolate the problem. &quot;My code doesn't work&quot; isn't going
+                  to help even if you post the whole code online. Others don't have time
+                  to go through all of your code. Isolate the part that doesn't work and
+                  strip it down to the bare minimum that is enough reproduce the error. Sometimes,
+                  this process actually helps you to figure out the problem yourself. If
+                  not, at least it increases the chance of someone else being able to help
+                  you.
                   <br><span class="bg-info">
 Tip: How to isolate problematic code? Delete code (one bit at a time) that is confirmed as not related to the problem. Do that until you can still reproduce the problem with the least amount of code remaining.
 </span>
                 </p>
               </li>
               <li>
-                <p>Generalize the problem. "How to write tasks to a text file using Java"
-                  is too specific to what you are working on. You are more likely to find
-                  help if you post a thread called (or search for) "How to write to a file
-                  using Java".</p>
+                <p>Generalize the problem. &quot;How to write tasks to a text file using
+                  Java&quot; is too specific to what you are working on. You are more likely
+                  to find help if you post a thread called (or search for) &quot;How to write
+                  to a file using Java&quot;.</p>
               </li>
               <li>
                 <p>Explain well. Conversations via online forums take time. If you post everything
@@ -2552,8 +2555,8 @@ Tip: How to isolate problematic code? Delete code (one bit at a time) that is co
             <li>Rename the forked repo as <code>main</code>. This repo is to be used as
               the repo for your project.</li>
             <li>Clone the repo to your computer.</li>
-            <li>Edit this element <code><name>addressbook-level4</name></code> and the line
-              below that in the <code>.project</code> file to match the <strong>product name</strong> (not
+            <li>Edit this element <code>&lt;name&gt;addressbook-level4&lt;/name&gt;</code> and
+              the line below that in the <code>.project</code> file to match the <strong>product name</strong> (not
               repo name) of your project. e.g. <code>SuperToDo</code>
               <br>Commit the change.</li>
             <li>Push to the <code>main</code> repo you created above.</li>
@@ -2888,7 +2891,9 @@ Tip: How to isolate problematic code? Delete code (one bit at a time) that is co
       tooltip: VueStrap.tooltip,
       dynamicPanel: VueStrap.dynamicPanel,
       morph: VueStrap.morph,
-      question: VueStrap.question
+      question: VueStrap.question,
+      tipBox: VueStrap.tipBox,
+      pic: VueStrap.pic,
     },
     el: "#app"
   });
