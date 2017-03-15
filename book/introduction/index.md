@@ -1,23 +1,30 @@
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/textbook.css">
+
+<include src="../../common/header.md" />
+
+<div class="website-content">
+
 ## Software Engineering Rocks!
 
-<div class="bg-info">
+<tip-box type="warning">
 
-> **How to use these handouts?** Refrain from using the handouts to follow the lectures. Handouts contain reference materials that supplement the lectures, rather than substitute. You are advised to make your own notes during each lecture and read the associated handout later. This helps you gain a deeper understanding of the topics discussed in class. Moreover, handouts may explain things in slightly different ways so as to offer you differing perspectives.
->
-> **Why are sub-headings not numbered?** Handouts are meant to be independent of each other. Numbering them would otherwise have introduced an artificial ordering, as well as clutter.
+**How to use these handouts?** Refrain from using the handouts to follow the lectures. Handouts contain reference materials that supplement the lectures, rather than substitute. You are advised to make your own notes during each lecture and read the associated handout later. This helps you gain a deeper understanding of the topics discussed in class. Moreover, handouts may explain things in slightly different ways so as to offer you differing perspectives.
 
-</div>
+**Why are sub-headings not numbered?** Handouts are meant to be independent of each other. Numbering them would otherwise have introduced an artificial ordering, as well as clutter.
+
+</tip-box>
 
 The following description of the Joys (and Woes) of the Programming Craft was taken from Chapter 1 of The *Mythical Man-Month*, by Frederick P. Brooks. 
 
 <span class="image-container">
-<img src="contents/textbook/images/img1.png" height="320px" v-closeable>
-<img src="contents/textbook/images/img2.jpeg" height="320px" v-closeable>
+<img src="./images/img1.png" height="320px" v-closeable alt="Show Author Pic">
+<img src="./images/img2.jpeg" height="320px" v-closeable alt="Show Book Cover">
 </span>
 
 **The Joys of the Craft**
 
-<div v-closeable>
+<div v-closeable class="center-block">
 
 @[youtube](qNleOXs6fJc)
 
@@ -73,3 +80,5 @@ This then is programming, both a tar pit in which many efforts have floundered a
 
 <morph title="Dummy Question 1" src="./questions/L1P1-Q1.md"></morph>
 <morph title="Dummy Question 2" src="./questions/L1P1-Q2.md"></morph>
+
+</div>
