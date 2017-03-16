@@ -17,7 +17,7 @@
 ### Lecture Slides
 <div v-closeable alt="Read lecture slides online">
 
-@[powerpoint](https://nusu-my.sharepoint.com/personal/a0119446_u_nus_edu/_layouts/15/WopiFrame.aspx?sourcedoc={423717f5-88ec-4056-aeef-405331bbb9ff})  
+@[powerpoint](https://onedrive.live.com/embed?cid=880E9830B9B0E826&resid=880E9830B9B0E826%21858&authkey=AJ0VCSNC3KqA1_s&em=2)  
 
 </div>
 
