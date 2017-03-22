@@ -285,33 +285,33 @@ class Episode {
             <question>
               <p>Which of the following is an ideal situation for using Singleton pattern?</p>
               <ul
-              radio-group="as3j9" class="radio-list">
+              radio-group="knuw4" class="radio-list">
                 <li class="radio-list-item">
                   <label>
-                    <input class="radio-list-input" name="as3j9" type="radio">Utility methods used by many class in the application.</label>
+                    <input class="radio-list-input" name="knuw4" type="radio">Utility methods used by many class in the application.</label>
                 </li>
                 <li class="radio-list-item">
                   <label>
-                    <input class="radio-list-input" name="as3j9" type="radio">A database manager shared by different component of the application.</label>
+                    <input class="radio-list-input" name="knuw4" type="radio">A database manager shared by different component of the application.</label>
                 </li>
                 <li class="radio-list-item">
                   <label>
-                    <input class="radio-list-input" name="as3j9" type="radio">A constant String defined in every controller.</label>
+                    <input class="radio-list-input" name="knuw4" type="radio">A constant String defined in every controller.</label>
                 </li>
                 </ul>
                 <div slot="answer">
-                  <ul radio-group="mqsgf" class="radio-list">
+                  <ul radio-group="34r9h" class="radio-list">
                     <li class="radio-list-item">
                       <label>
-                        <input class="radio-list-input" name="mqsgf" type="radio">Utility methods used by many class in the application.</label>
+                        <input class="radio-list-input" name="34r9h" type="radio">Utility methods used by many class in the application.</label>
                     </li>
                     <li class="radio-list-item">
                       <label>
-                        <input class="radio-list-input" checked name="mqsgf" type="radio">Database manager shared by different component of the application.</label>
+                        <input class="radio-list-input" checked name="34r9h" type="radio">Database manager shared by different component of the application.</label>
                     </li>
                     <li class="radio-list-item">
                       <label>
-                        <input class="radio-list-input" name="mqsgf" type="radio">A constant String defined in every controller.</label>
+                        <input class="radio-list-input" name="34r9h" type="radio">A constant String defined in every controller.</label>
                     </li>
                   </ul>
                   <p>Database is a shared resources here, and by using singleton pattern, we
@@ -765,28 +765,10 @@ public void update() {
 <script src="../../markbind/js/vue.min.js"></script>
 <script src="../../markbind/js/vue-strap.min.js"></script>
 <script type="text/javascript">
-  Vue.directive('closeable', VueStrap.closeable);
+  Vue.use(VueStrap);
   var vm = new Vue({
-    components: {
-      affix: VueStrap.affix,
-      accordion: VueStrap.accordion,
-      panel: VueStrap.panel,
-      navbar: VueStrap.navbar,
-      popover: VueStrap.popover,
-      modal: VueStrap.modal,
-      tabs: VueStrap.tabset,
-      tab: VueStrap.tab,
-      tooltip: VueStrap.tooltip,
-      dynamicPanel: VueStrap.dynamicPanel,
-      morph: VueStrap.morph,
-      question: VueStrap.question,
-      tipBox: VueStrap.tipBox,
-      pic: VueStrap.pic,
-    },
     el: "#app"
   });
-  vm.$on('retriever:fetched', function (el) {
-    vm.$compile(el);
-  });
+  VueStrap.installEvents(vm);
 </script>
 </html>

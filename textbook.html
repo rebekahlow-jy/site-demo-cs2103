@@ -25,38 +25,27 @@
   <h1 id="table-of-contents">Table of Contents</h1>
   <ul>
     <li><a href="book/introduction/">Software Engineering Rocks</a>
+      <button class="btn btn-default"
+      v-show-modal="introduction-preview">Preview</button>
     </li>
     <li><a href="book/se-pattern/">Software Engineering Design Patterns</a>
     </li>
   </ul>
 </div>
+<modal name="introduction-preview" title="Introduction Preview">
+  <div>
+    <p>Some <strong>preview</strong> contents.</p>
+  </div>
+</modal>
 </div>
 </body>
 <script src="markbind/js/vue.min.js"></script>
 <script src="markbind/js/vue-strap.min.js"></script>
 <script type="text/javascript">
-  Vue.directive('closeable', VueStrap.closeable);
+  Vue.use(VueStrap);
   var vm = new Vue({
-    components: {
-      affix: VueStrap.affix,
-      accordion: VueStrap.accordion,
-      panel: VueStrap.panel,
-      navbar: VueStrap.navbar,
-      popover: VueStrap.popover,
-      modal: VueStrap.modal,
-      tabs: VueStrap.tabset,
-      tab: VueStrap.tab,
-      tooltip: VueStrap.tooltip,
-      dynamicPanel: VueStrap.dynamicPanel,
-      morph: VueStrap.morph,
-      question: VueStrap.question,
-      tipBox: VueStrap.tipBox,
-      pic: VueStrap.pic,
-    },
     el: "#app"
   });
-  vm.$on('retriever:fetched', function (el) {
-    vm.$compile(el);
-  });
+  VueStrap.installEvents(vm);
 </script>
 </html>
