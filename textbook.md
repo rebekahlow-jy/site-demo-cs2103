@@ -6,7 +6,11 @@
 <div class="website-content">
 
 # Table of Contents
-* [Software Engineering Rocks](book/introduction/)
+* [Software Engineering Rocks](book/introduction/) <button class="btn btn-default" v-show-modal="introduction-preview">Preview</button>
 * [Software Engineering Design Patterns](book/se-pattern/)
 
 </div>
+
+<modal name="introduction-preview" title="Introduction Preview">
+<include src="book/introduction/preview.md#preview" />
+</modal>
