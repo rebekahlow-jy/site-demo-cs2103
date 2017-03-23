@@ -26,13 +26,13 @@
   <ul>
     <li><a href="book/introduction/">Software Engineering Rocks</a>
       <button class="btn btn-default"
-      v-show-modal="introduction-preview">Preview</button>
+      v-show-modal="introduction-preview">Preview 🐱</button>
     </li>
     <li><a href="book/se-pattern/">Software Engineering Design Patterns</a>
     </li>
   </ul>
 </div>
-<modal name="introduction-preview" title="Introduction Preview">
+<modal name="introduction-preview" title="Introduction Preview :rocket: ">
   <div>
     <p>Some <strong>preview</strong> contents.</p>
   </div>
@@ -41,11 +41,5 @@
 </body>
 <script src="markbind/js/vue.min.js"></script>
 <script src="markbind/js/vue-strap.min.js"></script>
-<script type="text/javascript">
-  Vue.use(VueStrap);
-  var vm = new Vue({
-    el: "#app"
-  });
-  VueStrap.installEvents(vm);
-</script>
+<script src="markbind/js/setup.js"></script>
 </html>

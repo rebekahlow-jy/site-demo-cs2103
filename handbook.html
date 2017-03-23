@@ -905,7 +905,7 @@
           <p>Indicate the different roles played and responsibilities held by each
             team member. You can reassign these roles and responsibilities later in
             the project, if necessary.</p>
-          <panel header="&lt;strong&gt;Roles and responsibilities&lt;/strong&gt;"
+          <panel header="**Roles and responsibilities**"
           expandable="">Roles imply aspects you are in charge of and responsible for. E.g., if
             you are in charge of documentation, you are the person who should allocate
             who should write which part, ensure the document is in right format, ensure
@@ -2099,7 +2099,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
           your post or the email got stuck somewhere.</p>
         <p>Similarly I expect you to check email regularly and respond to emails
           written to you personally (not mass email) promptly.</p>
-        <panel header="&lt;strong&gt;Email etiquette: ALWAYS respond to direct emails&lt;/strong&gt;"
+        <panel header="**Email etiquette: ALWAYS respond to direct emails**"
         expandable="">
           <p>Not responding to a personal email is a major breach of professional etiquette
             (and general civility). Imagine how pissed off you would be if you met
@@ -2595,7 +2595,7 @@ Tip: How to isolate problematic code? Delete code (one bit at a time) that is co
         <li>Specify your full name.</li>
         <li>Upload a suitable profile photo (i.e. a recent photo of your face).</li>
       </ul>
-      <panel header="&lt;strong&gt;Why am I being pushed to complete my GitHub profile?&lt;/strong&gt;"
+      <panel header="**Why am I being pushed to complete my GitHub profile?**"
       expandable="">
         <p>The GitHub profile is useful for the tutors and classmates to identify
           you. If you are reluctant to share your info in your long-term GitHub account,
@@ -2884,29 +2884,23 @@ Tip: How to isolate problematic code? Delete code (one bit at a time) that is co
       </ul>
     </div>
   </div>
-  <div id="disqus_thread"></div>
-  <script>
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = '//cs2103.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-  </script>
-  <p>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  <div>
+    <div id="disqus_thread"></div>
+    <script>
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = '//cs2103.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/disqus.md?ref_noscript">comments powered by Disqus.</a>
     </noscript>
-  </p>
+  </div>
 </div>
 </div>
 </body>
 <script src="markbind/js/vue.min.js"></script>
 <script src="markbind/js/vue-strap.min.js"></script>
-<script type="text/javascript">
-  Vue.use(VueStrap);
-  var vm = new Vue({
-    el: "#app"
-  });
-  VueStrap.installEvents(vm);
-</script>
+<script src="markbind/js/setup.js"></script>
 </html>
