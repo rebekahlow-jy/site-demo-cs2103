@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CS2103/T Textbook - Design Patterns</title>
     <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../markbind/css/github.min.css">
 </head>
 <body>
 <div id="app" class="container-fluid">
@@ -147,31 +148,31 @@
             given above.</p>
           <h4 id="code-example">Code Example</h4>
           <tabs>
-            <tab header="Java"><pre><code class="language-java">class MetaBook {
+            <tab header="Java"><pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MetaBook</span> </span>{
     String name;
     String author;
     String isbn;
     List&lt;BookCopy&gt; copies;
 }
 
-class BookCopy {
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BookCopy</span> </span>{
     MetaBook meta;
     String serial;
 }
 </code></pre>
               <p></p>
             </tab>
-            <tab header="C++"><pre><code class="language-c++">class MetaBook {
-    public:
-        string name;
-        string author;
-        string isbn;
-        vector&lt;BookCopy&gt; copies;
+            <tab header="C++"><pre><code class="hljs c++"><span class="hljs-keyword">class</span> MetaBook {
+    <span class="hljs-keyword">public</span>:
+        <span class="hljs-built_in">string</span> name;
+        <span class="hljs-built_in">string</span> author;
+        <span class="hljs-built_in">string</span> isbn;
+        <span class="hljs-built_in">vector</span>&lt;BookCopy&gt; copies;
 };
 
-class BookCopy {
-    public:
-        string serial;
+<span class="hljs-keyword">class</span> BookCopy {
+    <span class="hljs-keyword">public</span>:
+        <span class="hljs-built_in">string</span> serial;
         MetaBook meta;
 }
 </code></pre>
@@ -189,15 +190,15 @@ class BookCopy {
               <div slot="hint">
                 <p>Refer to the code example.</p>
               </div>
-              <div slot="answer"><pre><code class="language-java">class TVSeries {
+              <div slot="answer"><pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TVSeries</span> </span>{
     String seriesName;
     String producer;
     List&lt;Episode&gt; episodes;
 }
 
-class Episode {
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Episode</span> </span>{
     TVSeries series;
-    int number;
+    <span class="hljs-keyword">int</span> number;
     String title;
     String storySynopsis;
 }
@@ -237,42 +238,42 @@ class Episode {
             the class.</p>
           <h4 id="code-example-2">Code Example</h4>
           <tabs>
-            <tab header="Java"><pre><code class="language-java">public class ClassicSingleton {
-   private static ClassicSingleton instance = null;
-   private ClassicSingleton() {
-      // Exists only to defeat instantiation.
+            <tab header="Java"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassicSingleton</span> </span>{
+   <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> ClassicSingleton instance = <span class="hljs-keyword">null</span>;
+   <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">ClassicSingleton</span><span class="hljs-params">()</span> </span>{
+      <span class="hljs-comment">// Exists only to defeat instantiation.</span>
    }
-   public static ClassicSingleton getInstance() {
-      if(instance == null) {
-         instance = new ClassicSingleton();
+   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> ClassicSingleton <span class="hljs-title">getInstance</span><span class="hljs-params">()</span> </span>{
+      <span class="hljs-keyword">if</span>(instance == <span class="hljs-keyword">null</span>) {
+         instance = <span class="hljs-keyword">new</span> ClassicSingleton();
       }
-      return instance;
+      <span class="hljs-keyword">return</span> instance;
    }
 }
 </code></pre>
             </tab>
-            <tab header="C++"><pre><code class="language-c++">class GlobalClass
+            <tab header="C++"><pre><code class="hljs c++"><span class="hljs-keyword">class</span> GlobalClass
 {
-    int m_value;
-    static GlobalClass *s_instance;
-    GlobalClass(int v = 0)
+    <span class="hljs-keyword">int</span> m_value;
+    <span class="hljs-keyword">static</span> GlobalClass *s_instance;
+    GlobalClass(<span class="hljs-keyword">int</span> v = <span class="hljs-number">0</span>)
     {
         m_value = v;
     }
-  public:
-    int get_value()
-    {
-        return m_value;
+  <span class="hljs-keyword">public</span>:
+    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">get_value</span><span class="hljs-params">()</span>
+    </span>{
+        <span class="hljs-keyword">return</span> m_value;
     }
-    void set_value(int v)
-    {
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">set_value</span><span class="hljs-params">(<span class="hljs-keyword">int</span> v)</span>
+    </span>{
         m_value = v;
     }
-    static GlobalClass *instance()
-    {
-        if (!s_instance)
-          s_instance = new GlobalClass;
-        return s_instance;
+    <span class="hljs-function"><span class="hljs-keyword">static</span> GlobalClass *<span class="hljs-title">instance</span><span class="hljs-params">()</span>
+    </span>{
+        <span class="hljs-keyword">if</span> (!s_instance)
+          s_instance = <span class="hljs-keyword">new</span> GlobalClass;
+        <span class="hljs-keyword">return</span> s_instance;
     }
 };
 </code></pre>
@@ -283,33 +284,33 @@ class Episode {
             <question>
               <p>Which of the following is an ideal situation for using Singleton pattern?</p>
               <ul
-              radio-group="zmv6p" class="radio-list">
+              radio-group="g7mo9" class="radio-list">
                 <li class="radio-list-item">
                   <label>
-                    <input class="radio-list-input" name="zmv6p" type="radio">Utility methods used by many class in the application.</label>
+                    <input class="radio-list-input" name="g7mo9" type="radio">Utility methods used by many class in the application.</label>
                 </li>
                 <li class="radio-list-item">
                   <label>
-                    <input class="radio-list-input" name="zmv6p" type="radio">A database manager shared by different component of the application.</label>
+                    <input class="radio-list-input" name="g7mo9" type="radio">A database manager shared by different component of the application.</label>
                 </li>
                 <li class="radio-list-item">
                   <label>
-                    <input class="radio-list-input" name="zmv6p" type="radio">A constant String defined in every controller.</label>
+                    <input class="radio-list-input" name="g7mo9" type="radio">A constant String defined in every controller.</label>
                 </li>
                 </ul>
                 <div slot="answer">
-                  <ul radio-group="p9fm8" class="radio-list">
+                  <ul radio-group="3lmfw" class="radio-list">
                     <li class="radio-list-item">
                       <label>
-                        <input class="radio-list-input" name="p9fm8" type="radio">Utility methods used by many class in the application.</label>
+                        <input class="radio-list-input" name="3lmfw" type="radio">Utility methods used by many class in the application.</label>
                     </li>
                     <li class="radio-list-item">
                       <label>
-                        <input class="radio-list-input" checked name="p9fm8" type="radio">Database manager shared by different component of the application.</label>
+                        <input class="radio-list-input" checked name="3lmfw" type="radio">Database manager shared by different component of the application.</label>
                     </li>
                     <li class="radio-list-item">
                       <label>
-                        <input class="radio-list-input" name="p9fm8" type="radio">A constant String defined in every controller.</label>
+                        <input class="radio-list-input" name="3lmfw" type="radio">A constant String defined in every controller.</label>
                     </li>
                   </ul>
                   <p>Database is a shared resources here, and by using singleton pattern, we
@@ -346,24 +347,24 @@ class Episode {
         <p>The following <code>ShapeMaker</code> is a Façade class. The caller class
           who uses <code>ShapeMaker</code> could use it to draw different shape, but
           the implementation detail and the actual <code>Shape</code> class is invisible
-          to the caller class.</p><pre><code>public class ShapeMaker {
-   private Shape circle;
-   private Shape rectangle;
-   private Shape square;
+          to the caller class.</p><pre class="hljs"><code><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">ShapeMaker</span> {
+   <span class="hljs-keyword">private</span> Shape circle;
+   <span class="hljs-keyword">private</span> Shape rectangle;
+   <span class="hljs-keyword">private</span> Shape square;
 
-   public ShapeMaker() {
-      circle = new Circle();
-      rectangle = new Rectangle();
-      square = new Square();
+   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">ShapeMaker</span>(<span class="hljs-params"></span>) </span>{
+      circle = <span class="hljs-keyword">new</span> Circle();
+      rectangle = <span class="hljs-keyword">new</span> Rectangle();
+      square = <span class="hljs-keyword">new</span> Square();
    }
 
-   public void drawCircle(){
+   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">drawCircle</span>(<span class="hljs-params"></span>)</span>{
       circle.draw();
    }
-   public void drawRectangle(){
+   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">drawRectangle</span>(<span class="hljs-params"></span>)</span>{
       rectangle.draw();
    }
-   public void drawSquare(){
+   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">drawSquare</span>(<span class="hljs-params"></span>)</span>{
       square.draw();
    }
 }
@@ -423,43 +424,43 @@ class Episode {
       <h4 id="code-example-4">Code Example</h4>
       <tabs>
         <tab header="Java">
-          <p>Create a command interface.</p><pre><code>public interface Command {
-   void execute();
+          <p>Create a command interface.</p><pre class="hljs"><code><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title">Command</span> {
+   <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">execute</span>(<span class="hljs-params"></span>)</span>;
 }
 </code></pre>
-          <p>Some concrete commands class.</p><pre><code>public class ConcreteCommand implements Command {
-    public void execute() {
-      // Do something
+          <p>Some concrete commands class.</p><pre class="hljs"><code><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ConcreteCommand</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Command</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">execute</span><span class="hljs-params">()</span> </span>{
+      <span class="hljs-comment">// Do something</span>
     }
 }
 
-public class OtherConcreteCommand implements Command {
-    public void execute() {
-      // Do other thing
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">OtherConcreteCommand</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Command</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">execute</span><span class="hljs-params">()</span> </span>{
+      <span class="hljs-comment">// Do other thing</span>
     }
 }
 </code></pre>
-          <p>And the invoker class.</p><pre><code>public class Invoker {
-    List&lt;Command&gt; cmdList = new ArrayList&lt;Command&gt;();
+          <p>And the invoker class.</p><pre class="hljs"><code><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Invoker</span> {
+    List&lt;Command&gt; cmdList = <span class="hljs-keyword">new</span> ArrayList&lt;Command&gt;();
     
-    public void addCmd(Command cmd) {
-        cmdList.add(cmd);
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addCmd</span>(<span class="hljs-params">Command cmd</span>) </span>{
+        cmdList.<span class="hljs-keyword">add</span>(cmd);
     }
     
-    public void executeAll() {
-        for (Command cmd : cmdList) {
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">executeAll</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">for</span> (Command cmd : cmdList) {
             cmd.execute();
         }
         cmdList.clear();
     }
 }
 </code></pre>
-          <p>And use the Invoker to add and execute commands.</p><pre><code>public static void main(String[] args) {
+          <p>And use the Invoker to add and execute commands.</p><pre class="hljs"><code><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> void main(<span class="hljs-keyword">String</span>[] args) {
   
-    Command cmd1 = new ConcreteCommand();
-    Command cmd2 = new OtherConcreteCommand();
+    Command cmd1 = <span class="hljs-keyword">new</span> <span class="hljs-type">ConcreteCommand</span>();
+    Command cmd2 = <span class="hljs-keyword">new</span> <span class="hljs-type">OtherConcreteCommand</span>();
     
-    Invoker invoker = new Invoker();
+    Invoker invoker = <span class="hljs-keyword">new</span> <span class="hljs-type">Invoker</span>();
     invoker.addCommand(cmd1);
     invoker.addCommand(cmd2);
     
@@ -568,53 +569,59 @@ public class OtherConcreteCommand implements Command {
         src="observer/solution1.png">
         <p>Here is the Observer pattern applied to the student management system.</p>
         <p>During initialization of the system,</p>
-        <p>1.First, create the relevant objects.</p><pre><code>StudentList studentList = new StudentList(); 
-StudentListUi listUi = new StudentListUi(); 
-StudentStatusUi statusUi = new StudentStatsUi();
+        <p>1.First, create the relevant objects.</p><pre class="hljs"><code><span class="hljs-attribute">StudentList studentList</span> = new StudentList(); 
+<span class="hljs-attribute">StudentListUi listUi</span> = new StudentListUi(); 
+<span class="hljs-attribute">StudentStatusUi statusUi</span> = new StudentStatsUi();
 </code></pre>
         <p>2.Next, the two UIs indicate to the <code>StudentList</code> that they are
           interested in being updated whenever StudentList changes. This is also
-          known as ‘subscribing for updates’.</p><pre><code>studentList.addUi(listUi);
-studentList.addUi(statusUi);
+          known as ‘subscribing for updates’.</p><pre class="hljs"><code>studentList.addUi(listUi)<span class="hljs-comment">;</span>
+studentList.addUi(statusUi)<span class="hljs-comment">;</span>
 </code></pre>
         <p>Within the addUi operation of <code>StudentList</code>, all Observer objects
-          subscribers are added to an internal data structure called <code>observerList</code>.</p><pre><code>//StudentList class
-public void addUi(Observer o) { 
-    observerList.add(o);
+          subscribers are added to an internal data structure called <code>observerList</code>.</p>
+        <pre
+        class="hljs"><code><span class="hljs-comment">//StudentList class</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addUi</span>(<span class="hljs-params">Observer o</span>) </span>{ 
+    observerList.<span class="hljs-keyword">add</span>(o);
 }
-</code></pre>
-        <p>As such, whenever the data in <code>StudentList</code> changes (e.g. when
-          a new student is added to the <code>StudentList</code>), all interested
-          observers are updated by calling the <code>notifyUIs</code> operation.</p><pre><code>//StudentList class
-public void notifyUIs() {
-for(Observer o: observerList) //for each observer in the list
+</code>
+          </pre>
+          <p>As such, whenever the data in <code>StudentList</code> changes (e.g. when
+            a new student is added to the <code>StudentList</code>), all interested
+            observers are updated by calling the <code>notifyUIs</code> operation.</p>
+          <pre
+          class="hljs"><code><span class="hljs-comment">//StudentList class</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">notifyUIs</span><span class="hljs-params">()</span> </span>{
+<span class="hljs-keyword">for</span>(Observer o: observerList) <span class="hljs-comment">//for each observer in the list</span>
     o.update();
 }
-</code></pre>
-        <p>UIs can then pull data from the StudentList whenever the update operation
-          is called.</p><pre><code>//StudentListUI class
-public void update() {
-    //refresh UI by pulling data from StudentList
+</code>
+            </pre>
+            <p>UIs can then pull data from the StudentList whenever the update operation
+              is called.</p><pre class="hljs"><code><span class="hljs-comment">//StudentListUI class</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">update</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-comment">//refresh UI by pulling data from StudentList</span>
 }
 </code></pre>
-        <p>Note that <code>StudentList</code> is unaware of the exact nature of the
-          two UIs but still manages to communicate with them via an intermediary.</p>
-        <p>Here is the generic description of the observer pattern:</p>
-        <img class="center-block"
-        src="observer/solution2.png">
-        <ul>
-          <li><code>&lt;&lt;Observer&gt;&gt;</code> is an interface: any class that implements
-            it can observe an <code>&lt;&lt;Observable&gt;&gt;</code>. Any number of <code>&lt;&lt;Observer&gt;&gt;</code> objects
-            can observe (i.e. listen to changes of) the <code>&lt;&lt;Observable&gt;&gt;</code> object.</li>
-          <li>The <code>&lt;&lt;Observable&gt;&gt;</code> maintains a list of <code>&lt;&lt;Observer&gt;&gt;</code> objects. <code>addObserver(Observer)</code> operation
-            adds a new <code>&lt;&lt;Observer&gt;&gt;</code> to the list of <code>&lt;&lt;Observer&gt;&gt;</code>s.</li>
-          <li>Whenever there is a change in the <code>&lt;&lt;Observable&gt;</code>,
-            the <code>notifyObservers()</code> operation is called that will call the <code>update()</code> operation
-            of all <code>&lt;&lt;Observer&gt;&gt;</code>s in the list.</li>
-        </ul>
-        <p>In a GUI application, how is the Controller notified when the “save” button
-          is clicked? UI frameworks such as JavaFX has inbuilt support for the Observer
-          pattern.</p>
+            <p>Note that <code>StudentList</code> is unaware of the exact nature of the
+              two UIs but still manages to communicate with them via an intermediary.</p>
+            <p>Here is the generic description of the observer pattern:</p>
+            <img class="center-block"
+            src="observer/solution2.png">
+            <ul>
+              <li><code>&lt;&lt;Observer&gt;&gt;</code> is an interface: any class that implements
+                it can observe an <code>&lt;&lt;Observable&gt;&gt;</code>. Any number of <code>&lt;&lt;Observer&gt;&gt;</code> objects
+                can observe (i.e. listen to changes of) the <code>&lt;&lt;Observable&gt;&gt;</code> object.</li>
+              <li>The <code>&lt;&lt;Observable&gt;&gt;</code> maintains a list of <code>&lt;&lt;Observer&gt;&gt;</code> objects. <code>addObserver(Observer)</code> operation
+                adds a new <code>&lt;&lt;Observer&gt;&gt;</code> to the list of <code>&lt;&lt;Observer&gt;&gt;</code>s.</li>
+              <li>Whenever there is a change in the <code>&lt;&lt;Observable&gt;</code>,
+                the <code>notifyObservers()</code> operation is called that will call the <code>update()</code> operation
+                of all <code>&lt;&lt;Observer&gt;&gt;</code>s in the list.</li>
+            </ul>
+            <p>In a GUI application, how is the Controller notified when the “save” button
+              is clicked? UI frameworks such as JavaFX has inbuilt support for the Observer
+              pattern.</p>
   </div>
 </panel>
 <div>
