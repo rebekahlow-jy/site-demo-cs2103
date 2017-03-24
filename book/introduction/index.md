@@ -70,11 +70,11 @@ This then is programming, both a tar pit in which many efforts have floundered a
 
 **Worked examples**
 
-<morph title="Question 1">
+<panel header="Question 1" type="seamless" expandable>
 
 <include src="questions/L1P1-E1.md" />
 
-</morph>
+</panel>
 
 ## Practice question
 
