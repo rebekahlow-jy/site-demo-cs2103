@@ -24,20 +24,31 @@
 </div>
 <div class="website-content">
   <h1 id="table-of-contents">Table of Contents</h1>
-  <ul>
-    <li><a href="book/introduction/">Software Engineering Rocks</a>
-      <button class="btn btn-default"
-      v-show-modal="introduction-preview">Preview 🐱</button>
-    </li>
-    <li><a href="book/se-pattern/">Software Engineering Design Patterns</a>
-    </li>
-  </ul>
-</div>
-<modal name="introduction-preview" title="Introduction Preview :rocket: ">
   <div>
-    <p>Some <strong>preview</strong> contents.</p>
+    <ul>
+      <li><a href="book/introduction/">Software Engineering Rocks</a> (
+        <trigger for="pop:introduction">Preview</trigger>)</li>
+    </ul>
+    <popover id="pop:introduction" placement="bottom" title="Introduction Preview :rocket: ">
+      <div slot="content">
+        <div>
+          <p>Some <strong>preview</strong> contents.
+            <img src="https://vuejs.org/images/logo.png">
+          </p>
+        </div>
+      </div>
+    </popover>
   </div>
-</modal>
+  <div>
+    <ul>
+      <li><a href="book/se-pattern/">Software Engineering Design Patterns</a> (
+        <trigger
+        for="pop:se-pattern">Preview</trigger>)</li>
+    </ul>
+    <popover id="pop:se-pattern" placement="bottom" title="Patterns Preview :rocket: "
+    content="Se-pattern preview"></popover>
+  </div>
+</div>
 </div>
 </body>
 <script src="markbind/js/vue.min.js"></script>
