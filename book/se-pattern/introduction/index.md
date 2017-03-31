@@ -13,16 +13,13 @@ In software development, there are certain design problems that crop up repeated
 After repeated attempts at solving such design problems, better solutions are discovered and refined 
 over time. These solutions are collectively known as<trigger trigger="click" for="modal:gofbook"> _design patterns_</trigger>, a term popularized by the seminal _Gang of Four book_.
 
-<panel header="More about Gang of Four(GoF) Book :zero:" type="seamless" expandable>
+<panel header="More about Gang of Four Book :zero:" type="seamless" expandable>
   <div class="pull-right">
   <pic src="introduction/book-designpatterns.jpg" width="200px">GoF Book Cover </pic>
   </div>
-  
-  The term _design patterns_ was popularized by the seminal book 
-  *Design Patterns: Elements of Reusable Object-Oriented Software* also known as  the so-called _Gang of Four_ (GoF) book by Eric Gamma, Richard Helm, Ralph Johnson and John Vlissides.
-  
-  The authors of the DesignPatternsBook came to be known as the "Gang of Four." The name of the book ("Design Patterns: Elements of Reusable Object-Oriented Software") is too long for e-mail, so "book by the gang of four" became a shorthand name for it. After all, it isn't the ONLY book on patterns. That got shortened to "GOF book", which is pretty cryptic the first time you hear it.
-  
+
+  **Design Patterns: Elements of Reusable Object-Oriented Software** by the four authors Eric Gamma, Richard Helm, Ralph Johnson and John Vlissides is also known as  the _Gang of Four_ book or _GoF book_. It is also probably the  most famous book about design patterns.
+
 </panel><br>
 
 <tip-box type="info">
@@ -53,6 +50,7 @@ The common format to describe a pattern consists of the following components:
 **Self-test questions:**
 
 <morph title="Q1" src="Q-Essay-WhatIsAPattern.md" />
+<morph title="Q2" src="Q-Tick-WhatIsAPattern.md" />
 
 <!-- additional info -->
 
@@ -76,12 +74,6 @@ The common format to describe a pattern consists of the following components:
 
 <modal title="**GoF Book** :zero:" id="modal:gofbook">
 
-  <pic src="introduction/book-designpatterns.jpg" width="400px" />
-  
-  The authors of the DesignPatternsBook came to be known as the "Gang of Four." The name of the book ("Design Patterns: Elements of Reusable Object-Oriented Software") is too long for e-mail, so "book by the gang of four" became a shorthand name for it. After all, it isn't the ONLY book on patterns. That got shortened to "GOF book", which is pretty cryptic the first time you hear it. 
-  
-  <panel header="An example pattern from the book: Singleton :one: " expandable type="seamless">
-    <include src="../singleton/index.md" />
-  </panel>
+  <include src="GoF.md" />
 
 </modal>
