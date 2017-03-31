@@ -9,7 +9,7 @@ For example, in a library, there can be multiple copies of same book title. Each
 Representing the objects mentioned previously as a single class would be problematic (refer to anti-pattern description below). A better way to represent such instances is required, which should avoid duplicating the common information. Without duplicated information, inconsistency is avoided should these common information be changed.
 
 #### Anti-patterns
-<img src="abstraction-occurrence/antipattern1.png" class="center-block">
+<img src="abstraction-occurrence/antipattern1.png" class="pull-right">
 
 Take for example the problem of representing books in a library. 
 Assume that there could be multiple copies of the same title, bearing the same ISBN number, but different serial numbers. 

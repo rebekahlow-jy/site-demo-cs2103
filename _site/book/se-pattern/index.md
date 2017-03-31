@@ -5,48 +5,51 @@
 
 <div class="website-content">
 
-## Déjà vu: Using patterns to solve recurring problems
+# Software Design Patterns
 
-<tip-box type="warning">
-
-**FAQ**: Why is this topic covered so late in the semester?    
-**Answer**: We want you to try a design without patterns first, and then, refactor the design to introduce patterns. That way, you can not only see the difference, but also get to practice refactoring.
-
-</tip-box>
-
-### Lecture Slides
-<div v-closeable alt="Read lecture slides online">
-
-@[powerpoint](https://nusu-my.sharepoint.com/personal/a0119446_u_nus_edu/_layouts/15/WopiFrame.aspx?sourcedoc={423717f5-88ec-4056-aeef-405331bbb9ff})  
-
-</div>
+## Introduction
 
 <include src="introduction/index.md" />
 
-<Panel header="**Abstraction occurrence pattern** :star::star:" expandable>
-<include src="abstraction-occurrence/index.md" />
-</Panel>
-<Panel header="**Singleton pattern** :star::star::star:" expandable>
+## Example design patterns 
+
+Next, let us learn some commonly used patterns.
+
+<Panel header="**Singleton pattern** :one:" expandable type="seamless" is-open="true">
 <include src="singleton/index.md" />
 </Panel>
-<Panel header="**Façade pattern** :star:" expandable>
+<Panel header="**Façade pattern** :one:" expandable type="seamless" is-open="true">
 <include src="facade/index.md" />
 </Panel>
-<Panel header="**Command pattern** :star::star::star:" expandable>
+
+<Panel header="**Command pattern** :one:" expandable type="seamless" is-open="true">
 <include src="command/index.md" />
 </Panel>
-<Panel header="**Mode-View-Controller pattern** :star:" expandable>
+
+<Panel header="**Mode-View-Controller pattern** :two:" expandable type="seamless">
 <include src="mvc/index.md" />
 </Panel>
-<Panel header="**Observer pattern** :star::star:" expandable>
+
+<Panel header="**Observer pattern** :two:" expandable type="seamless">
 <include src="observer/index.md" />
 </Panel>
+
+<Panel header="**Abstraction occurrence pattern** :three:" expandable type="seamless">
+<include src="abstraction-occurrence/index.md" />
+</Panel>
+
+## Beyond design patterns
 
 <include src="beyond/index.md" />
 
 <Panel header="**Case Study**" expandable>
 <include src="case-study/index.md" />
 </Panel>
+
+<Panel header="Other types of patterns :one: " expandable type="seamless">
+  <include src="abstraction-occurrence/index.md" />
+</Panel>
+
 
 <tip-box type="success">
 

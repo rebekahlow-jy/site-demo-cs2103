@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CS2103/T Website - Schedule</title>
-    <link rel="stylesheet" href="markbind/css/bootstrap.min.css">
+    <link rel="stylesheet" href="markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="markbind\css\github.min.css">
 </head>
 <body>
 <div id="app" class="container-fluid">
@@ -223,8 +224,7 @@
               Java code almost every week.</p>
             <p>Advanced: Have a look at Java 8 new features.</p>
           </panel>
-          <panel header="Attend Lecture 1 &lt;mark&gt;(compulsory)&lt;/mark&gt;"
-          expandable="">
+          <panel header="Attend Lecture 1 ==(compulsory)== :star: :sheep:" expandable="">
             <p>More about lectures</p>
           </panel>
         </div>
@@ -424,7 +424,7 @@
       <div>
         <p>{Pre-Tutorial Learning Activity = Work to be done before coming to the
           tutorial. These can earn participation marks}</p>
-        <panel header="T1A1. Get started with IDEs ⭐️"
+        <panel header="T1A1. Get started with IDEs :star:"
         expandable="">
           <div>
             <p>The single ⭐️ above indicates this is a
@@ -447,7 +447,7 @@
               the tutorial.</p>
           </div>
         </panel>
-        <panel header="T1A2. Debugging in IDEs ⭐️⭐️" expandable="">
+        <panel header="T1A2. Debugging in IDEs :star::star:" expandable="">
           <div>
             <p>Complete the exercise for the learning outcome:</p>
             <p><a href="https://github.com/nus-cs2103-AY1617S2/addressbook-level1#use-a-debugger-lo-debugging">AddressBook-Level1: Use a debugger [LO-Debugging]</a>
@@ -457,7 +457,8 @@
               step through code, inspect variable values, step in to methods, etc.</p>
           </div>
         </panel>
-        <panel header="T1A3. Start using a task management tool ⭐️⭐️" expandable="">
+        <panel header="T1A3. Start using a task management tool :star::star:"
+        expandable="">
           <div>
             <p>If you don't use a scheduling/task tracking tool (also known as
               <tooltip
@@ -477,7 +478,7 @@
               of the software you are using.</p>
           </div>
         </panel>
-        <panel header="T1A4. Regression testing using text input/output ⭐️⭐️"
+        <panel header="T1A4. Regression testing using text input/output :star::star:"
         expandable="">
           <div>
             <p>Complete the exercise for the learning outcome:</p>
@@ -486,7 +487,8 @@
             <p>Submission: Demo how you run the tests to the tutor.</p>
           </div>
         </panel>
-        <panel header="T1A5. Use Java Collections, Enums, Varargs ⭐️⭐️" expandable="">
+        <panel header="T1A5. Use Java Collections, Enums, Varargs :star::star:"
+        expandable="">
           <div>
             <p>If you have not used Java Collections classes (<code>ArrayList, HashMap, HashMap, etc.</code>), <code>Enums</code>,
               or <code>Varargs</code>, complete the exercises for the corresponding learning
@@ -552,31 +554,7 @@
 </div>
 </div>
 </body>
-<script src="markbind/js/vue.min.js"></script>
-<script src="markbind/js/vue-strap.min.js"></script>
-<script type="text/javascript">
-  Vue.directive('closeable', VueStrap.closeable);
-  var vm = new Vue({
-    components: {
-      affix: VueStrap.affix,
-      accordion: VueStrap.accordion,
-      panel: VueStrap.panel,
-      navbar: VueStrap.navbar,
-      popover: VueStrap.popover,
-      modal: VueStrap.modal,
-      tabs: VueStrap.tabset,
-      tab: VueStrap.tab,
-      tooltip: VueStrap.tooltip,
-      dynamicPanel: VueStrap.dynamicPanel,
-      morph: VueStrap.morph,
-      question: VueStrap.question,
-      tipBox: VueStrap.tipBox,
-      pic: VueStrap.pic,
-    },
-    el: "#app"
-  });
-  vm.$on('retriever:fetched', function (el) {
-    vm.$compile(el);
-  });
-</script>
+<script src="markbind\js\vue.min.js"></script>
+<script src="markbind\js\vue-strap.min.js"></script>
+<script src="markbind\js\setup.js"></script>
 </html>

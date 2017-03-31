@@ -21,6 +21,12 @@ Access to this object is provided by a public class-level operation getInstance(
 In the skeleton code above, `getInstance()` instantiates a single copy of the singleton class when it is executed for the first time. 
 Subsequent calls to this operation return the single instance of the class.
 
+<div v-closeable alt="Read lecture slides online">
+
+@[powerpoint](https://onedrive.live.com/embed?cid=880E9830B9B0E826&resid=880E9830B9B0E826%21858&authkey=AJ0VCSNC3KqA1_s&em=2)  
+
+</div>
+
 #### Code Example
 <tabs>
 <tab header="Java">

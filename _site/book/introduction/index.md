@@ -48,6 +48,15 @@ Programming then is fun because it gratifies creative longings built deep within
 
 **The Woes of the Craft**
 
+What is software engineering?
+- ( ) A game people play for fun.
+- (X) A course you have to take for graduate
+
+What can Software Engineer do?
+- [X] Play Games
+- [X] Become Billionaire
+
+
 Not all is delight, however, and knowing the inherent woes makes it easier to bear them when they appear. 
 
 First, one must perform perfectly. The computer resembles the magic of legend in this respect, too. If one character, one pause, of the incantation is not strictly in proper form, the magic doesn't work. Human beings are not accustomed to being perfect, and few areas of human activity demand it. Adjusting to the requirement for perfection is, I think, the most difficult part of learning to program. 

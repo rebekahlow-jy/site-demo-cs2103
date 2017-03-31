@@ -51,7 +51,7 @@ Advanced: Have a look at Java 8 new features.
 
 </Panel>
 
-<Panel header="Attend Lecture 1 ==(compulsory)==" expandable>
+<Panel header="Attend Lecture 1 ==(compulsory)== :star: :sheep:" expandable>
 
 More about lectures
 
