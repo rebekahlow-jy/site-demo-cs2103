@@ -7,7 +7,7 @@
 
 # Software Design Patterns
 
-## Introduction
+## What is a design pattern? :one:
 
 <include src="introduction/index.md" />
 

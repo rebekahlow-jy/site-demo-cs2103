@@ -24,39 +24,44 @@
 </div>
 <div class="website-content">
   <h1 id="software-design-patterns">Software Design Patterns</h1>
-  <h2 id="introduction">Introduction</h2>
+  <h2 id="what-is-a-design-pattern-one">What is a design pattern? <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h2>
   <div>
-    <p>In software development, there are certain design problems that crop up
-      repeatedly.</p>
-    <ul>
-      <li>
-        <p>An example problem about software architecture: what is the best
-          <trigger
-          for="pop:architecture">architecture</trigger>for a given type of system?</p>
-      </li>
-      <li>
-        <p>An example problem about the interaction between classes: how to lower
-          the
-          <trigger for="tt:coupling">coupling</trigger>between <code>UI</code> and <code>Logic</code> classes ?</p>
-      </li>
-      <li>
-        <panel header="Some more examples :zero: " expandable="" type="seamless">
-          <ul>
-            <li>Another example</li>
-            <li>One more example about
-              <trigger for="tt:coupling">coupling</trigger>
-            </li>
-          </ul>
-        </panel>
-      </li>
-    </ul>
-    <p>After repeated attempts at solving such design problems, better solutions
-      are discovered and refined over time. These solutions are collectively
-      known as
-      <trigger trigger="click" for="modal:gofbook"><em>design patterns</em>
-      </trigger>, a term popularized by the seminal <em>Gang of Four book</em>.</p>
-    <panel
-    header="More about Gang of Four Book :zero:" type="seamless" expandable="">
+    <blockquote>
+      <p>Some software design problems crop up repeatedly. After repeated attempts
+        at solving such design problems, better solutions are discovered and refined
+        over time. These solutions are collectively known as <em>design patterns</em>,
+        a term popularized by the seminal
+        <trigger trigger="click" for="modal:gofbook"><em>Gang of Four book</em>
+        </trigger>.</p>
+    </blockquote>
+    <panel header="Some examples of recurring design problems :zero:" type="seamless"
+    expandable="">
+      <ul>
+        <li>
+          <p>An example problem about software architecture: what is the best
+            <trigger
+            for="pop:architecture">architecture</trigger>for a given type of system?</p>
+        </li>
+        <li>
+          <p>An example problem about the interaction between classes: how to lower
+            the
+            <trigger for="tt:coupling">coupling</trigger>between <code>UI</code> and <code>Logic</code> classes ?</p>
+        </li>
+        <li>
+          <panel header="Some more examples :zero: " expandable="" type="seamless">
+            <ul>
+              <li>Another example</li>
+              <li>One more example about
+                <trigger for="tt:coupling">coupling</trigger>
+              </li>
+            </ul>
+          </panel>
+        </li>
+      </ul>
+      <p></p>
+    </panel>
+    <br>
+    <panel header="More about Gang of Four Book :zero:" type="seamless" expandable="">
       <div class="pull-right">
         <pic src="introduction/book-designpatterns.jpg" width="200px">GoF Book Cover</pic>
       </div>
@@ -65,70 +70,76 @@
         is also known as the <em>Gang of Four</em> book or <em>GoF book</em>. It is
         also probably the most famous book about design patterns.</p>
       <p></p>
-      </panel>
-      <br>
-      <tip-box type="info">
-        <p><strong>Software Design Pattern</strong> :</p>
-        <div>
-          <p>An <em>elegant reusable solution</em> to a <em>commonly recurring problem</em> within
-            a <em>given context</em> in software design.</p>
-        </div>
-      </tip-box>
-      <panel header="Documenting a design pattern :one:" expandable="" type="seamless"
-      is-open="true">
-        <p>The common format to describe a pattern consists of the following components:</p>
-        <ul>
-          <li><strong>Context</strong>: The situation or scenario where the design problem
-            is encountered.</li>
-          <li><strong>Problem</strong>: The main difficulty to be resolved. The criteria
-            for a good solution are also identified to evaluate solutions.</li>
-          <li><strong>Solution</strong>: The core of the solution. It is important to
-            note that the solution presented only includes the most general constraints,
-            which may need further refinement for a specific context.</li>
-          <li><strong>Anti-patterns</strong> (optional): Commonly used solutions, which
-            are usually incorrect and/or inferior to the Design Pattern.</li>
-          <li><strong>Consequences</strong> (optional): Identifying the pros and cons
-            of applying the pattern.</li>
-          <li><strong>Other useful information</strong> (optional): Code examples, known
-            uses, other related patterns, etc.</li>
-        </ul>
-        <hr>
-      </panel>
-      <panel header="Above description is too abstract? Here is an illustrative example :zero:"
-      expandable="" type="seamless">
-        <div>
-          <h3 id="singleton-pattern">Singleton Pattern</h3>
-          <h4 id="context">Context</h4>
-          <p>In most systems, it is common to restrict the number of instantiated objects
-            of certain classes to just <strong>one</strong> (e.g. the main controller
-            class of the system). These single instances are commonly known as <em>singletons</em>.</p>
+    </panel>
+    <br>
+    <tip-box type="info">
+      <p><strong>Software Design Pattern</strong> :</p>
+      <div>
+        <p>An <em>elegant reusable solution</em> to a <em>commonly recurring problem</em> within
+          a <em>given context</em> in software design.</p>
+      </div>
+    </tip-box>
+    <p>Because design patterns document design solutions meant to be shared,
+      they are usually documented in a certain format.</p>
+    <panel header="Format for documenting a desing pattern :one:"
+    expandable="" type="seamless" is-open="true">
+      <div class="pull-right" v-closeable="" alt="comic">
+        <img src="http://www.topswagcode.com/content/images/2016/02/developer-patterns.jpg"
+        width="250">
+      </div>
+      <p>The common format to describe a pattern consists of the following components:</p>
+      <ul>
+        <li><strong>Context</strong>: The situation or scenario where the design problem
+          is encountered.</li>
+        <li><strong>Problem</strong>: The main difficulty to be resolved. The criteria
+          for a good solution are also identified to evaluate solutions.</li>
+        <li><strong>Solution</strong>: The core of the solution. It is important to
+          note that the solution presented only includes the most general constraints,
+          which may need further refinement for a specific context.</li>
+        <li><strong>Anti-patterns</strong> (optional): Commonly used solutions, which
+          are usually incorrect and/or inferior to the Design Pattern.</li>
+        <li><strong>Consequences</strong> (optional): Identifying the pros and cons
+          of applying the pattern.</li>
+        <li><strong>Other useful information</strong> (optional): Code examples, known
+          uses, other related patterns, etc.</li>
+      </ul>
+    </panel>
+    <panel header="Above description is too abstract? Here is an illustrative example :zero:"
+    expandable="" type="seamless">
+      <div>
+        <h3 id="singleton-pattern">Singleton Pattern</h3>
+        <h4 id="context">Context</h4>
+        <p>In most systems, it is common to restrict the number of instantiated objects
+          of certain classes to just <strong>one</strong> (e.g. the main controller
+          class of the system). These single instances are commonly known as <em>singletons</em>.</p>
+        <h4
+        id="problem">Problem</h4>
+          <p>Prohibit the instantiation of more than one object from a singleton class,
+            with the single instance easily shared among those who need it.</p>
           <h4
-          id="problem">Problem</h4>
-            <p>Prohibit the instantiation of more than one object from a singleton class,
-              with the single instance easily shared among those who need it.</p>
-            <h4
-            id="solution">Solution</h4>
-              <p>The key insight of the solution is that the <em>constructor</em> of the
-                singleton class cannot be <em>public</em>. Since a <em>public constructor</em> will
-                allow others to instantiate the class at will, a <em>private constructor</em> should
-                be used instead. In addition, a public method is provided to access the <em>single</em> instance.
-                This solution is described below.</p>
-              <img class="center-block" src="singleton/solution.png">
-              <p>As shown, the solution makes the constructor private (note the “-“ visibility
-                marker for the constructor), which prevents instantiation from outside
-                the class. The single instance of the singleton class is maintained by
-                a private class-level variable. Access to this object is provided by a
-                public class-level operation getInstance(). In the skeleton code above, <code>getInstance()</code> instantiates
-                a single copy of the singleton class when it is executed for the first
-                time. Subsequent calls to this operation return the single instance of
-                the class.</p>
-              <div v-closeable="" alt="Read lecture slides online">
-                <div class="block-embed block-embed-service-powerpoint">
-                  <iframe type="text/html" src="https://onedrive.live.com/embed?cid=880E9830B9B0E826&resid=880E9830B9B0E826%21858&authkey=AJ0VCSNC3KqA1_s&em=2&action=embedview&wdAr=1.3333333333333333"
-                  frameborder="0" width="610" height="481" webkitallowfullscreen="" mozallowfullscreen=""
-                  allowfullscreen></iframe>
-                </div>
+          id="solution">Solution</h4>
+            <p>The key insight of the solution is that the <em>constructor</em> of the
+              singleton class cannot be <em>public</em>. Since a <em>public constructor</em> will
+              allow others to instantiate the class at will, a <em>private constructor</em> should
+              be used instead. In addition, a public method is provided to access the <em>single</em> instance.
+              This solution is described below.</p>
+            <img class="center-block" src="singleton/solution.png">
+            <p>As shown, the solution makes the constructor private (note the “-“ visibility
+              marker for the constructor), which prevents instantiation from outside
+              the class. The single instance of the singleton class is maintained by
+              a private class-level variable. Access to this object is provided by a
+              public class-level operation getInstance(). In the skeleton code above, <code>getInstance()</code> instantiates
+              a single copy of the singleton class when it is executed for the first
+              time. Subsequent calls to this operation return the single instance of
+              the class.</p>
+            <div v-closeable="" alt="Read lecture slides online">
+              <div class="block-embed block-embed-service-powerpoint">
+                <iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212070&authkey=&em=2&action=embedview&wdAr=1.3333333333333333"
+                frameborder="0" width="610" height="481" webkitallowfullscreen="" mozallowfullscreen=""
+                allowfullscreen></iframe>
               </div>
+            </div>
+            <div v-closeable="" alt="code examples">
               <h4 id="code-example">Code Example</h4>
               <tabs>
                 <tab header="Java"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassicSingleton</span> </span>{
@@ -172,120 +183,164 @@
 </code></pre>
                 </tab>
               </tabs>
-              <h4 id="exercise">Exercise</h4>
-              <morph title="Question 1">
-                <question>
-                  <p>Which of the following is an ideal situation for using Singleton pattern?</p>
-                  <ul
-                  radio-group="maw4d" class="radio-list">
-                    <li class="radio-list-item">
-                      <label>
-                        <input class="radio-list-input" name="maw4d" type="radio">Utility methods used by many class in the application.</label>
-                    </li>
-                    <li class="radio-list-item">
-                      <label>
-                        <input class="radio-list-input" name="maw4d" type="radio">A database manager shared by different component of the application.</label>
-                    </li>
-                    <li class="radio-list-item">
-                      <label>
-                        <input class="radio-list-input" name="maw4d" type="radio">A constant String defined in every controller.</label>
-                    </li>
+            </div>
+            <h4 id="exercise">Exercise</h4>
+            <morph title="Question 1">
+              <question>
+                <p>Which of the following is an ideal situation for using Singleton pattern?</p>
+                <ul
+                radio-group="rhc8a" class="radio-list">
+                  <li class="radio-list-item">
+                    <label>
+                      <input class="radio-list-input" name="rhc8a" type="radio">Utility methods used by many class in the application.</label>
+                  </li>
+                  <li class="radio-list-item">
+                    <label>
+                      <input class="radio-list-input" name="rhc8a" type="radio">A database manager shared by different component of the application.</label>
+                  </li>
+                  <li class="radio-list-item">
+                    <label>
+                      <input class="radio-list-input" name="rhc8a" type="radio">A constant String defined in every controller.</label>
+                  </li>
+                  </ul>
+                  <div slot="answer">
+                    <ul radio-group="px35r" class="radio-list">
+                      <li class="radio-list-item">
+                        <label>
+                          <input class="radio-list-input" name="px35r" type="radio">Utility methods used by many class in the application.</label>
+                      </li>
+                      <li class="radio-list-item">
+                        <label>
+                          <input class="radio-list-input" checked name="px35r" type="radio">Database manager shared by different component of the application.</label>
+                      </li>
+                      <li class="radio-list-item">
+                        <label>
+                          <input class="radio-list-input" name="px35r" type="radio">A constant String defined in every controller.</label>
+                      </li>
                     </ul>
-                    <div slot="answer">
-                      <ul radio-group="lwo3t" class="radio-list">
-                        <li class="radio-list-item">
-                          <label>
-                            <input class="radio-list-input" name="lwo3t" type="radio">Utility methods used by many class in the application.</label>
-                        </li>
-                        <li class="radio-list-item">
-                          <label>
-                            <input class="radio-list-input" checked name="lwo3t" type="radio">Database manager shared by different component of the application.</label>
-                        </li>
-                        <li class="radio-list-item">
-                          <label>
-                            <input class="radio-list-input" name="lwo3t" type="radio">A constant String defined in every controller.</label>
-                        </li>
-                      </ul>
-                      <p>Database is a shared resources here, and by using singleton pattern, we
-                        have better control over the database operations.</p>
-                    </div>
-                </question>
-              </morph>
-        </div>
-      </panel>
-      <br>
-      <p><strong>Self-test questions:</strong>
-      </p>
-      <morph title="Q1" src="Q-Essay-WhatIsAPattern._include_.html"></morph>
-      <morph title="Q2" src="Q-Tick-WhatIsAPattern._include_.html"></morph>
-      <popover id="pop:architecture">
-        <div slot="content">
-          <p><em><strong>Software architecture</strong></em> :</p>
-          <div>
-            <p>The high level structures of a software system, the discipline of creating
-              such structures, and the documentation of these structures. These structures
-              are needed to reason about the software system. Each structure comprises
-              software elements, relations among them, and properties of both elements
-              and relations. The architecture of a software system is a metaphor, analogous
-              to the architecture of a building.</p>
-          </div>
-        </div>
-      </popover>
-      <tooltip id="tt:coupling">
-        <div slot="content">
-          <div>
-            <p>
-              <mark><strong><em>coupling</em></strong>
-              </mark>is the degree of interdependence between software modules; a measure of
-              how closely connected two routines or modules are; the strength of the
-              relationships between module.</p>
-          </div>
-        </div>
-      </tooltip>
-      <modal title="**GoF Book** :zero:" id="modal:gofbook">
-        <div>
-          <pic src="introduction/book-designpatterns.jpg" width="400px"></pic>
-          <p>The authors of the DesignPatternsBook came to be known as the &quot;Gang
-            of Four.&quot; The name of the book (&quot;Design Patterns: Elements of
-            Reusable Object-Oriented Software&quot;) is too long for e-mail, so &quot;book
-            by the gang of four&quot; became a shorthand name for it. After all, it
-            isn't the ONLY book on patterns. That got shortened to &quot;GOF book&quot;,
-            which is pretty cryptic the first time you hear it.</p>
-          <panel header="An example pattern from the book: Singleton :one: "
-          expandable="" type="seamless">
-            <div>
-              <h3 id="singleton-pattern-2">Singleton Pattern</h3>
-              <h4 id="context-2">Context</h4>
-              <p>In most systems, it is common to restrict the number of instantiated objects
-                of certain classes to just <strong>one</strong> (e.g. the main controller
-                class of the system). These single instances are commonly known as <em>singletons</em>.</p>
-              <h4
-              id="problem-2">Problem</h4>
-                <p>Prohibit the instantiation of more than one object from a singleton class,
-                  with the single instance easily shared among those who need it.</p>
-                <h4
-                id="solution-2">Solution</h4>
-                  <p>The key insight of the solution is that the <em>constructor</em> of the
-                    singleton class cannot be <em>public</em>. Since a <em>public constructor</em> will
-                    allow others to instantiate the class at will, a <em>private constructor</em> should
-                    be used instead. In addition, a public method is provided to access the <em>single</em> instance.
-                    This solution is described below.</p>
-                  <img class="center-block" src="singleton/solution.png">
-                  <p>As shown, the solution makes the constructor private (note the “-“ visibility
-                    marker for the constructor), which prevents instantiation from outside
-                    the class. The single instance of the singleton class is maintained by
-                    a private class-level variable. Access to this object is provided by a
-                    public class-level operation getInstance(). In the skeleton code above, <code>getInstance()</code> instantiates
-                    a single copy of the singleton class when it is executed for the first
-                    time. Subsequent calls to this operation return the single instance of
-                    the class.</p>
-                  <div v-closeable="" alt="Read lecture slides online">
-                    <div class="block-embed block-embed-service-powerpoint">
-                      <iframe type="text/html" src="https://onedrive.live.com/embed?cid=880E9830B9B0E826&resid=880E9830B9B0E826%21858&authkey=AJ0VCSNC3KqA1_s&em=2&action=embedview&wdAr=1.3333333333333333"
-                      frameborder="0" width="610" height="481" webkitallowfullscreen="" mozallowfullscreen=""
-                      allowfullscreen></iframe>
-                    </div>
+                    <p>Database is a shared resources here, and by using singleton pattern, we
+                      have better control over the database operations.</p>
                   </div>
+              </question>
+            </morph>
+      </div>
+    </panel>
+    <br>
+    <panel header=":mortar_board: Learning Outcomes" expandable="" type="seamless">
+      <ul>
+        <li>
+          <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;"
+          src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png">Able to explain what is a design pattern</li>
+        <li>
+          <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;"
+          src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png">Able to describe distinguishing characteristics of a design pattern</li>
+      </ul>
+    </panel>
+    <panel header=":bulb: Test your knowledge" expandable="" type="seamless">
+      <p>❓ Definition of a <em>design pattern</em>
+        <morph title="Q1  :one:" src="Q-Essay-WhatIsAPattern._include_.html"></morph>
+        <morph title="Q1a :zero:" src="Q-Essay-WhatIsAPattern._include_.html"></morph>
+        <morph title="Q1b :zero:" src="Q-Essay-WhatIsAPattern._include_.html"></morph>
+        <br>❓ Attributes of a <em>design pattern</em>
+        <morph title="Q2  :one: " src="Q-Tick-PatternAttributes._include_.html"></morph>
+        <morph title="Q2a :zero: " src="Q-Tick-PatternAttributes._include_.html"></morph>
+      </p>
+      <p></p>
+    </panel>
+    <panel header=":pencil: Apply your knowledge" expandable="" type="seamless">
+      <ul>
+        <li>
+          <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;"
+          src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png">Do the exercise given in <a href="https://github.com/se-edu/addressbook-level4/blob/master/docs/LearningOutcomes.md#apply-design-patterns-lo-designpatterns">SE-EDU: Addressbook Level 4: Apply Design Patterns</a>
+        </li>
+      </ul>
+    </panel>
+    <panel header=":package: Resources" expandable="" type="seamless">
+      <ul>
+        <li>
+          <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;"
+          src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png">GoF Book</li>
+        <li>
+          <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;"
+          src="https://assets-cdn.github.com/images/icons/emoji/unicode/0030-20e3.png">Resource 2</li>
+        <li>
+          <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;"
+          src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png">Resrouce 3</li>
+      </ul>
+    </panel>
+    <panel header="::laughing:: Humor" expandable="" type="seamless">
+      <img src="http://www.topswagcode.com/content/images/2016/02/developer-patterns.jpg"
+      width="250">
+    </panel>
+    <popover id="pop:architecture">
+      <div slot="content">
+        <p><em><strong>Software architecture</strong></em> :</p>
+        <div>
+          <p>The high level structures of a software system, the discipline of creating
+            such structures, and the documentation of these structures. These structures
+            are needed to reason about the software system. Each structure comprises
+            software elements, relations among them, and properties of both elements
+            and relations. The architecture of a software system is a metaphor, analogous
+            to the architecture of a building.</p>
+        </div>
+      </div>
+    </popover>
+    <tooltip id="tt:coupling">
+      <div slot="content">
+        <div>
+          <p>
+            <mark><strong><em>coupling</em></strong>
+            </mark>is the degree of interdependence between software modules; a measure of
+            how closely connected two routines or modules are; the strength of the
+            relationships between module.</p>
+        </div>
+      </div>
+    </tooltip>
+    <modal title="**GoF Book** :zero:" id="modal:gofbook">
+      <div>
+        <pic src="introduction/book-designpatterns.jpg" width="400px"></pic>
+        <p>The authors of the DesignPatternsBook came to be known as the &quot;Gang
+          of Four.&quot; The name of the book (&quot;Design Patterns: Elements of
+          Reusable Object-Oriented Software&quot;) is too long for e-mail, so &quot;book
+          by the gang of four&quot; became a shorthand name for it. After all, it
+          isn't the ONLY book on patterns. That got shortened to &quot;GOF book&quot;,
+          which is pretty cryptic the first time you hear it.</p>
+        <panel header="An example pattern from the book: Singleton :one: "
+        expandable="" type="seamless">
+          <div>
+            <h3 id="singleton-pattern-2">Singleton Pattern</h3>
+            <h4 id="context-2">Context</h4>
+            <p>In most systems, it is common to restrict the number of instantiated objects
+              of certain classes to just <strong>one</strong> (e.g. the main controller
+              class of the system). These single instances are commonly known as <em>singletons</em>.</p>
+            <h4
+            id="problem-2">Problem</h4>
+              <p>Prohibit the instantiation of more than one object from a singleton class,
+                with the single instance easily shared among those who need it.</p>
+              <h4
+              id="solution-2">Solution</h4>
+                <p>The key insight of the solution is that the <em>constructor</em> of the
+                  singleton class cannot be <em>public</em>. Since a <em>public constructor</em> will
+                  allow others to instantiate the class at will, a <em>private constructor</em> should
+                  be used instead. In addition, a public method is provided to access the <em>single</em> instance.
+                  This solution is described below.</p>
+                <img class="center-block" src="singleton/solution.png">
+                <p>As shown, the solution makes the constructor private (note the “-“ visibility
+                  marker for the constructor), which prevents instantiation from outside
+                  the class. The single instance of the singleton class is maintained by
+                  a private class-level variable. Access to this object is provided by a
+                  public class-level operation getInstance(). In the skeleton code above, <code>getInstance()</code> instantiates
+                  a single copy of the singleton class when it is executed for the first
+                  time. Subsequent calls to this operation return the single instance of
+                  the class.</p>
+                <div v-closeable="" alt="Read lecture slides online">
+                  <div class="block-embed block-embed-service-powerpoint">
+                    <iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212070&authkey=&em=2&action=embedview&wdAr=1.3333333333333333"
+                    frameborder="0" width="610" height="481" webkitallowfullscreen="" mozallowfullscreen=""
+                    allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div v-closeable="" alt="code examples">
                   <h4 id="code-example-2">Code Example</h4>
                   <tabs>
                     <tab header="Java"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassicSingleton</span> </span>{
@@ -329,49 +384,50 @@
 </code></pre>
                     </tab>
                   </tabs>
-                  <h4 id="exercise-2">Exercise</h4>
-                  <morph title="Question 1">
-                    <question>
-                      <p>Which of the following is an ideal situation for using Singleton pattern?</p>
-                      <ul
-                      radio-group="t5ycu" class="radio-list">
-                        <li class="radio-list-item">
-                          <label>
-                            <input class="radio-list-input" name="t5ycu" type="radio">Utility methods used by many class in the application.</label>
-                        </li>
-                        <li class="radio-list-item">
-                          <label>
-                            <input class="radio-list-input" name="t5ycu" type="radio">A database manager shared by different component of the application.</label>
-                        </li>
-                        <li class="radio-list-item">
-                          <label>
-                            <input class="radio-list-input" name="t5ycu" type="radio">A constant String defined in every controller.</label>
-                        </li>
+                </div>
+                <h4 id="exercise-2">Exercise</h4>
+                <morph title="Question 1">
+                  <question>
+                    <p>Which of the following is an ideal situation for using Singleton pattern?</p>
+                    <ul
+                    radio-group="p09co" class="radio-list">
+                      <li class="radio-list-item">
+                        <label>
+                          <input class="radio-list-input" name="p09co" type="radio">Utility methods used by many class in the application.</label>
+                      </li>
+                      <li class="radio-list-item">
+                        <label>
+                          <input class="radio-list-input" name="p09co" type="radio">A database manager shared by different component of the application.</label>
+                      </li>
+                      <li class="radio-list-item">
+                        <label>
+                          <input class="radio-list-input" name="p09co" type="radio">A constant String defined in every controller.</label>
+                      </li>
+                      </ul>
+                      <div slot="answer">
+                        <ul radio-group="v6g7j" class="radio-list">
+                          <li class="radio-list-item">
+                            <label>
+                              <input class="radio-list-input" name="v6g7j" type="radio">Utility methods used by many class in the application.</label>
+                          </li>
+                          <li class="radio-list-item">
+                            <label>
+                              <input class="radio-list-input" checked name="v6g7j" type="radio">Database manager shared by different component of the application.</label>
+                          </li>
+                          <li class="radio-list-item">
+                            <label>
+                              <input class="radio-list-input" name="v6g7j" type="radio">A constant String defined in every controller.</label>
+                          </li>
                         </ul>
-                        <div slot="answer">
-                          <ul radio-group="5k5o6" class="radio-list">
-                            <li class="radio-list-item">
-                              <label>
-                                <input class="radio-list-input" name="5k5o6" type="radio">Utility methods used by many class in the application.</label>
-                            </li>
-                            <li class="radio-list-item">
-                              <label>
-                                <input class="radio-list-input" checked name="5k5o6" type="radio">Database manager shared by different component of the application.</label>
-                            </li>
-                            <li class="radio-list-item">
-                              <label>
-                                <input class="radio-list-input" name="5k5o6" type="radio">A constant String defined in every controller.</label>
-                            </li>
-                          </ul>
-                          <p>Database is a shared resources here, and by using singleton pattern, we
-                            have better control over the database operations.</p>
-                        </div>
-                    </question>
-                  </morph>
-            </div>
-          </panel>
-        </div>
-      </modal>
+                        <p>Database is a shared resources here, and by using singleton pattern, we
+                          have better control over the database operations.</p>
+                      </div>
+                  </question>
+                </morph>
+          </div>
+        </panel>
+      </div>
+    </modal>
   </div>
   <h2 id="example-design-patterns">Example design patterns</h2>
   <p>Next, let us learn some commonly used patterns.</p>
@@ -405,14 +461,15 @@
             the class.</p>
           <div v-closeable="" alt="Read lecture slides online">
             <div class="block-embed block-embed-service-powerpoint">
-              <iframe type="text/html" src="https://onedrive.live.com/embed?cid=880E9830B9B0E826&resid=880E9830B9B0E826%21858&authkey=AJ0VCSNC3KqA1_s&em=2&action=embedview&wdAr=1.3333333333333333"
+              <iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212070&authkey=&em=2&action=embedview&wdAr=1.3333333333333333"
               frameborder="0" width="610" height="481" webkitallowfullscreen="" mozallowfullscreen=""
               allowfullscreen></iframe>
             </div>
           </div>
-          <h4 id="code-example-3">Code Example</h4>
-          <tabs>
-            <tab header="Java"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassicSingleton</span> </span>{
+          <div v-closeable="" alt="code examples">
+            <h4 id="code-example-3">Code Example</h4>
+            <tabs>
+              <tab header="Java"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassicSingleton</span> </span>{
    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> ClassicSingleton instance = <span class="hljs-keyword">null</span>;
    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">ClassicSingleton</span><span class="hljs-params">()</span> </span>{
       <span class="hljs-comment">// Exists only to defeat instantiation.</span>
@@ -425,8 +482,8 @@
    }
 }
 </code></pre>
-            </tab>
-            <tab header="C++"><pre><code class="hljs c++"><span class="hljs-keyword">class</span> GlobalClass
+              </tab>
+              <tab header="C++"><pre><code class="hljs c++"><span class="hljs-keyword">class</span> GlobalClass
 {
     <span class="hljs-keyword">int</span> m_value;
     <span class="hljs-keyword">static</span> GlobalClass *s_instance;
@@ -451,40 +508,41 @@
     }
 };
 </code></pre>
-            </tab>
-          </tabs>
+              </tab>
+            </tabs>
+          </div>
           <h4 id="exercise-3">Exercise</h4>
           <morph title="Question 1">
             <question>
               <p>Which of the following is an ideal situation for using Singleton pattern?</p>
               <ul
-              radio-group="27oak" class="radio-list">
+              radio-group="344sq" class="radio-list">
                 <li class="radio-list-item">
                   <label>
-                    <input class="radio-list-input" name="27oak" type="radio">Utility methods used by many class in the application.</label>
+                    <input class="radio-list-input" name="344sq" type="radio">Utility methods used by many class in the application.</label>
                 </li>
                 <li class="radio-list-item">
                   <label>
-                    <input class="radio-list-input" name="27oak" type="radio">A database manager shared by different component of the application.</label>
+                    <input class="radio-list-input" name="344sq" type="radio">A database manager shared by different component of the application.</label>
                 </li>
                 <li class="radio-list-item">
                   <label>
-                    <input class="radio-list-input" name="27oak" type="radio">A constant String defined in every controller.</label>
+                    <input class="radio-list-input" name="344sq" type="radio">A constant String defined in every controller.</label>
                 </li>
                 </ul>
                 <div slot="answer">
-                  <ul radio-group="fkuza" class="radio-list">
+                  <ul radio-group="2eu5p" class="radio-list">
                     <li class="radio-list-item">
                       <label>
-                        <input class="radio-list-input" name="fkuza" type="radio">Utility methods used by many class in the application.</label>
+                        <input class="radio-list-input" name="2eu5p" type="radio">Utility methods used by many class in the application.</label>
                     </li>
                     <li class="radio-list-item">
                       <label>
-                        <input class="radio-list-input" checked name="fkuza" type="radio">Database manager shared by different component of the application.</label>
+                        <input class="radio-list-input" checked name="2eu5p" type="radio">Database manager shared by different component of the application.</label>
                     </li>
                     <li class="radio-list-item">
                       <label>
-                        <input class="radio-list-input" name="fkuza" type="radio">A constant String defined in every controller.</label>
+                        <input class="radio-list-input" name="2eu5p" type="radio">A constant String defined in every controller.</label>
                     </li>
                   </ul>
                   <p>Database is a shared resources here, and by using singleton pattern, we

@@ -1,5 +1,7 @@
 In software development, there are certain design problems that crop up repeatedly.    
 
+<panel header="Some examples of recurring design problems :zero:" type="seamless" expandable>
+
 * An example problem about software architecture: what is the best <trigger for="pop:architecture">architecture</trigger> for a given type of system?
 * An example problem about the interaction between classes: how to lower the 
   <trigger for="tt:coupling">coupling</trigger> between  `UI` and `Logic` classes ?
@@ -9,6 +11,7 @@ In software development, there are certain design problems that crop up repeated
   * One more example about <trigger for="tt:coupling">coupling</trigger>
 
   </panel>
+</panel><br>
 
 After repeated attempts at solving such design problems, better solutions are discovered and refined 
 over time. These solutions are collectively known as<trigger trigger="click" for="modal:gofbook"> _design patterns_</trigger>, a term popularized by the seminal _Gang of Four book_.
@@ -47,10 +50,15 @@ The common format to describe a pattern consists of the following components:
   <include src="../singleton/index.md" />
 </panel><br>
 
-**Self-test questions:**
+**Test your understanding:**
 
-<morph title="Q1" src="Q-Essay-WhatIsAPattern.md" />
-<morph title="Q2" src="Q-Tick-WhatIsAPattern.md" />
+* Definition of a _design pattern_
+  <morph title="Q1  :one:" src="Q-Essay-WhatIsAPattern.md" />
+  <morph title="Q1a :zero:" src="Q-Essay-WhatIsAPattern.md" />
+  <morph title="Q1b :zero:" src="Q-Essay-WhatIsAPattern.md" />
+* Attributes of a _design pattern_
+  <morph title="Q2  :one: " src="Q-Tick-PatternAttributes.md" />
+  <morph title="Q2a :zero: " src="Q-Tick-PatternAttributes.md" />
 
 <!-- additional info -->
 

@@ -1,4 +1,6 @@
-In software development, there are certain design problems that crop up repeatedly.    
+> Some software design problems crop up repeatedly. After repeated attempts at solving such design problems, better solutions are discovered and refined over time. These solutions are collectively known as _design patterns_, a term popularized by the seminal <trigger trigger="click" for="modal:gofbook">_Gang of Four book_</trigger>.   
+
+<panel header="Some examples of recurring design problems :zero:" type="seamless" expandable>
 
 * An example problem about software architecture: what is the best <trigger for="pop:architecture">architecture</trigger> for a given type of system?
 * An example problem about the interaction between classes: how to lower the 
@@ -9,9 +11,7 @@ In software development, there are certain design problems that crop up repeated
   * One more example about <trigger for="tt:coupling">coupling</trigger>
 
   </panel>
-
-After repeated attempts at solving such design problems, better solutions are discovered and refined 
-over time. These solutions are collectively known as<trigger trigger="click" for="modal:gofbook"> _design patterns_</trigger>, a term popularized by the seminal _Gang of Four book_.
+</panel><br>
 
 <panel header="More about Gang of Four Book :zero:" type="seamless" expandable>
   <div class="pull-right">
@@ -25,11 +25,18 @@ over time. These solutions are collectively known as<trigger trigger="click" for
 <tip-box type="info">
 
 **Software Design Pattern** :
-<include src="../../common/Definitions.md#def-se-design-pattern" />
+<include src="../../common/Definitions.md#def-se-design-pattern"/>
 
 </tip-box>
 
-<panel header="Documenting a design pattern :one:" expandable type="seamless" is-open="true">
+
+Because design patterns document design solutions meant to be shared, they are usually documented in a certain format.
+
+<panel header="Format for documenting a desing pattern :one:" expandable type="seamless" is-open="true">
+
+<div class="pull-right" v-closeable alt="comic">
+ <img src="http://www.topswagcode.com/content/images/2016/02/developer-patterns.jpg" width="250"/>
+</div>
 
 The common format to describe a pattern consists of the following components: 
 * **Context**: The situation or scenario where the design problem is encountered.
@@ -39,18 +46,50 @@ The common format to describe a pattern consists of the following components:
 * **Consequences** (optional): Identifying the pros and cons of applying the pattern.
 * **Other useful information** (optional): Code examples, known uses, other related patterns, etc.
 
-<hr>
-
 </panel>
 
 <panel header="Above description is too abstract? Here is an illustrative example :zero:" expandable type="seamless">
   <include src="../singleton/index.md" />
 </panel><br>
 
-**Self-test questions:**
+<panel header=":mortar_board: Learning Outcomes" expandable type="seamless">
 
-<morph title="Q1" src="Q-Essay-WhatIsAPattern.md" />
-<morph title="Q2" src="Q-Tick-WhatIsAPattern.md" />
+* :one: Able to explain what is a design pattern
+* :one: Able to describe distinguishing characteristics of a design pattern
+
+</panel>
+
+<panel header=":bulb: Test your knowledge" expandable type="seamless">
+
+:question: Definition of a _design pattern_
+  <morph title="Q1  :one:" src="Q-Essay-WhatIsAPattern.md" />
+  <morph title="Q1a :zero:" src="Q-Essay-WhatIsAPattern.md" />
+  <morph title="Q1b :zero:" src="Q-Essay-WhatIsAPattern.md" /><br>
+:question: Attributes of a _design pattern_
+  <morph title="Q2  :one: " src="Q-Tick-PatternAttributes.md" />
+  <morph title="Q2a :zero: " src="Q-Tick-PatternAttributes.md" />
+  
+</panel>
+
+<panel header=":pencil: Apply your knowledge" expandable type="seamless">
+
+* :one: Do the exercise given in [SE-EDU: Addressbook Level 4: Apply Design Patterns](https://github.com/se-edu/addressbook-level4/blob/master/docs/LearningOutcomes.md#apply-design-patterns-lo-designpatterns)
+
+</panel>
+
+<panel header=":package: Resources" expandable type="seamless">
+
+* :one: GoF Book
+* :zero: Resource 2
+* :two: Resrouce 3
+
+</panel>
+
+<panel header="::laughing:: Humor" expandable type="seamless">
+
+<img src="http://www.topswagcode.com/content/images/2016/02/developer-patterns.jpg" width="250"/>
+
+</panel>
 
 <!-- additional info -->
 
@@ -60,20 +99,15 @@ The common format to describe a pattern consists of the following components:
   _**Software architecture**_ :
   
   <include src="../../common/Definitions.md#def-architecture" />
-
   </div>
 </popover>
 
 <tooltip id="tt:coupling">
   <div slot="content">
-  
   <include src="../../common/Definitions.md#def-coupling" />
-
   </div>
 </tooltip>
 
 <modal title="**GoF Book** :zero:" id="modal:gofbook">
-
   <include src="GoF.md" />
-
 </modal>

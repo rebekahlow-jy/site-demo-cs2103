@@ -23,11 +23,14 @@ Subsequent calls to this operation return the single instance of the class.
 
 <div v-closeable alt="Read lecture slides online">
 
-@[powerpoint](https://onedrive.live.com/embed?cid=880E9830B9B0E826&resid=880E9830B9B0E826%21858&authkey=AJ0VCSNC3KqA1_s&em=2)  
+@[powerpoint](https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212070&authkey=&em=2)  
 
 </div>
 
+<div v-closeable alt="code examples">
+
 #### Code Example
+
 <tabs>
 <tab header="Java">
 
@@ -78,6 +81,7 @@ class GlobalClass
 
 </tab>
 </tabs>
+</div>
 
 #### Exercise
 <morph title="Question 1">

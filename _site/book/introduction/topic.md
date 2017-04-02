@@ -1,7 +1,9 @@
 * [Introduction to SE](book/introduction/) 
-  <span v-show-modal="modal1"> :mag: </span>
+  <trigger for="pop:intro-preview">:mag:</trigger>
   
-<modal name="modal1" title="Introduction to SE">
+<popover id="pop:intro-preview" placement="right">
+  <div slot="content">
+  
 This chapters gives a general introduction to SE.
 
 It covers topics:
@@ -9,4 +11,7 @@ It covers topics:
 * topic two :one:
 
 <pic src="{{baseurl}}/book/introduction/images/img1.png" width="100">
-</modal>
+
+  </div>
+</popover>
+

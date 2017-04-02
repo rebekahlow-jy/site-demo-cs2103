@@ -18,7 +18,7 @@ This is not strictly accurate:
 
 <div slot="answer">
 
-None of these are not strictly accurate.
+None of these are strictly accurate.
 
 - [ ] They are recurring ==problems==<br>
   %%{Reason: Design patterns are _solutions_, not _problems_}%% 
