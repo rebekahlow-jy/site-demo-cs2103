@@ -13,7 +13,7 @@
   </panel>
 </panel><br>
 
-<panel header="More about Gang of Four Book :zero:" type="seamless" expandable>
+<panel header="More about the Gang of Four Book :zero:" type="seamless" expandable>
   <div class="pull-right">
   <pic src="introduction/book-designpatterns.jpg" width="200px">GoF Book Cover </pic>
   </div>
@@ -23,10 +23,7 @@
 </panel><br>
 
 <tip-box type="info">
-
-**Software Design Pattern** :
 <include src="../../common/Definitions.md#def-se-design-pattern"/>
-
 </tip-box>
 
 
@@ -35,7 +32,7 @@ Because design patterns document design solutions meant to be shared, they are u
 <panel header="Format for documenting a desing pattern :one:" expandable type="seamless" is-open="true">
 
 <div class="pull-right" v-closeable alt="comic">
- <img src="http://www.topswagcode.com/content/images/2016/02/developer-patterns.jpg" width="250"/>
+ <img src="https://upload.wikimedia.org/wikipedia/en/f/f3/Dilbert-20050910.png" width="200"/>
 </div>
 
 The common format to describe a pattern consists of the following components: 
@@ -85,7 +82,7 @@ The common format to describe a pattern consists of the following components:
 
 </panel>
 
-<panel header="::laughing:: Humor" expandable type="seamless">
+<panel header=":laughing: Humor" expandable type="seamless">
 
 <img src="http://www.topswagcode.com/content/images/2016/02/developer-patterns.jpg" width="250"/>
 
@@ -95,9 +92,6 @@ The common format to describe a pattern consists of the following components:
 
 <popover id="pop:architecture">
   <div slot="content">
-  
-  _**Software architecture**_ :
-  
   <include src="../../common/Definitions.md#def-architecture" />
   </div>
 </popover>
