@@ -1,4 +1,9 @@
-> Some software design problems crop up repeatedly. After repeated attempts at solving such design problems, better solutions are discovered and refined over time. These solutions are collectively known as _design patterns_, a term popularized by the seminal <trigger trigger="click" for="modal:gofbook">_Gang of Four book_</trigger>.   
+## What is a design pattern? :one:
+
+
+#### Some software design problems crop up repeatedly. After repeated attempts at solving such design problems, better solutions are discovered and refined over time. These solutions are collectively known as _design patterns_, a term popularized by the seminal <trigger trigger="click" for="modal:gofbook">_Gang of Four book_</trigger>.
+
+<br/>
 
 <panel header="Some examples of recurring design problems :zero:" type="seamless" expandable>
 
@@ -13,44 +18,17 @@
   </panel>
 </panel><br>
 
-<panel header="More about Gang of Four Book :zero:" type="seamless" expandable>
-  <div class="pull-right">
-  <pic src="introduction/book-designpatterns.jpg" width="200px">GoF Book Cover </pic>
-  </div>
-
-  **Design Patterns: Elements of Reusable Object-Oriented Software** by the four authors Eric Gamma, Richard Helm, Ralph Johnson and John Vlissides is also known as  the _Gang of Four_ book or _GoF book_. It is also probably the  most famous book about design patterns.
-
-</panel><br>
-
 <tip-box type="info">
-
-**Software Design Pattern** :
 <include src="../../common/Definitions.md#def-se-design-pattern"/>
-
 </tip-box>
-
-
-Because design patterns document design solutions meant to be shared, they are usually documented in a certain format.
-
-<panel header="Format for documenting a desing pattern :one:" expandable type="seamless" is-open="true">
-
-<div class="pull-right" v-closeable alt="comic">
- <img src="http://www.topswagcode.com/content/images/2016/02/developer-patterns.jpg" width="250"/>
-</div>
-
-The common format to describe a pattern consists of the following components: 
-* **Context**: The situation or scenario where the design problem is encountered.
-* **Problem**: The main difficulty to be resolved. The criteria for a good solution are also identified to evaluate solutions.
-* **Solution**: The core of the solution. It is important to note that the solution presented only includes the most general constraints, which may need further refinement for a specific context.
-* **Anti-patterns** (optional): Commonly used solutions, which are usually incorrect and/or inferior to the Design Pattern.
-* **Consequences** (optional): Identifying the pros and cons of applying the pattern.
-* **Other useful information** (optional): Code examples, known uses, other related patterns, etc.
-
-</panel>
 
 <panel header="Above description is too abstract? Here is an illustrative example :zero:" expandable type="seamless">
   <include src="../singleton/index.md" />
 </panel><br>
+
+<!-- extras ------------------------------------------------------------------------------------ -->
+
+<panel header=":paperclip: Extras" expandable type="seamless">
 
 <panel header=":mortar_board: Learning Outcomes" expandable type="seamless">
 
@@ -64,40 +42,33 @@ The common format to describe a pattern consists of the following components:
 :question: Definition of a _design pattern_
   <morph title="Q1  :one:" src="Q-Essay-WhatIsAPattern.md" />
   <morph title="Q1a :zero:" src="Q-Essay-WhatIsAPattern.md" />
-  <morph title="Q1b :zero:" src="Q-Essay-WhatIsAPattern.md" /><br>
+  <morph title="Q1b :zero:" src="Q-Essay-WhatIsAPattern.md" /><br/>
 :question: Attributes of a _design pattern_
   <morph title="Q2  :one: " src="Q-Tick-PatternAttributes.md" />
   <morph title="Q2a :zero: " src="Q-Tick-PatternAttributes.md" />
-  
+
 </panel>
 
 <panel header=":pencil: Apply your knowledge" expandable type="seamless">
-
-* :one: Do the exercise given in [SE-EDU: Addressbook Level 4: Apply Design Patterns](https://github.com/se-edu/addressbook-level4/blob/master/docs/LearningOutcomes.md#apply-design-patterns-lo-designpatterns)
-
+  <include src="Apply.md" />
 </panel>
 
 <panel header=":package: Resources" expandable type="seamless">
+  <include src="Resources.md" />
+</panel>
 
-* :one: GoF Book
-* :zero: Resource 2
-* :two: Resrouce 3
+<panel header=":laughing: Humor" expandable type="seamless">
+  <include src="Humor.md" />
+</panel>
 
 </panel>
 
-<panel header="::laughing:: Humor" expandable type="seamless">
 
-<img src="http://www.topswagcode.com/content/images/2016/02/developer-patterns.jpg" width="250"/>
 
-</panel>
-
-<!-- additional info -->
+<!-- additional info ------------------------------------------------------------------------------------ -->
 
 <popover id="pop:architecture">
   <div slot="content">
-  
-  _**Software architecture**_ :
-  
   <include src="../../common/Definitions.md#def-architecture" />
   </div>
 </popover>

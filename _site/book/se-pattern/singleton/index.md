@@ -1,4 +1,4 @@
-### Singleton Pattern
+### Singleton Pattern :one:
 
 #### Context
 In most systems, it is common to restrict the number of instantiated 
