@@ -21,7 +21,7 @@
   <include src="../../common/Definitions.md#def-se-design-pattern"/>
 </tip-box>
 
-<panel header="Above description is too abstract? Here is an illustrative example :zero:" expandable type="seamless">
+<panel header="%%Above description is too abstract? Here is an illustrative example :zero:%%" expandable type="seamless">
   <include src="../singleton/index.md" />
 </panel><br/>
 

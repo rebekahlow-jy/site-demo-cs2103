@@ -8,3 +8,7 @@
 # Table of Contents
 <include src="book/introduction/topic.md" />
 <include src="book/se-pattern/topic.md" />
+
+* [Definitions](book/common/Definitions.html)
+
+</div>

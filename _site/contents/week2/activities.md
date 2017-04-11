@@ -1,7 +1,11 @@
 {Pre-Tutorial Learning Activity = Work to be done before coming to the tutorial. These can earn participation marks}
 
-<Panel header="T1A1. Get started with IDEs :star:" expandable>
-    <include src="../topics/ide/activities/get-started.md" />
+<Panel header="T1A1. Singleton pattern :one:" expandable>
+
+Learn the <morph title="singleton pattern" src="../../book/se-pattern/singleton/index.md" />
+
+Achieve the <morph title="level :one: learning outcomes" src="../../book/se-pattern/introduction/Outcomes.md" />
+    
 </Panel>
 <Panel header="T1A2. Debugging in IDEs :star::star:" expandable>
     <include src="../topics/ide/activities/debug-in-ide.md" />
