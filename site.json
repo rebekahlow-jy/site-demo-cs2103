@@ -24,6 +24,10 @@
     {
       "src": "book/se-pattern/index.md",
       "title": "CS2103/T Textbook - Design Patterns"
+    },
+    {
+      "src": "book/common/Definitions.md",
+      "title": "CS2103/T Textbook - Definitions"
     }
   ],
   "ignore": [
@@ -31,7 +35,6 @@
     ".idea/*",
     ".gitignore",
     "README.md",
-    "contents/handbook/*",
-    "*.md"
+    "contents/handbook/*"
   ]
 }
