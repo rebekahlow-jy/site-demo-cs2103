@@ -15,19 +15,24 @@ Normally, any client can instantiate a class by calling the constructor. This me
 
 
 #### Solution
+
+<tabs>
+<tab header=":ab:">
+
 Make the *constructor* of the singleton class `private`. Provide a `public` method to access the *singleton* instance.
 
-<img class="center-block" src="{{baseUrl}}book/se-pattern/singleton/solution.png">
+<img class="center-block" src="{{baseUrl}}book/se-pattern/singleton/solution.png" />
 
 As shown, the solution makes the constructor private (note the “-“ visibility marker for the constructor), which prevents instantiation from outside the class. The single instance of the singleton class is maintained by a private class-level variable. Access to this object is provided by a public class-level operation `getInstance()`. In the skeleton code above, `getInstance()` instantiates a single copy of the singleton class when it is executed for the first time. Subsequent calls to this operation return the single instance of the class.
 
-<div v-closeable alt="Read lecture slides online">
+</tab>
+<tab header=":symbols:">
 
 @[powerpoint](https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212070&authkey=&em=2)
 
-</div>
 
-<div v-closeable alt="code examples">
+</tab>
+</tabs>
 
 #### Code Example
 
@@ -83,29 +88,27 @@ class GlobalClass
 </tabs>
 </div>
 
-#### Exercise
-<morph title="Question 1">
-<Question>
+<!-- extras ------------------------------------------------------------------------------------ -->
 
-Which of the following is an ideal situation for using Singleton pattern?
+<panel header=":paperclip: Extras" expandable type="seamless">
 
-- ( ) Utility methods used by many class in the application. 
-- ( ) A database manager shared by different component of the application.
-- ( ) A constant String defined in every controller.  
+  <panel header=":mortar_board: Learning Outcomes" expandable type="seamless">
+    <include src="Outcomes.md" />
+  </panel>
 
-<div slot="answer">
+  <panel header=":pencil: Apply your knowledge" expandable type="seamless">
+    <include src="Apply.md" />
+  </panel>
 
-- ( ) Utility methods used by many class in the application. 
-- (X) Database manager shared by different component of the application.
-- ( ) A constant String defined in every controller.
+  <panel header=":package: Resources" expandable type="seamless">
+    <include src="Resources.md" />
+  </panel>
 
-Database is a shared resources here, and by using singleton pattern, we have better control
-over the database operations.
+  <panel header=":laughing: Humor" expandable type="seamless">
+    <include src="Humor.md" />
+  </panel>
 
-</div>
-</Question>
-
-</morph>
+</panel>
 
 <!-- additional info ------------------------------------------------------------------------------------ -->
 

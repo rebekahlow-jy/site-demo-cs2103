@@ -7,20 +7,22 @@
 <h4 id="problem">Problem</h4>
 <p>Normally, any client can instantiate a class by calling the constructor. This means we can end up with multiple instances of the class in concern.</p>
 <h4 id="solution">Solution</h4>
-<p>Make the <em>constructor</em> of the singleton class <code>private</code>. Provide a <code>public</code> method to access the <em>singleton</em> instance.</p>
-<img class="center-block" src="{{baseUrl}}book/se-pattern/singleton/solution.png">
-<p>As shown, the solution makes the constructor private (note the “-“ visibility marker for the constructor), which prevents instantiation from outside the class. The single instance of the singleton class is maintained by a private class-level variable.
-  Access to this object is provided by a public class-level operation <code>getInstance()</code>. In the skeleton code above, <code>getInstance()</code> instantiates a single copy of the singleton class when it is executed for the first time. Subsequent
-  calls to this operation return the single instance of the class.</p>
-<div v-closeable="" alt="Read lecture slides online">
-  <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212070&authkey=&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen="" mozallowfullscreen=""
-      allowfullscreen></iframe></div>
-</div>
-<div v-closeable="" alt="code examples">
-  <h4 id="code-example">Code Example</h4>
-  <tabs>
-    <tab header="Java">
-      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassicSingleton</span> </span>{
+<tabs>
+  <tab header=":ab:">
+    <p>Make the <em>constructor</em> of the singleton class <code>private</code>. Provide a <code>public</code> method to access the <em>singleton</em> instance.</p><img class="center-block" src="{{baseUrl}}book/se-pattern/singleton/solution.png">
+    <p>As shown, the solution makes the constructor private (note the “-“ visibility marker for the constructor), which prevents instantiation from outside the class. The single instance of the singleton class is maintained by a private class-level variable.
+      Access to this object is provided by a public class-level operation <code>getInstance()</code>. In the skeleton code above, <code>getInstance()</code> instantiates a single copy of the singleton class when it is executed for the first time. Subsequent
+      calls to this operation return the single instance of the class.</p>
+  </tab>
+  <tab header=":symbols:">
+    <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212070&authkey=&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen="" mozallowfullscreen=""
+        allowfullscreen></iframe></div>
+  </tab>
+</tabs>
+<h4 id="code-example">Code Example</h4>
+<tabs>
+  <tab header="Java">
+    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassicSingleton</span> </span>{
    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> ClassicSingleton instance = <span class="hljs-keyword">null</span>;
    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">ClassicSingleton</span><span class="hljs-params">()</span> </span>{
       <span class="hljs-comment">// Exists only to defeat instantiation.</span>
@@ -33,9 +35,9 @@
    }
 }
 </code></pre>
-    </tab>
-    <tab header="C++">
-      <pre><code class="hljs c++"><span class="hljs-keyword">class</span> GlobalClass
+  </tab>
+  <tab header="C++">
+    <pre><code class="hljs c++"><span class="hljs-keyword">class</span> GlobalClass
 {
     <span class="hljs-keyword">int</span> m_value;
     <span class="hljs-keyword">static</span> GlobalClass *s_instance;
@@ -60,28 +62,55 @@
     }
 };
 </code></pre>
-    </tab>
-  </tabs>
-</div>
-<h4 id="exercise">Exercise</h4>
-<morph title="Question 1">
-  <question>
-    <p>Which of the following is an ideal situation for using Singleton pattern?</p>
-    <ul radio-group="t4su9" class="radio-list">
-      <li class="radio-list-item"><label><input class="radio-list-input" name="t4su9" type="radio"> Utility methods used by many class in the application.</label></li>
-      <li class="radio-list-item"><label><input class="radio-list-input" name="t4su9" type="radio"> A database manager shared by different component of the application.</label></li>
-      <li class="radio-list-item"><label><input class="radio-list-input" name="t4su9" type="radio"> A constant String defined in every controller.</label></li>
-    </ul>
-    <div slot="answer">
-      <ul radio-group="69q4x" class="radio-list">
-        <li class="radio-list-item"><label><input class="radio-list-input" name="69q4x" type="radio"> Utility methods used by many class in the application.</label></li>
-        <li class="radio-list-item"><label><input class="radio-list-input" checked name="69q4x" type="radio"> Database manager shared by different component of the application.</label></li>
-        <li class="radio-list-item"><label><input class="radio-list-input" name="69q4x" type="radio"> A constant String defined in every controller.</label></li>
-      </ul>
-      <p>Database is a shared resources here, and by using singleton pattern, we have better control over the database operations.</p>
+  </tab>
+</tabs>
+<!-- extras ------------------------------------------------------------------------------------ -->
+<panel header=":paperclip: Extras" expandable="" type="seamless">
+  <panel header=":mortar_board: Learning Outcomes" expandable="" type="seamless">
+    <div>
+      <panel header=":one: Able to explain the singleton pattern" expandable="">
+        <morph title="Question 1">
+          <question>
+            <p>Which of the following is an ideal situation for using Singleton pattern?</p>
+            <ul radio-group="9ku7j" class="radio-list">
+              <li class="radio-list-item"><label><input class="radio-list-input" name="9ku7j" type="radio"> Utility methods used by many class in the application.</label></li>
+              <li class="radio-list-item"><label><input class="radio-list-input" name="9ku7j" type="radio"> A database manager shared by different component of the application.</label></li>
+              <li class="radio-list-item"><label><input class="radio-list-input" name="9ku7j" type="radio"> A constant String defined in every controller.</label></li>
+            </ul>
+            <div slot="answer">
+              <ul radio-group="t6xa4" class="radio-list">
+                <li class="radio-list-item"><label><input class="radio-list-input" name="t6xa4" type="radio"> Utility methods used by many class in the application.</label></li>
+                <li class="radio-list-item"><label><input class="radio-list-input" checked name="t6xa4" type="radio"> Database manager shared by different component of the application.</label></li>
+                <li class="radio-list-item"><label><input class="radio-list-input" name="t6xa4" type="radio"> A constant String defined in every controller.</label></li>
+              </ul>
+              <p>Database is a shared resources here, and by using singleton pattern, we have better control over the database operations.</p>
+            </div>
+          </question>
+        </morph>
+      </panel>
     </div>
-  </question>
-</morph>
+  </panel>
+  <panel header=":pencil: Apply your knowledge" expandable="" type="seamless">
+    <div>
+      <ul>
+        <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> Do the exercise given in <a href="https://github.com/se-edu/addressbook-level4/blob/master/docs/LearningOutcomes.md#apply-design-patterns-lo-designpatterns">SE-EDU: Addressbook Level 4: Apply Design Patterns</a></li>
+      </ul>
+    </div>
+  </panel>
+  <panel header=":package: Resources" expandable="" type="seamless">
+    <div>
+      <ul>
+        <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> GoF Book</li>
+        <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0030-20e3.png"> Resource 2</li>
+        <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"> Resrouce 3</li>
+      </ul>
+    </div>
+  </panel>
+  <panel header=":laughing: Humor" expandable="" type="seamless">
+    <div><img src="http://www.topswagcode.com/content/images/2016/02/developer-patterns.jpg" width="250"></div>
+  </panel>
+</panel>
+<!-- additional info ------------------------------------------------------------------------------------ -->
 <tooltip id="pop:client-code">
   <div slot="content">
     <div>

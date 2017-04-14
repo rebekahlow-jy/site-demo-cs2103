@@ -1,6 +1,12 @@
-{Pre-Tutorial Learning Activity = Work to be done before coming to the tutorial. These can earn participation marks}
+<panel header="What is a _Pre-Tutorial Learning Activity_? :zero:" class="book" expandable>
+ 
+**Pre-Tutorial Learning Activities** are work to be done before coming to the tutorial. These can earn participation marks.
 
-<Panel header="T1A1. Singleton pattern :one:" expandable>
+  <include name="More about participation marks :zero:" src="../handbook-md/participation.md" dynamic />
+ 
+</panel>
+
+<Panel header="T1A1. Singleton pattern :star:" expandable>
 
 Learn the <morph title="singleton pattern" src="../../book/se-pattern/singleton/index.md" />
 
