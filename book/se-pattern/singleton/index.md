@@ -16,8 +16,6 @@ Normally, any client can instantiate a class by calling the constructor. This me
 
 #### Solution
 
-<div v-closeable alt="code examples">
-
 <tabs>
 <tab header=":ab:">
 
@@ -90,29 +88,27 @@ class GlobalClass
 </tabs>
 </div>
 
-#### Exercise
-<morph title="Question 1">
-<Question>
+<!-- extras ------------------------------------------------------------------------------------ -->
 
-Which of the following is an ideal situation for using Singleton pattern?
+<panel header=":paperclip: Extras" expandable type="seamless">
 
-- ( ) Utility methods used by many class in the application. 
-- ( ) A database manager shared by different component of the application.
-- ( ) A constant String defined in every controller.  
+  <panel header=":mortar_board: Learning Outcomes" expandable type="seamless">
+    <include src="Outcomes.md" />
+  </panel>
 
-<div slot="answer">
+  <panel header=":pencil: Apply your knowledge" expandable type="seamless">
+    <include src="Apply.md" />
+  </panel>
 
-- ( ) Utility methods used by many class in the application. 
-- (X) Database manager shared by different component of the application.
-- ( ) A constant String defined in every controller.
+  <panel header=":package: Resources" expandable type="seamless">
+    <include src="Resources.md" />
+  </panel>
 
-Database is a shared resources here, and by using singleton pattern, we have better control
-over the database operations.
+  <panel header=":laughing: Humor" expandable type="seamless">
+    <include src="Humor.md" />
+  </panel>
 
-</div>
-</Question>
-
-</morph>
+</panel>
 
 <!-- additional info ------------------------------------------------------------------------------------ -->
 

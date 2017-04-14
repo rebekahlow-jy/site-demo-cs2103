@@ -68,23 +68,22 @@
               <h4 id="problem">Problem</h4>
               <p>Normally, any client can instantiate a class by calling the constructor. This means we can end up with multiple instances of the class in concern.</p>
               <h4 id="solution">Solution</h4>
-              <div v-closeable="" alt="code examples">
-                <tabs>
-                  <tab header=":ab:">
-                    <p>Make the <em>constructor</em> of the singleton class <code>private</code>. Provide a <code>public</code> method to access the <em>singleton</em> instance.</p><img class="center-block" src="/site-demo-cs2103/book/se-pattern/singleton/solution.png">
-                    <p>As shown, the solution makes the constructor private (note the “-“ visibility marker for the constructor), which prevents instantiation from outside the class. The single instance of the singleton class is maintained by a private class-level
-                      variable. Access to this object is provided by a public class-level operation <code>getInstance()</code>. In the skeleton code above, <code>getInstance()</code> instantiates a single copy of the singleton class when it is executed
-                      for the first time. Subsequent calls to this operation return the single instance of the class.</p>
-                  </tab>
-                  <tab header=":symbols:">
-                    <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212070&authkey=&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen=""
-                        mozallowfullscreen="" allowfullscreen></iframe></div>
-                  </tab>
-                </tabs>
-                <h4 id="code-example">Code Example</h4>
-                <tabs>
-                  <tab header="Java">
-                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassicSingleton</span> </span>{
+              <tabs>
+                <tab header=":ab:">
+                  <p>Make the <em>constructor</em> of the singleton class <code>private</code>. Provide a <code>public</code> method to access the <em>singleton</em> instance.</p><img class="center-block" src="/site-demo-cs2103/book/se-pattern/singleton/solution.png">
+                  <p>As shown, the solution makes the constructor private (note the “-“ visibility marker for the constructor), which prevents instantiation from outside the class. The single instance of the singleton class is maintained by a private class-level
+                    variable. Access to this object is provided by a public class-level operation <code>getInstance()</code>. In the skeleton code above, <code>getInstance()</code> instantiates a single copy of the singleton class when it is executed
+                    for the first time. Subsequent calls to this operation return the single instance of the class.</p>
+                </tab>
+                <tab header=":symbols:">
+                  <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212070&authkey=&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen=""
+                      mozallowfullscreen="" allowfullscreen></iframe></div>
+                </tab>
+              </tabs>
+              <h4 id="code-example">Code Example</h4>
+              <tabs>
+                <tab header="Java">
+                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassicSingleton</span> </span>{
    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> ClassicSingleton instance = <span class="hljs-keyword">null</span>;
    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">ClassicSingleton</span><span class="hljs-params">()</span> </span>{
       <span class="hljs-comment">// Exists only to defeat instantiation.</span>
@@ -97,9 +96,9 @@
    }
 }
 </code></pre>
-                  </tab>
-                  <tab header="C++">
-                    <pre><code class="hljs c++"><span class="hljs-keyword">class</span> GlobalClass
+                </tab>
+                <tab header="C++">
+                  <pre><code class="hljs c++"><span class="hljs-keyword">class</span> GlobalClass
 {
     <span class="hljs-keyword">int</span> m_value;
     <span class="hljs-keyword">static</span> GlobalClass *s_instance;
@@ -124,28 +123,53 @@
     }
 };
 </code></pre>
-                  </tab>
-                </tabs>
-              </div>
-              <h4 id="exercise">Exercise</h4>
-              <morph title="Question 1">
-                <question>
-                  <p>Which of the following is an ideal situation for using Singleton pattern?</p>
-                  <ul radio-group="0ppsi" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="0ppsi" type="radio"> Utility methods used by many class in the application.</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="0ppsi" type="radio"> A database manager shared by different component of the application.</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="0ppsi" type="radio"> A constant String defined in every controller.</label></li>
-                  </ul>
-                  <div slot="answer">
-                    <ul radio-group="uk38t" class="radio-list">
-                      <li class="radio-list-item"><label><input class="radio-list-input" name="uk38t" type="radio"> Utility methods used by many class in the application.</label></li>
-                      <li class="radio-list-item"><label><input class="radio-list-input" checked name="uk38t" type="radio"> Database manager shared by different component of the application.</label></li>
-                      <li class="radio-list-item"><label><input class="radio-list-input" name="uk38t" type="radio"> A constant String defined in every controller.</label></li>
-                    </ul>
-                    <p>Database is a shared resources here, and by using singleton pattern, we have better control over the database operations.</p>
+                </tab>
+              </tabs>
+              <panel header=":paperclip: Extras" expandable="" type="seamless">
+                <panel header=":mortar_board: Learning Outcomes" expandable="" type="seamless">
+                  <div>
+                    <panel header=":one: Able to explain the singleton pattern" expandable="">
+                      <morph title="Question 1">
+                        <question>
+                          <p>Which of the following is an ideal situation for using Singleton pattern?</p>
+                          <ul radio-group="6ayyn" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="6ayyn" type="radio"> Utility methods used by many class in the application.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="6ayyn" type="radio"> A database manager shared by different component of the application.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="6ayyn" type="radio"> A constant String defined in every controller.</label></li>
+                          </ul>
+                          <div slot="answer">
+                            <ul radio-group="bid3q" class="radio-list">
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="bid3q" type="radio"> Utility methods used by many class in the application.</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" checked name="bid3q" type="radio"> Database manager shared by different component of the application.</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="bid3q" type="radio"> A constant String defined in every controller.</label></li>
+                            </ul>
+                            <p>Database is a shared resources here, and by using singleton pattern, we have better control over the database operations.</p>
+                          </div>
+                        </question>
+                      </morph>
+                    </panel>
                   </div>
-                </question>
-              </morph>
+                </panel>
+                <panel header=":pencil: Apply your knowledge" expandable="" type="seamless">
+                  <div>
+                    <ul>
+                      <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> Do the exercise given in <a href="https://github.com/se-edu/addressbook-level4/blob/master/docs/LearningOutcomes.md#apply-design-patterns-lo-designpatterns">SE-EDU: Addressbook Level 4: Apply Design Patterns</a></li>
+                    </ul>
+                  </div>
+                </panel>
+                <panel header=":package: Resources" expandable="" type="seamless">
+                  <div>
+                    <ul>
+                      <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> GoF Book</li>
+                      <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0030-20e3.png"> Resource 2</li>
+                      <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"> Resrouce 3</li>
+                    </ul>
+                  </div>
+                </panel>
+                <panel header=":laughing: Humor" expandable="" type="seamless">
+                  <div><img src="http://www.topswagcode.com/content/images/2016/02/developer-patterns.jpg" width="250"></div>
+                </panel>
+              </panel>
               <tooltip id="pop:client-code">
                 <div slot="content">
                   <div>
@@ -252,23 +276,22 @@
                     <h4 id="problem-2">Problem</h4>
                     <p>Normally, any client can instantiate a class by calling the constructor. This means we can end up with multiple instances of the class in concern.</p>
                     <h4 id="solution-2">Solution</h4>
-                    <div v-closeable="" alt="code examples">
-                      <tabs>
-                        <tab header=":ab:">
-                          <p>Make the <em>constructor</em> of the singleton class <code>private</code>. Provide a <code>public</code> method to access the <em>singleton</em> instance.</p><img class="center-block" src="/site-demo-cs2103/book/se-pattern/singleton/solution.png">
-                          <p>As shown, the solution makes the constructor private (note the “-“ visibility marker for the constructor), which prevents instantiation from outside the class. The single instance of the singleton class is maintained by a private
-                            class-level variable. Access to this object is provided by a public class-level operation <code>getInstance()</code>. In the skeleton code above, <code>getInstance()</code> instantiates a single copy of the singleton class
-                            when it is executed for the first time. Subsequent calls to this operation return the single instance of the class.</p>
-                        </tab>
-                        <tab header=":symbols:">
-                          <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212070&authkey=&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen=""
-                              mozallowfullscreen="" allowfullscreen></iframe></div>
-                        </tab>
-                      </tabs>
-                      <h4 id="code-example-2">Code Example</h4>
-                      <tabs>
-                        <tab header="Java">
-                          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassicSingleton</span> </span>{
+                    <tabs>
+                      <tab header=":ab:">
+                        <p>Make the <em>constructor</em> of the singleton class <code>private</code>. Provide a <code>public</code> method to access the <em>singleton</em> instance.</p><img class="center-block" src="/site-demo-cs2103/book/se-pattern/singleton/solution.png">
+                        <p>As shown, the solution makes the constructor private (note the “-“ visibility marker for the constructor), which prevents instantiation from outside the class. The single instance of the singleton class is maintained by a private
+                          class-level variable. Access to this object is provided by a public class-level operation <code>getInstance()</code>. In the skeleton code above, <code>getInstance()</code> instantiates a single copy of the singleton class when
+                          it is executed for the first time. Subsequent calls to this operation return the single instance of the class.</p>
+                      </tab>
+                      <tab header=":symbols:">
+                        <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212070&authkey=&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen=""
+                            mozallowfullscreen="" allowfullscreen></iframe></div>
+                      </tab>
+                    </tabs>
+                    <h4 id="code-example-2">Code Example</h4>
+                    <tabs>
+                      <tab header="Java">
+                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassicSingleton</span> </span>{
    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> ClassicSingleton instance = <span class="hljs-keyword">null</span>;
    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">ClassicSingleton</span><span class="hljs-params">()</span> </span>{
       <span class="hljs-comment">// Exists only to defeat instantiation.</span>
@@ -281,9 +304,9 @@
    }
 }
 </code></pre>
-                        </tab>
-                        <tab header="C++">
-                          <pre><code class="hljs c++"><span class="hljs-keyword">class</span> GlobalClass
+                      </tab>
+                      <tab header="C++">
+                        <pre><code class="hljs c++"><span class="hljs-keyword">class</span> GlobalClass
 {
     <span class="hljs-keyword">int</span> m_value;
     <span class="hljs-keyword">static</span> GlobalClass *s_instance;
@@ -308,28 +331,53 @@
     }
 };
 </code></pre>
-                        </tab>
-                      </tabs>
-                    </div>
-                    <h4 id="exercise-2">Exercise</h4>
-                    <morph title="Question 1">
-                      <question>
-                        <p>Which of the following is an ideal situation for using Singleton pattern?</p>
-                        <ul radio-group="bkta6" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="bkta6" type="radio"> Utility methods used by many class in the application.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="bkta6" type="radio"> A database manager shared by different component of the application.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="bkta6" type="radio"> A constant String defined in every controller.</label></li>
-                        </ul>
-                        <div slot="answer">
-                          <ul radio-group="uao5c" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="uao5c" type="radio"> Utility methods used by many class in the application.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" checked name="uao5c" type="radio"> Database manager shared by different component of the application.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="uao5c" type="radio"> A constant String defined in every controller.</label></li>
-                          </ul>
-                          <p>Database is a shared resources here, and by using singleton pattern, we have better control over the database operations.</p>
+                      </tab>
+                    </tabs>
+                    <panel header=":paperclip: Extras" expandable="" type="seamless">
+                      <panel header=":mortar_board: Learning Outcomes" expandable="" type="seamless">
+                        <div>
+                          <panel header=":one: Able to explain the singleton pattern" expandable="">
+                            <morph title="Question 1">
+                              <question>
+                                <p>Which of the following is an ideal situation for using Singleton pattern?</p>
+                                <ul radio-group="jk34n" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="jk34n" type="radio"> Utility methods used by many class in the application.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="jk34n" type="radio"> A database manager shared by different component of the application.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="jk34n" type="radio"> A constant String defined in every controller.</label></li>
+                                </ul>
+                                <div slot="answer">
+                                  <ul radio-group="a7xqt" class="radio-list">
+                                    <li class="radio-list-item"><label><input class="radio-list-input" name="a7xqt" type="radio"> Utility methods used by many class in the application.</label></li>
+                                    <li class="radio-list-item"><label><input class="radio-list-input" checked name="a7xqt" type="radio"> Database manager shared by different component of the application.</label></li>
+                                    <li class="radio-list-item"><label><input class="radio-list-input" name="a7xqt" type="radio"> A constant String defined in every controller.</label></li>
+                                  </ul>
+                                  <p>Database is a shared resources here, and by using singleton pattern, we have better control over the database operations.</p>
+                                </div>
+                              </question>
+                            </morph>
+                          </panel>
                         </div>
-                      </question>
-                    </morph>
+                      </panel>
+                      <panel header=":pencil: Apply your knowledge" expandable="" type="seamless">
+                        <div>
+                          <ul>
+                            <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> Do the exercise given in <a href="https://github.com/se-edu/addressbook-level4/blob/master/docs/LearningOutcomes.md#apply-design-patterns-lo-designpatterns">SE-EDU: Addressbook Level 4: Apply Design Patterns</a></li>
+                          </ul>
+                        </div>
+                      </panel>
+                      <panel header=":package: Resources" expandable="" type="seamless">
+                        <div>
+                          <ul>
+                            <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> GoF Book</li>
+                            <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0030-20e3.png"> Resource 2</li>
+                            <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"> Resrouce 3</li>
+                          </ul>
+                        </div>
+                      </panel>
+                      <panel header=":laughing: Humor" expandable="" type="seamless">
+                        <div><img src="http://www.topswagcode.com/content/images/2016/02/developer-patterns.jpg" width="250"></div>
+                      </panel>
+                    </panel>
                     <tooltip id="pop:client-code">
                       <div slot="content">
                         <div>
@@ -380,23 +428,22 @@
           <h4 id="problem-3">Problem</h4>
           <p>Normally, any client can instantiate a class by calling the constructor. This means we can end up with multiple instances of the class in concern.</p>
           <h4 id="solution-3">Solution</h4>
-          <div v-closeable="" alt="code examples">
-            <tabs>
-              <tab header=":ab:">
-                <p>Make the <em>constructor</em> of the singleton class <code>private</code>. Provide a <code>public</code> method to access the <em>singleton</em> instance.</p><img class="center-block" src="/site-demo-cs2103/book/se-pattern/singleton/solution.png">
-                <p>As shown, the solution makes the constructor private (note the “-“ visibility marker for the constructor), which prevents instantiation from outside the class. The single instance of the singleton class is maintained by a private class-level
-                  variable. Access to this object is provided by a public class-level operation <code>getInstance()</code>. In the skeleton code above, <code>getInstance()</code> instantiates a single copy of the singleton class when it is executed for
-                  the first time. Subsequent calls to this operation return the single instance of the class.</p>
-              </tab>
-              <tab header=":symbols:">
-                <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212070&authkey=&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen=""
-                    mozallowfullscreen="" allowfullscreen></iframe></div>
-              </tab>
-            </tabs>
-            <h4 id="code-example-3">Code Example</h4>
-            <tabs>
-              <tab header="Java">
-                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassicSingleton</span> </span>{
+          <tabs>
+            <tab header=":ab:">
+              <p>Make the <em>constructor</em> of the singleton class <code>private</code>. Provide a <code>public</code> method to access the <em>singleton</em> instance.</p><img class="center-block" src="/site-demo-cs2103/book/se-pattern/singleton/solution.png">
+              <p>As shown, the solution makes the constructor private (note the “-“ visibility marker for the constructor), which prevents instantiation from outside the class. The single instance of the singleton class is maintained by a private class-level
+                variable. Access to this object is provided by a public class-level operation <code>getInstance()</code>. In the skeleton code above, <code>getInstance()</code> instantiates a single copy of the singleton class when it is executed for
+                the first time. Subsequent calls to this operation return the single instance of the class.</p>
+            </tab>
+            <tab header=":symbols:">
+              <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212070&authkey=&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen="" mozallowfullscreen=""
+                  allowfullscreen></iframe></div>
+            </tab>
+          </tabs>
+          <h4 id="code-example-3">Code Example</h4>
+          <tabs>
+            <tab header="Java">
+              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassicSingleton</span> </span>{
    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> ClassicSingleton instance = <span class="hljs-keyword">null</span>;
    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">ClassicSingleton</span><span class="hljs-params">()</span> </span>{
       <span class="hljs-comment">// Exists only to defeat instantiation.</span>
@@ -409,9 +456,9 @@
    }
 }
 </code></pre>
-              </tab>
-              <tab header="C++">
-                <pre><code class="hljs c++"><span class="hljs-keyword">class</span> GlobalClass
+            </tab>
+            <tab header="C++">
+              <pre><code class="hljs c++"><span class="hljs-keyword">class</span> GlobalClass
 {
     <span class="hljs-keyword">int</span> m_value;
     <span class="hljs-keyword">static</span> GlobalClass *s_instance;
@@ -436,28 +483,53 @@
     }
 };
 </code></pre>
-              </tab>
-            </tabs>
-          </div>
-          <h4 id="exercise-3">Exercise</h4>
-          <morph title="Question 1">
-            <question>
-              <p>Which of the following is an ideal situation for using Singleton pattern?</p>
-              <ul radio-group="y5p1k" class="radio-list">
-                <li class="radio-list-item"><label><input class="radio-list-input" name="y5p1k" type="radio"> Utility methods used by many class in the application.</label></li>
-                <li class="radio-list-item"><label><input class="radio-list-input" name="y5p1k" type="radio"> A database manager shared by different component of the application.</label></li>
-                <li class="radio-list-item"><label><input class="radio-list-input" name="y5p1k" type="radio"> A constant String defined in every controller.</label></li>
-              </ul>
-              <div slot="answer">
-                <ul radio-group="srjei" class="radio-list">
-                  <li class="radio-list-item"><label><input class="radio-list-input" name="srjei" type="radio"> Utility methods used by many class in the application.</label></li>
-                  <li class="radio-list-item"><label><input class="radio-list-input" checked name="srjei" type="radio"> Database manager shared by different component of the application.</label></li>
-                  <li class="radio-list-item"><label><input class="radio-list-input" name="srjei" type="radio"> A constant String defined in every controller.</label></li>
-                </ul>
-                <p>Database is a shared resources here, and by using singleton pattern, we have better control over the database operations.</p>
+            </tab>
+          </tabs>
+          <panel header=":paperclip: Extras" expandable="" type="seamless">
+            <panel header=":mortar_board: Learning Outcomes" expandable="" type="seamless">
+              <div>
+                <panel header=":one: Able to explain the singleton pattern" expandable="">
+                  <morph title="Question 1">
+                    <question>
+                      <p>Which of the following is an ideal situation for using Singleton pattern?</p>
+                      <ul radio-group="9p0sh" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="9p0sh" type="radio"> Utility methods used by many class in the application.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="9p0sh" type="radio"> A database manager shared by different component of the application.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="9p0sh" type="radio"> A constant String defined in every controller.</label></li>
+                      </ul>
+                      <div slot="answer">
+                        <ul radio-group="2borb" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="2borb" type="radio"> Utility methods used by many class in the application.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="2borb" type="radio"> Database manager shared by different component of the application.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="2borb" type="radio"> A constant String defined in every controller.</label></li>
+                        </ul>
+                        <p>Database is a shared resources here, and by using singleton pattern, we have better control over the database operations.</p>
+                      </div>
+                    </question>
+                  </morph>
+                </panel>
               </div>
-            </question>
-          </morph>
+            </panel>
+            <panel header=":pencil: Apply your knowledge" expandable="" type="seamless">
+              <div>
+                <ul>
+                  <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> Do the exercise given in <a href="https://github.com/se-edu/addressbook-level4/blob/master/docs/LearningOutcomes.md#apply-design-patterns-lo-designpatterns">SE-EDU: Addressbook Level 4: Apply Design Patterns</a></li>
+                </ul>
+              </div>
+            </panel>
+            <panel header=":package: Resources" expandable="" type="seamless">
+              <div>
+                <ul>
+                  <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> GoF Book</li>
+                  <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0030-20e3.png"> Resource 2</li>
+                  <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"> Resrouce 3</li>
+                </ul>
+              </div>
+            </panel>
+            <panel header=":laughing: Humor" expandable="" type="seamless">
+              <div><img src="http://www.topswagcode.com/content/images/2016/02/developer-patterns.jpg" width="250"></div>
+            </panel>
+          </panel>
           <tooltip id="pop:client-code">
             <div slot="content">
               <div>
@@ -588,7 +660,7 @@
           </tab>
           <tab header="C++"></tab>
         </tabs>
-        <h4 id="exercise-4">Exercise</h4>
+        <h4 id="exercise">Exercise</h4>
         <morph title="Question 1">
           <question has-input="">
             <p>Study the Memento pattern yourself, and compare it with Command pattern.</p>
@@ -749,7 +821,7 @@ studentList.addUi(statusUi)<span class="hljs-comment">;</span>
             <p></p>
           </tab>
         </tabs>
-        <h4 id="exercise-5">Exercise</h4>
+        <h4 id="exercise-2">Exercise</h4>
         <morph title="Question 1">
           <question has-input="">
             <p>What is the resulted Java class for the following relationship model using abstraction occurrence pattern?</p>
