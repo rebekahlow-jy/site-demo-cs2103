@@ -9,10 +9,13 @@
 #### Context
 Creating more than one instance of a certain class is undesirable due to some reason <morph title="Examples"> * Example 1 * Example 2 </morph>. If multiple <trigger for="pop:client-code">clients</trigger> need to interact with an instance of the said class, they should share the same single instance. Such a single instance is commonly known as a *singleton*.
 
+<div class="clearfix">
 
 #### Problem
+
 Normally, any client can instantiate a class by calling the constructor. This means we can end up with multiple instances of the class in concern.
 
+</div>
 
 #### Solution
 
