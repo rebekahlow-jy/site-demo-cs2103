@@ -7,7 +7,7 @@
 </div>
 
 #### Context
-Creating more than one instance of a certain class is undesirable due to some reason <morph title="Examples"> * Example 1 * Example 2 </morph>. If multiple <trigger for="pop:client-code">clients</trigger> need to interact with an instance of the said class, they should share the same single instance. Such a single instance is commonly known as a *singleton*.
+Creating more than one instance of a certain class is undesirable due to some reasons. If multiple <trigger for="pop:client-code">clients</trigger> need to interact with an instance of the said class, they should share the same single instance. Such a single instance is commonly known as a *singleton*.
 
 <div class="clearfix">
 
@@ -90,28 +90,6 @@ class GlobalClass
 </tab>
 </tabs>
 </div>
-
-<!-- extras ------------------------------------------------------------------------------------ -->
-
-<panel header=":paperclip: Extras" expandable type="seamless">
-
-  <panel header=":mortar_board: Learning Outcomes" expandable type="seamless">
-    <include src="Outcomes.md" />
-  </panel>
-
-  <panel header=":pencil: Apply your knowledge" expandable type="seamless">
-    <include src="Apply.md" />
-  </panel>
-
-  <panel header=":package: Resources" expandable type="seamless">
-    <include src="Resources.md" />
-  </panel>
-
-  <panel header=":laughing: Humor" expandable type="seamless">
-    <include src="Humor.md" />
-  </panel>
-
-</panel>
 
 <!-- additional info ------------------------------------------------------------------------------------ -->
 
