@@ -1,3 +1,11 @@
+<link rel="stylesheet" href="{{baseUrl}}/css/main.css">
+<link rel="stylesheet" href="{{baseUrl}}/css/textbook.css">
+
+<include src="../../../common/header.md" />
+
+<div class="website-content">
+<div id="main">
+
 ### Singleton Pattern :one:
 
 <div class="pull-right" v-closeable alt="Read lecture slides online">
@@ -120,3 +128,6 @@ class GlobalClass
     <include src="../../common/Definitions.md#def-client-code" />
   </div>
 </tooltip>
+
+</div>
+</div>

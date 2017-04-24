@@ -1,10 +1,22 @@
-<link rel="stylesheet" href="{{baseUrl}}/css/main.css">
-<link rel="stylesheet" href="{{baseUrl}}/css/textbook.css">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS2103/T Textbook - Singleton Pattern</title>
+    <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\..\markbind\css\github.min.css">
+</head>
+<body>
+<div id="app" class="container-fluid">
+    <link rel="stylesheet" href="/site-demo-cs2103//css/main.css">
+<link rel="stylesheet" href="/site-demo-cs2103//css/textbook.css">
 <div>
   <navbar placement="top" type="default"><a slot="brand" href="index.html" title="Home" class="navbar-brand">CS2103/T</a>
-    <li><a href="{{baseUrl}}index.html">Schedule</a></li>
-    <li><a href="{{baseUrl}}textbook.html">Textbook</a></li>
-    <li><a href="{{baseUrl}}handbook.html">Handbook</a></li>
+    <li><a href="/site-demo-cs2103/index.html">Schedule</a></li>
+    <li><a href="/site-demo-cs2103/textbook.html">Textbook</a></li>
+    <li><a href="/site-demo-cs2103/handbook.html">Handbook</a></li>
   </navbar>
 </div>
 <div class="website-content">
@@ -23,7 +35,7 @@
       <h4 id="solution">Solution</h4>
       <tabs>
         <tab header=":ab:">
-          <p>Make the <em>constructor</em> of the singleton class <code>private</code>. Provide a <code>public</code> method to access the <em>singleton</em> instance.</p><img class="center-block" src="{{baseUrl}}book/se-pattern/singleton/solution.png">
+          <p>Make the <em>constructor</em> of the singleton class <code>private</code>. Provide a <code>public</code> method to access the <em>singleton</em> instance.</p><img class="center-block" src="/site-demo-cs2103/book/se-pattern/singleton/solution.png">
           <p>As shown, the solution makes the constructor private (note the “-“ visibility marker for the constructor), which prevents instantiation from outside the class. The single instance of the singleton class is maintained by a private class-level
             variable. Access to this object is provided by a public class-level operation <code>getInstance()</code>. In the skeleton code above, <code>getInstance()</code> instantiates a single copy of the singleton class when it is executed for the
             first time. Subsequent calls to this operation return the single instance of the class.</p>
@@ -86,16 +98,16 @@
           <morph title="Question 1">
             <question>
               <p>Which of the following is an ideal situation for using Singleton pattern?</p>
-              <ul radio-group="ntzbj" class="radio-list">
-                <li class="radio-list-item"><label><input class="radio-list-input" name="ntzbj" type="radio"> Utility methods used by many class in the application.</label></li>
-                <li class="radio-list-item"><label><input class="radio-list-input" name="ntzbj" type="radio"> A database manager shared by different component of the application.</label></li>
-                <li class="radio-list-item"><label><input class="radio-list-input" name="ntzbj" type="radio"> A constant String defined in every controller.</label></li>
+              <ul radio-group="r1r5w" class="radio-list">
+                <li class="radio-list-item"><label><input class="radio-list-input" name="r1r5w" type="radio"> Utility methods used by many class in the application.</label></li>
+                <li class="radio-list-item"><label><input class="radio-list-input" name="r1r5w" type="radio"> A database manager shared by different component of the application.</label></li>
+                <li class="radio-list-item"><label><input class="radio-list-input" name="r1r5w" type="radio"> A constant String defined in every controller.</label></li>
               </ul>
               <div slot="answer">
-                <ul radio-group="zx9fj" class="radio-list">
-                  <li class="radio-list-item"><label><input class="radio-list-input" name="zx9fj" type="radio"> Utility methods used by many class in the application.</label></li>
-                  <li class="radio-list-item"><label><input class="radio-list-input" checked name="zx9fj" type="radio"> Database manager shared by different component of the application.</label></li>
-                  <li class="radio-list-item"><label><input class="radio-list-input" name="zx9fj" type="radio"> A constant String defined in every controller.</label></li>
+                <ul radio-group="thmd6" class="radio-list">
+                  <li class="radio-list-item"><label><input class="radio-list-input" name="thmd6" type="radio"> Utility methods used by many class in the application.</label></li>
+                  <li class="radio-list-item"><label><input class="radio-list-input" checked name="thmd6" type="radio"> Database manager shared by different component of the application.</label></li>
+                  <li class="radio-list-item"><label><input class="radio-list-input" name="thmd6" type="radio"> A constant String defined in every controller.</label></li>
                 </ul>
                 <p>Database is a shared resources here, and by using singleton pattern, we have better control over the database operations.</p>
               </div>
@@ -132,3 +144,9 @@
     </div>
   </tooltip>
 </div>
+</div>
+</body>
+<script src="..\..\..\markbind\js\vue.min.js"></script>
+<script src="..\..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\..\markbind\js\setup.js"></script>
+</html>

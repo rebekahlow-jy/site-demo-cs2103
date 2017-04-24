@@ -31,7 +31,7 @@
 %%There are many design patterns. Given below are some better known ones.%%
 
 <Panel header="**Singleton pattern** :one:" expandable type="seamless">
-  <include src="singleton/index.md" /><hr>
+  <include src="singleton/index.md#main" /><hr>
 </Panel>
 <Panel header="**Façade pattern** :one:" expandable type="seamless">
   <include src="facade/index.md" />
