@@ -26,6 +26,10 @@
       "title": "CS2103/T Textbook - Design Patterns"
     },
     {
+      "src": "book/se-pattern/singleton/index.md",
+      "title": "CS2103/T Textbook - Singleton Pattern"
+    },
+    {
       "src": "book/common/Definitions.md",
       "title": "CS2103/T Textbook - Definitions"
     }
