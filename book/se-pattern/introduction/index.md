@@ -7,7 +7,7 @@
 <panel header="Some examples of recurring design problems :zero:" type="seamless" expandable>
 
 * An example problem about software architecture: what is the best <trigger for="pop:architecture">architecture</trigger> for a given type of system?
-* An example problem about the interaction between classes: how to lower the 
+* An example problem about the interaction between classes: how to lower the
   <trigger for="tt:coupling">coupling</trigger> between  `UI` and `Logic` classes ?
 * <panel header="Some more examples :zero: " expandable type="seamless">
 
@@ -22,7 +22,7 @@
 </tip-box>
 
 <panel header="%%Above description is too abstract? Here is an illustrative example :zero:%%" expandable type="seamless">
-  <include src="../singleton/index.md" />
+  <include src="../singleton/index.md#main" />
 </panel><br/>
 
 <!-- extras ------------------------------------------------------------------------------------ -->
