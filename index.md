@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/schedule.css">
 
 <include src="common/header.md" />
 

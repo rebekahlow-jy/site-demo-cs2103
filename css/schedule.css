@@ -1,0 +1,112 @@
+
+/* Lecture structure */
+.padded-borderless > tbody > tr > td {
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+.lecture-content-table {
+    width: 100%;
+}
+
+.lecture-content-table > tbody > tr > td:nth-child(1) {
+    width: 200px;
+}
+
+.lecture-content-table > tbody > tr > td:nth-child(1) > img {
+    width: 175px;
+}
+
+.lecture-content-table > tbody > tr > td:nth-child(2) {
+    vertical-align: initial;
+    text-align: left;
+}
+
+table.two-column-content {
+    border-collapse: collapse;
+}
+
+table.two-column-content td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+/* Schedule entry panel header */
+.panel.overview > .panel-heading {
+    border-color:#dfdfdf;
+    background-color:#dfdfdf;
+}
+.panel.overview > .panel-collapse > .panel-body {
+    background-color:#dfdfdf;
+}
+
+/* todo panel header */
+.panel.todo > .panel-heading {
+    color: #31708f;
+    background-color:#d9edf7;
+    border-color:#d9edf7;
+}
+.panel.todo > .panel-collapse > .panel-body {
+    background-color:#d9edf7;
+}
+
+/* lecture item's header */
+.panel.todo .panel.item > .panel-heading {
+    background-color: #5bc0de;
+    color: #fff;
+}
+
+/* lecture panel header */
+.panel.lecture > .panel-heading {
+    background-color: #fcf8e3;
+    border-color: #fcf8e3;
+    color: #8a6d3b;
+}
+.panel.lecture > .panel-collapse > .panel-body {
+    background-color: #fcf8e3;
+}
+
+/* lecture item's header */
+.panel.lecture .panel.item > .panel-heading {
+    background-color: #f0ad4e;
+    color: #fff;
+}
+
+/* tutorial panel header */
+.panel.tutorial > .panel-heading {
+    background-color: #dff0d8;
+    border-color: #dff0d8;
+    color: #3c763d;
+}
+.panel.tutorial > .panel-collapse > .panel-body {
+    background-color: #dff0d8;
+}
+
+/* tutorial item's header */
+.panel.tutorial .panel.item > .panel-heading {
+    background-color: #5cb85c;
+    color: #fff;
+}
+
+/* activity panel header */
+.panel.activity > .panel-heading {
+    background-color: #c9daf8;
+    border-color: #c9daf8;
+    color: #31708f;
+}
+.panel.activity > .panel-collapse > .panel-body {
+    background-color: #c9daf8;
+}
+
+/* activity item's header */
+.panel.activity .panel.item >.panel-heading {
+    background-color: #337ab7;
+    color: #fff;
+}
+
+/* book panel header */
+.book.panel > .panel-heading {
+    background-color: #7A629B!important;
+    border-color: #7A629B!important;;
+    color: #ffffff!important;;
+}
