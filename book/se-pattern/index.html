@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CS2103/T Textbook - Design Patterns</title>
-    <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
-    <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../markbind/css/github.min.css">
 </head>
 <body>
 <div id="app" class="container-fluid">
@@ -22,7 +22,7 @@
 <div class="website-content">
   <h1 id="software-design-patterns">Software Design Patterns</h1>
   <div v-closeable="" alt="definition">
-    <panel header="**What are _Software Design Patterns_?** :one:" expandable="" type="seamless">
+    <panel header="**What are _Software Design Patterns_?** :one:" type="seamless">
       <div>
         <h2 id="what-is-a-design-pattern-one">What is a design pattern? <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h2>
         <h4 id="some-software-design-problems-crop-up-repeatedly-after-repeated-attempts-at-solving-such-design-problems-better-solutions-are-discovered-and-refined-over-time-these-solutions-are-collectively-known-as-design-patterns-a-term-popularized-by-the-seminal-gang-of-four-book">Some software design problems crop up repeatedly. After repeated attempts at solving such design problems, better solutions are discovered and refined over time. These solutions are collectively known as <em>design patterns</em>, a term popularized
@@ -58,44 +58,34 @@
         </tip-box>
         <panel header="%%Above description is too abstract? Here is an illustrative example :zero:%%" expandable="" type="seamless">
           <div>
-            <link rel="stylesheet" href="/site-demo-cs2103//css/main.css">
-            <link rel="stylesheet" href="/site-demo-cs2103//css/textbook.css">
-            <div>
-              <navbar placement="top" type="default"><a slot="brand" href="index.html" title="Home" class="navbar-brand">CS2103/T</a>
-                <li><a href="/site-demo-cs2103/index.html">Schedule</a></li>
-                <li><a href="/site-demo-cs2103/textbook.html">Textbook</a></li>
-                <li><a href="/site-demo-cs2103/handbook.html">Handbook</a></li>
-              </navbar>
-            </div>
-            <div class="website-content" id="main">
-              <h3 id="singleton-pattern-one">Singleton Pattern <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h3>
-              <div class="pull-right" v-closeable="" alt="Read lecture slides online"><iframe src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212074&authkey=&em=2&wdAr=1.3333333333333333" width="350px" height="286px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe></div>
-              <h4
-                id="context">Context</h4>
-                <p>Creating more than one instance of a certain class is undesirable due to some reason
-                  <morph title="Examples"> * Example 1 * Example 2 </morph>. If multiple
-                  <trigger for="pop:client-code">clients</trigger> need to interact with an instance of the said class, they should share the same single instance. Such a single instance is commonly known as a <em>singleton</em>.</p>
-                <div class="clearfix">
-                  <h4 id="problem">Problem</h4>
-                  <p>Normally, any client can instantiate a class by calling the constructor. This means we can end up with multiple instances of the class in concern.</p>
-                </div>
-                <h4 id="solution">Solution</h4>
-                <tabs>
-                  <tab header=":ab:">
-                    <p>Make the <em>constructor</em> of the singleton class <code>private</code>. Provide a <code>public</code> method to access the <em>singleton</em> instance.</p><img class="center-block" src="/site-demo-cs2103/book/se-pattern/singleton/solution.png">
-                    <p>As shown, the solution makes the constructor private (note the “-“ visibility marker for the constructor), which prevents instantiation from outside the class. The single instance of the singleton class is maintained by a private class-level
-                      variable. Access to this object is provided by a public class-level operation <code>getInstance()</code>. In the skeleton code above, <code>getInstance()</code> instantiates a single copy of the singleton class when it is executed
-                      for the first time. Subsequent calls to this operation return the single instance of the class.</p>
-                  </tab>
-                  <tab header=":symbols:">
-                    <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212070&authkey=&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen=""
-                        mozallowfullscreen="" allowfullscreen></iframe></div>
-                  </tab>
-                </tabs>
-                <h4 id="code-example">Code Example</h4>
-                <tabs>
-                  <tab header="Java">
-                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassicSingleton</span> </span>{
+            <h3 id="singleton-pattern-one">Singleton Pattern <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h3>
+            <div class="pull-right" v-closeable="" alt="Read lecture slides online"><iframe src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212074&authkey=&em=2&wdAr=1.3333333333333333" width="350px" height="286px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe></div>
+            <h4
+              id="context">Context</h4>
+              <p>Creating more than one instance of a certain class is undesirable due to some reason
+                <morph title="Examples"> * Example 1 * Example 2 </morph>. If multiple
+                <trigger for="pop:client-code">clients</trigger> need to interact with an instance of the said class, they should share the same single instance. Such a single instance is commonly known as a <em>singleton</em>.</p>
+              <div class="clearfix">
+                <h4 id="problem">Problem</h4>
+                <p>Normally, any client can instantiate a class by calling the constructor. This means we can end up with multiple instances of the class in concern.</p>
+              </div>
+              <h4 id="solution">Solution</h4>
+              <tabs>
+                <tab header=":ab:">
+                  <p>Make the <em>constructor</em> of the singleton class <code>private</code>. Provide a <code>public</code> method to access the <em>singleton</em> instance.</p><img class="center-block" src="/site-demo-cs2103/book/se-pattern/singleton/solution.png">
+                  <p>As shown, the solution makes the constructor private (note the “-“ visibility marker for the constructor), which prevents instantiation from outside the class. The single instance of the singleton class is maintained by a private class-level
+                    variable. Access to this object is provided by a public class-level operation <code>getInstance()</code>. In the skeleton code above, <code>getInstance()</code> instantiates a single copy of the singleton class when it is executed
+                    for the first time. Subsequent calls to this operation return the single instance of the class.</p>
+                </tab>
+                <tab header=":symbols:">
+                  <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212070&authkey=&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen=""
+                      mozallowfullscreen="" allowfullscreen></iframe></div>
+                </tab>
+              </tabs>
+              <h4 id="code-example">Code Example</h4>
+              <tabs>
+                <tab header="Java">
+                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassicSingleton</span> </span>{
    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> ClassicSingleton instance = <span class="hljs-keyword">null</span>;
    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">ClassicSingleton</span><span class="hljs-params">()</span> </span>{
       <span class="hljs-comment">// Exists only to defeat instantiation.</span>
@@ -108,10 +98,10 @@
    }
 }
 </code></pre>
-                  </tab>
-                  <tab header="C++">
-                    <pre><code class="hljs c++"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GlobalClass</span>
-{</span>
+                </tab>
+                <tab header="C++">
+                  <pre><code class="hljs c++"><span class="hljs-keyword">class</span> GlobalClass
+{
     <span class="hljs-keyword">int</span> m_value;
     <span class="hljs-keyword">static</span> GlobalClass *s_instance;
     GlobalClass(<span class="hljs-keyword">int</span> v = <span class="hljs-number">0</span>)
@@ -135,85 +125,84 @@
     }
 };
 </code></pre>
-                  </tab>
-                </tabs>
-                <panel header=":paperclip: Extras" expandable="" type="seamless">
-                  <panel header=":mortar_board: Learning Outcomes" expandable="" type="seamless">
-                    <div>
-                      <panel header=":one: Able to explain the singleton pattern" expandable="">
-                        <morph title="Question 1">
-                          <question>
-                            <p>Which of the following is an ideal situation for using Singleton pattern?</p>
-                            <ul radio-group="m3xv5" class="radio-list">
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="m3xv5" type="radio"> Utility methods used by many class in the application.</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="m3xv5" type="radio"> A database manager shared by different component of the application.</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="m3xv5" type="radio"> A constant String defined in every controller.</label></li>
+                </tab>
+              </tabs>
+              <panel header=":paperclip: Extras" expandable="" type="seamless">
+                <panel header=":mortar_board: Learning Outcomes" expandable="" type="seamless">
+                  <div>
+                    <panel header=":one: Able to explain the singleton pattern" expandable="">
+                      <panel header="Question 1" minimized="">
+                        <question>
+                          <p>Which of the following is an ideal situation for using Singleton pattern?</p>
+                          <ul radio-group="wmaur" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="wmaur" type="radio"> Utility methods used by many class in the application.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="wmaur" type="radio"> A database manager shared by different component of the application.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="wmaur" type="radio"> A constant String defined in every controller.</label></li>
+                          </ul>
+                          <div slot="answer">
+                            <ul radio-group="txy4e" class="radio-list">
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="txy4e" type="radio"> Utility methods used by many class in the application.</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" checked name="txy4e" type="radio"> Database manager shared by different component of the application.</label></li>
+                              <li class="radio-list-item"><label><input class="radio-list-input" name="txy4e" type="radio"> A constant String defined in every controller.</label></li>
                             </ul>
-                            <div slot="answer">
-                              <ul radio-group="xo0m8" class="radio-list">
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="xo0m8" type="radio"> Utility methods used by many class in the application.</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" checked name="xo0m8" type="radio"> Database manager shared by different component of the application.</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="xo0m8" type="radio"> A constant String defined in every controller.</label></li>
-                              </ul>
-                              <p>Database is a shared resources here, and by using singleton pattern, we have better control over the database operations.</p>
-                            </div>
-                          </question>
-                        </morph>
+                            <p>Database is a shared resources here, and by using singleton pattern, we have better control over the database operations.</p>
+                          </div>
+                        </question>
                       </panel>
-                    </div>
-                  </panel>
-                  <panel header=":pencil: Apply your knowledge" expandable="" type="seamless">
-                    <div>
-                      <ul>
-                        <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> Do the exercise given in <a href="https://github.com/se-edu/addressbook-level4/blob/master/docs/LearningOutcomes.md#apply-design-patterns-lo-designpatterns">SE-EDU: Addressbook Level 4: Apply Design Patterns</a></li>
-                      </ul>
-                    </div>
-                  </panel>
-                  <panel header=":package: Resources" expandable="" type="seamless">
-                    <div>
-                      <ul>
-                        <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> GoF Book</li>
-                        <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0030-20e3.png"> Resource 2</li>
-                        <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"> Resrouce 3</li>
-                      </ul>
-                    </div>
-                  </panel>
-                  <panel header=":laughing: Humor" expandable="" type="seamless">
-                    <div><img src="http://www.topswagcode.com/content/images/2016/02/developer-patterns.jpg" width="250"></div>
-                  </panel>
-                </panel>
-                <tooltip id="pop:client-code">
-                  <div slot="content">
-                    <div>
-                      <p><strong>Client component/method/object</strong>: The component/method/object that is interacting with a given code.</p>
-                    </div>
+                    </panel>
                   </div>
-                </tooltip>
-            </div>
+                </panel>
+                <panel header=":pencil: Apply your knowledge" expandable="" type="seamless">
+                  <div>
+                    <ul>
+                      <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> Do the exercise given in <a href="https://github.com/se-edu/addressbook-level4/blob/master/docs/LearningOutcomes.md#apply-design-patterns-lo-designpatterns">SE-EDU: Addressbook Level 4: Apply Design Patterns</a></li>
+                    </ul>
+                  </div>
+                </panel>
+                <panel header=":package: Resources" expandable="" type="seamless">
+                  <div>
+                    <ul>
+                      <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> GoF Book</li>
+                      <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0030-20e3.png"> Resource 2</li>
+                      <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"> Resrouce 3</li>
+                    </ul>
+                  </div>
+                </panel>
+                <panel header=":laughing: Humor" expandable="" type="seamless">
+                  <div><img src="http://www.topswagcode.com/content/images/2016/02/developer-patterns.jpg" width="250"></div>
+                </panel>
+              </panel>
+              <tooltip id="pop:client-code">
+                <div slot="content">
+                  <div>
+                    <p><strong>Client component/method/object</strong>: The component/method/object that is interacting with a given code.</p>
+                  </div>
+                </div>
+              </tooltip>
           </div>
         </panel><br>
         <panel header=":paperclip: Extras" expandable="" type="seamless">
           <panel header=":mortar_board: Learning Outcomes" expandable="" type="seamless">
             <div>
-              <panel header=":one: Able to explain what is a design pattern" class="todo" expandable="">
+              <panel header=":one: Able to explain what is a design pattern" expandable="">
                 <div>
                   <p>❓ Definition of a <em>design pattern</em>
-                    <morph title="Q1  :one:" src="Q-Essay-WhatIsAPattern._include_.html"></morph>
-                    <morph title="Q1a :zero:" src="Q-Essay-WhatIsAPattern._include_.html"></morph>
-                    <morph title="Q1b :zero:" src="Q-Essay-WhatIsAPattern._include_.html"></morph><br> ❓ Attributes of a <em>design pattern</em>
-                    <morph title="Q2  :one: " src="Q-Tick-PatternAttributes._include_.html"></morph>
-                    <morph title="Q2a :zero: " src="Q-Tick-PatternAttributes._include_.html"></morph>
+                    <panel header="Q1  :one:" src="Q-Essay-WhatIsAPattern._include_.html" minimized=""></panel>
+                    <panel header="Q1a :zero:" src="Q-Essay-WhatIsAPattern._include_.html" minimized=""></panel>
+                    <panel header="Q1b :zero:" src="Q-Essay-WhatIsAPattern._include_.html" minimized=""></panel><br> ❓ Attributes of a <em>design pattern</em>
+                    <panel header="Q2  :one: " src="Q-Tick-PatternAttributes._include_.html" minimized=""></panel>
+                    <panel header="Q2a :zero: " src="Q-Tick-PatternAttributes._include_.html" minimized=""></panel>
                   </p>
                 </div>
               </panel>
               <panel header=":one: Able to describe distinguishing characteristics of a design pattern" expandable="">
                 <div>
                   <p>❓ Definition of a <em>design pattern</em>
-                    <morph title="Q1  :one:" src="Q-Essay-WhatIsAPattern._include_.html"></morph>
-                    <morph title="Q1a :zero:" src="Q-Essay-WhatIsAPattern._include_.html"></morph>
-                    <morph title="Q1b :zero:" src="Q-Essay-WhatIsAPattern._include_.html"></morph><br> ❓ Attributes of a <em>design pattern</em>
-                    <morph title="Q2  :one: " src="Q-Tick-PatternAttributes._include_.html"></morph>
-                    <morph title="Q2a :zero: " src="Q-Tick-PatternAttributes._include_.html"></morph>
+                    <panel header="Q1  :one:" src="Q-Essay-WhatIsAPattern._include_.html" minimized=""></panel>
+                    <panel header="Q1a :zero:" src="Q-Essay-WhatIsAPattern._include_.html" minimized=""></panel>
+                    <panel header="Q1b :zero:" src="Q-Essay-WhatIsAPattern._include_.html" minimized=""></panel><br> ❓ Attributes of a <em>design pattern</em>
+                    <panel header="Q2  :one: " src="Q-Tick-PatternAttributes._include_.html" minimized=""></panel>
+                    <panel header="Q2a :zero: " src="Q-Tick-PatternAttributes._include_.html" minimized=""></panel>
                   </p>
                 </div>
               </panel>
@@ -222,11 +211,11 @@
           <panel header=":bulb: Test your knowledge" expandable="" type="seamless">
             <div>
               <p>❓ Definition of a <em>design pattern</em>
-                <morph title="Q1  :one:" src="Q-Essay-WhatIsAPattern._include_.html"></morph>
-                <morph title="Q1a :zero:" src="Q-Essay-WhatIsAPattern._include_.html"></morph>
-                <morph title="Q1b :zero:" src="Q-Essay-WhatIsAPattern._include_.html"></morph><br> ❓ Attributes of a <em>design pattern</em>
-                <morph title="Q2  :one: " src="Q-Tick-PatternAttributes._include_.html"></morph>
-                <morph title="Q2a :zero: " src="Q-Tick-PatternAttributes._include_.html"></morph>
+                <panel header="Q1  :one:" src="Q-Essay-WhatIsAPattern._include_.html" minimized=""></panel>
+                <panel header="Q1a :zero:" src="Q-Essay-WhatIsAPattern._include_.html" minimized=""></panel>
+                <panel header="Q1b :zero:" src="Q-Essay-WhatIsAPattern._include_.html" minimized=""></panel><br> ❓ Attributes of a <em>design pattern</em>
+                <panel header="Q2  :one: " src="Q-Tick-PatternAttributes._include_.html" minimized=""></panel>
+                <panel header="Q2a :zero: " src="Q-Tick-PatternAttributes._include_.html" minimized=""></panel>
               </p>
             </div>
           </panel>
@@ -279,44 +268,34 @@
               <panel header="An example pattern from the book: Singleton :one: "
                 expandable="" type="seamless">
                 <div>
-                  <link rel="stylesheet" href="/site-demo-cs2103//css/main.css">
-                  <link rel="stylesheet" href="/site-demo-cs2103//css/textbook.css">
-                  <div>
-                    <navbar placement="top" type="default"><a slot="brand" href="index.html" title="Home" class="navbar-brand">CS2103/T</a>
-                      <li><a href="/site-demo-cs2103/index.html">Schedule</a></li>
-                      <li><a href="/site-demo-cs2103/textbook.html">Textbook</a></li>
-                      <li><a href="/site-demo-cs2103/handbook.html">Handbook</a></li>
-                    </navbar>
-                  </div>
-                  <div class="website-content" id="main">
-                    <h3 id="singleton-pattern-one-2">Singleton Pattern <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h3>
-                    <div class="pull-right" v-closeable="" alt="Read lecture slides online"><iframe src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212074&authkey=&em=2&wdAr=1.3333333333333333" width="350px" height="286px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe></div>
-                    <h4
-                      id="context-2">Context</h4>
-                      <p>Creating more than one instance of a certain class is undesirable due to some reason
-                        <morph title="Examples"> * Example 1 * Example 2 </morph>. If multiple
-                        <trigger for="pop:client-code">clients</trigger> need to interact with an instance of the said class, they should share the same single instance. Such a single instance is commonly known as a <em>singleton</em>.</p>
-                      <div class="clearfix">
-                        <h4 id="problem-2">Problem</h4>
-                        <p>Normally, any client can instantiate a class by calling the constructor. This means we can end up with multiple instances of the class in concern.</p>
-                      </div>
-                      <h4 id="solution-2">Solution</h4>
-                      <tabs>
-                        <tab header=":ab:">
-                          <p>Make the <em>constructor</em> of the singleton class <code>private</code>. Provide a <code>public</code> method to access the <em>singleton</em> instance.</p><img class="center-block" src="/site-demo-cs2103/book/se-pattern/singleton/solution.png">
-                          <p>As shown, the solution makes the constructor private (note the “-“ visibility marker for the constructor), which prevents instantiation from outside the class. The single instance of the singleton class is maintained by a private
-                            class-level variable. Access to this object is provided by a public class-level operation <code>getInstance()</code>. In the skeleton code above, <code>getInstance()</code> instantiates a single copy of the singleton class
-                            when it is executed for the first time. Subsequent calls to this operation return the single instance of the class.</p>
-                        </tab>
-                        <tab header=":symbols:">
-                          <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212070&authkey=&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen=""
-                              mozallowfullscreen="" allowfullscreen></iframe></div>
-                        </tab>
-                      </tabs>
-                      <h4 id="code-example-2">Code Example</h4>
-                      <tabs>
-                        <tab header="Java">
-                          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassicSingleton</span> </span>{
+                  <h3 id="singleton-pattern-one-2">Singleton Pattern <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h3>
+                  <div class="pull-right" v-closeable="" alt="Read lecture slides online"><iframe src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212074&authkey=&em=2&wdAr=1.3333333333333333" width="350px" height="286px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe></div>
+                  <h4
+                    id="context-2">Context</h4>
+                    <p>Creating more than one instance of a certain class is undesirable due to some reason
+                      <morph title="Examples"> * Example 1 * Example 2 </morph>. If multiple
+                      <trigger for="pop:client-code">clients</trigger> need to interact with an instance of the said class, they should share the same single instance. Such a single instance is commonly known as a <em>singleton</em>.</p>
+                    <div class="clearfix">
+                      <h4 id="problem-2">Problem</h4>
+                      <p>Normally, any client can instantiate a class by calling the constructor. This means we can end up with multiple instances of the class in concern.</p>
+                    </div>
+                    <h4 id="solution-2">Solution</h4>
+                    <tabs>
+                      <tab header=":ab:">
+                        <p>Make the <em>constructor</em> of the singleton class <code>private</code>. Provide a <code>public</code> method to access the <em>singleton</em> instance.</p><img class="center-block" src="/site-demo-cs2103/book/se-pattern/singleton/solution.png">
+                        <p>As shown, the solution makes the constructor private (note the “-“ visibility marker for the constructor), which prevents instantiation from outside the class. The single instance of the singleton class is maintained by a private
+                          class-level variable. Access to this object is provided by a public class-level operation <code>getInstance()</code>. In the skeleton code above, <code>getInstance()</code> instantiates a single copy of the singleton class when
+                          it is executed for the first time. Subsequent calls to this operation return the single instance of the class.</p>
+                      </tab>
+                      <tab header=":symbols:">
+                        <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212070&authkey=&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen=""
+                            mozallowfullscreen="" allowfullscreen></iframe></div>
+                      </tab>
+                    </tabs>
+                    <h4 id="code-example-2">Code Example</h4>
+                    <tabs>
+                      <tab header="Java">
+                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassicSingleton</span> </span>{
    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> ClassicSingleton instance = <span class="hljs-keyword">null</span>;
    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">ClassicSingleton</span><span class="hljs-params">()</span> </span>{
       <span class="hljs-comment">// Exists only to defeat instantiation.</span>
@@ -329,10 +308,10 @@
    }
 }
 </code></pre>
-                        </tab>
-                        <tab header="C++">
-                          <pre><code class="hljs c++"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GlobalClass</span>
-{</span>
+                      </tab>
+                      <tab header="C++">
+                        <pre><code class="hljs c++"><span class="hljs-keyword">class</span> GlobalClass
+{
     <span class="hljs-keyword">int</span> m_value;
     <span class="hljs-keyword">static</span> GlobalClass *s_instance;
     GlobalClass(<span class="hljs-keyword">int</span> v = <span class="hljs-number">0</span>)
@@ -356,61 +335,60 @@
     }
 };
 </code></pre>
-                        </tab>
-                      </tabs>
-                      <panel header=":paperclip: Extras" expandable="" type="seamless">
-                        <panel header=":mortar_board: Learning Outcomes" expandable="" type="seamless">
-                          <div>
-                            <panel header=":one: Able to explain the singleton pattern" expandable="">
-                              <morph title="Question 1">
-                                <question>
-                                  <p>Which of the following is an ideal situation for using Singleton pattern?</p>
-                                  <ul radio-group="q842p" class="radio-list">
-                                    <li class="radio-list-item"><label><input class="radio-list-input" name="q842p" type="radio"> Utility methods used by many class in the application.</label></li>
-                                    <li class="radio-list-item"><label><input class="radio-list-input" name="q842p" type="radio"> A database manager shared by different component of the application.</label></li>
-                                    <li class="radio-list-item"><label><input class="radio-list-input" name="q842p" type="radio"> A constant String defined in every controller.</label></li>
+                      </tab>
+                    </tabs>
+                    <panel header=":paperclip: Extras" expandable="" type="seamless">
+                      <panel header=":mortar_board: Learning Outcomes" expandable="" type="seamless">
+                        <div>
+                          <panel header=":one: Able to explain the singleton pattern" expandable="">
+                            <panel header="Question 1" minimized="">
+                              <question>
+                                <p>Which of the following is an ideal situation for using Singleton pattern?</p>
+                                <ul radio-group="agc9b" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="agc9b" type="radio"> Utility methods used by many class in the application.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="agc9b" type="radio"> A database manager shared by different component of the application.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="agc9b" type="radio"> A constant String defined in every controller.</label></li>
+                                </ul>
+                                <div slot="answer">
+                                  <ul radio-group="0r239" class="radio-list">
+                                    <li class="radio-list-item"><label><input class="radio-list-input" name="0r239" type="radio"> Utility methods used by many class in the application.</label></li>
+                                    <li class="radio-list-item"><label><input class="radio-list-input" checked name="0r239" type="radio"> Database manager shared by different component of the application.</label></li>
+                                    <li class="radio-list-item"><label><input class="radio-list-input" name="0r239" type="radio"> A constant String defined in every controller.</label></li>
                                   </ul>
-                                  <div slot="answer">
-                                    <ul radio-group="ssnhw" class="radio-list">
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="ssnhw" type="radio"> Utility methods used by many class in the application.</label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" checked name="ssnhw" type="radio"> Database manager shared by different component of the application.</label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="ssnhw" type="radio"> A constant String defined in every controller.</label></li>
-                                    </ul>
-                                    <p>Database is a shared resources here, and by using singleton pattern, we have better control over the database operations.</p>
-                                  </div>
-                                </question>
-                              </morph>
+                                  <p>Database is a shared resources here, and by using singleton pattern, we have better control over the database operations.</p>
+                                </div>
+                              </question>
                             </panel>
-                          </div>
-                        </panel>
-                        <panel header=":pencil: Apply your knowledge" expandable="" type="seamless">
-                          <div>
-                            <ul>
-                              <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> Do the exercise given in <a href="https://github.com/se-edu/addressbook-level4/blob/master/docs/LearningOutcomes.md#apply-design-patterns-lo-designpatterns">SE-EDU: Addressbook Level 4: Apply Design Patterns</a></li>
-                            </ul>
-                          </div>
-                        </panel>
-                        <panel header=":package: Resources" expandable="" type="seamless">
-                          <div>
-                            <ul>
-                              <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> GoF Book</li>
-                              <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0030-20e3.png"> Resource 2</li>
-                              <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"> Resrouce 3</li>
-                            </ul>
-                          </div>
-                        </panel>
-                        <panel header=":laughing: Humor" expandable="" type="seamless">
-                          <div><img src="http://www.topswagcode.com/content/images/2016/02/developer-patterns.jpg" width="250"></div>
-                        </panel>
-                      </panel>
-                      <tooltip id="pop:client-code">
-                        <div slot="content">
-                          <div>
-                            <p><strong>Client component/method/object</strong>: The component/method/object that is interacting with a given code.</p>
-                          </div>
+                          </panel>
                         </div>
-                      </tooltip>
-                  </div>
+                      </panel>
+                      <panel header=":pencil: Apply your knowledge" expandable="" type="seamless">
+                        <div>
+                          <ul>
+                            <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> Do the exercise given in <a href="https://github.com/se-edu/addressbook-level4/blob/master/docs/LearningOutcomes.md#apply-design-patterns-lo-designpatterns">SE-EDU: Addressbook Level 4: Apply Design Patterns</a></li>
+                          </ul>
+                        </div>
+                      </panel>
+                      <panel header=":package: Resources" expandable="" type="seamless">
+                        <div>
+                          <ul>
+                            <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> GoF Book</li>
+                            <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0030-20e3.png"> Resource 2</li>
+                            <li><img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"> Resrouce 3</li>
+                          </ul>
+                        </div>
+                      </panel>
+                      <panel header=":laughing: Humor" expandable="" type="seamless">
+                        <div><img src="http://www.topswagcode.com/content/images/2016/02/developer-patterns.jpg" width="250"></div>
+                      </panel>
+                    </panel>
+                    <tooltip id="pop:client-code">
+                      <div slot="content">
+                        <div>
+                          <p><strong>Client component/method/object</strong>: The component/method/object that is interacting with a given code.</p>
+                        </div>
+                      </div>
+                    </tooltip>
                 </div>
               </panel>
             </p>
@@ -423,7 +401,7 @@
   <div v-closeable="" alt="format">
     <hr>
     <p><span class="dimmed">Because design patterns document design solutions meant to be shared, they are usually documented in a certain format.</span></p>
-    <panel header="**Format for documenting a design pattern** :one:" expandable="" type="seamless">
+    <panel header="**Format for documenting a design pattern** :one:" type="seamless">
       <div>
         <h2 id="format-for-documenting-design-patterns">Format for documenting design patterns</h2>
         <div class="pull-right" v-closeable="" alt="comic"><img src="https://upload.wikimedia.org/wikipedia/en/f/f3/Dilbert-20050910.png" width="200"></div>
@@ -442,7 +420,7 @@
   <div v-closeable="" alt="examples">
     <hr>
     <p><span class="dimmed">There are many design patterns. Given below are some better known ones.</span></p>
-    <panel header="**Singleton pattern** :one:" expandable="" type="seamless">
+    <panel header="**Singleton pattern** :one:" type="seamless">
       <div>
         <h3 id="singleton-pattern-one-3">Singleton Pattern <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h3>
         <div class="pull-right" v-closeable="" alt="Read lecture slides online"><iframe src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212074&authkey=&em=2&wdAr=1.3333333333333333" width="350px" height="286px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe></div>
@@ -486,8 +464,8 @@
 </code></pre>
             </tab>
             <tab header="C++">
-              <pre><code class="hljs c++"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GlobalClass</span>
-{</span>
+              <pre><code class="hljs c++"><span class="hljs-keyword">class</span> GlobalClass
+{
     <span class="hljs-keyword">int</span> m_value;
     <span class="hljs-keyword">static</span> GlobalClass *s_instance;
     GlobalClass(<span class="hljs-keyword">int</span> v = <span class="hljs-number">0</span>)
@@ -517,24 +495,24 @@
             <panel header=":mortar_board: Learning Outcomes" expandable="" type="seamless">
               <div>
                 <panel header=":one: Able to explain the singleton pattern" expandable="">
-                  <morph title="Question 1">
+                  <panel header="Question 1" minimized="">
                     <question>
                       <p>Which of the following is an ideal situation for using Singleton pattern?</p>
-                      <ul radio-group="0annm" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="0annm" type="radio"> Utility methods used by many class in the application.</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="0annm" type="radio"> A database manager shared by different component of the application.</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="0annm" type="radio"> A constant String defined in every controller.</label></li>
+                      <ul radio-group="ywe2n" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="ywe2n" type="radio"> Utility methods used by many class in the application.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="ywe2n" type="radio"> A database manager shared by different component of the application.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="ywe2n" type="radio"> A constant String defined in every controller.</label></li>
                       </ul>
                       <div slot="answer">
-                        <ul radio-group="jhgsq" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="jhgsq" type="radio"> Utility methods used by many class in the application.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="jhgsq" type="radio"> Database manager shared by different component of the application.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="jhgsq" type="radio"> A constant String defined in every controller.</label></li>
+                        <ul radio-group="vu6w8" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="vu6w8" type="radio"> Utility methods used by many class in the application.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="vu6w8" type="radio"> Database manager shared by different component of the application.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="vu6w8" type="radio"> A constant String defined in every controller.</label></li>
                         </ul>
                         <p>Database is a shared resources here, and by using singleton pattern, we have better control over the database operations.</p>
                       </div>
                     </question>
-                  </morph>
+                  </panel>
                 </panel>
               </div>
             </panel>
@@ -568,7 +546,7 @@
       </div>
       <hr>
     </panel>
-    <panel header="**Façade pattern** :one:" expandable="" type="seamless">
+    <panel header="**Façade pattern** :one:" type="seamless">
       <div>
         <h3 id="facade-pattern">Façade Pattern</h3>
         <h4 id="context-4">Context</h4>
@@ -584,24 +562,24 @@
           <h4 id="code-example-4">Code Example</h4>
           <p>The following <code>ShapeMaker</code> is a Façade class. The caller class who uses <code>ShapeMaker</code> could use it to draw different shape, but the implementation detail and the actual <code>Shape</code> class is invisible to the caller
             class.</p>
-          <pre class="hljs"><code><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ShapeMaker</span> {</span>
+          <pre class="hljs"><code><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">ShapeMaker</span> {
    <span class="hljs-keyword">private</span> Shape circle;
    <span class="hljs-keyword">private</span> Shape rectangle;
    <span class="hljs-keyword">private</span> Shape square;
 
-   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">ShapeMaker</span><span class="hljs-params">()</span> </span>{
+   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">ShapeMaker</span>(<span class="hljs-params"></span>) </span>{
       circle = <span class="hljs-keyword">new</span> Circle();
       rectangle = <span class="hljs-keyword">new</span> Rectangle();
       square = <span class="hljs-keyword">new</span> Square();
    }
 
-   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">drawCircle</span><span class="hljs-params">()</span></span>{
+   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">drawCircle</span>(<span class="hljs-params"></span>)</span>{
       circle.draw();
    }
-   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">drawRectangle</span><span class="hljs-params">()</span></span>{
+   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">drawRectangle</span>(<span class="hljs-params"></span>)</span>{
       rectangle.draw();
    }
-   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">drawSquare</span><span class="hljs-params">()</span></span>{
+   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">drawSquare</span>(<span class="hljs-params"></span>)</span>{
       square.draw();
    }
 }
@@ -616,7 +594,7 @@
           </tip-box>
       </div>
     </panel>
-    <panel header="**Command pattern** :one:" expandable="" type="seamless">
+    <panel header="**Command pattern** :one:" type="seamless">
       <div>
         <h3 id="command-pattern">Command Pattern</h3>
         <h4 id="context-5">Context</h4>
@@ -658,11 +636,11 @@
             <p>And the invoker class.</p>
             <pre class="hljs"><code><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Invoker</span> {
     List&lt;Command&gt; cmdList = <span class="hljs-keyword">new</span> ArrayList&lt;Command&gt;();
-    
+
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addCmd</span>(<span class="hljs-params">Command cmd</span>) </span>{
         cmdList.<span class="hljs-keyword">add</span>(cmd);
     }
-    
+
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">executeAll</span>(<span class="hljs-params"></span>) </span>{
         <span class="hljs-keyword">for</span> (Command cmd : cmdList) {
             cmd.execute();
@@ -673,14 +651,14 @@
 </code></pre>
             <p>And use the Invoker to add and execute commands.</p>
             <pre class="hljs"><code><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> void main(<span class="hljs-keyword">String</span>[] args) {
-  
+
     Command cmd1 = <span class="hljs-keyword">new</span> <span class="hljs-type">ConcreteCommand</span>();
     Command cmd2 = <span class="hljs-keyword">new</span> <span class="hljs-type">OtherConcreteCommand</span>();
-    
+
     Invoker invoker = <span class="hljs-keyword">new</span> <span class="hljs-type">Invoker</span>();
     invoker.addCommand(cmd1);
     invoker.addCommand(cmd2);
-    
+
     invoker.executeAll();
 }
 </code></pre>
@@ -689,7 +667,7 @@
           <tab header="C++"></tab>
         </tabs>
         <h4 id="exercise">Exercise</h4>
-        <morph title="Question 1">
+        <panel header="Question 1" minimized="">
           <question has-input="">
             <p>Study the Memento pattern yourself, and compare it with Command pattern.</p>
             <div slot="answer">
@@ -698,10 +676,11 @@
               <p>Command can use Memento to maintain the state required for an undo operation.</p>
             </div>
           </question>
-        </morph>
+        </panel>
+        <p></p>
       </div>
     </panel>
-    <panel header="**Mode-View-Controller pattern** :two:" expandable="" type="seamless">
+    <panel header="**Mode-View-Controller pattern** :two:" type="seamless">
       <div>
         <h3 id="model-view-controller-mvc-pattern">Model-View-Controller (MVC) Pattern</h3>
         <h4 id="context-6">Context</h4>
@@ -726,7 +705,7 @@
         </tip-box>
       </div>
     </panel>
-    <panel header="**Observer pattern** :two:" expandable="" type="seamless">
+    <panel header="**Observer pattern** :two:" type="seamless">
       <div>
         <h3 id="observer-pattern">Observer Pattern</h3>
         <p>Here is another scenario from the same student management system where the user is adding a new student to the system.</p><img class="center-block" src="observer/intro.png">
@@ -787,7 +766,7 @@ studentList.addUi(statusUi)<span class="hljs-comment">;</span>
         </p>
       </div>
     </panel>
-    <panel header="**Abstraction occurrence pattern** :three:" expandable="" type="seamless">
+    <panel header="**Abstraction occurrence pattern** :three:" type="seamless">
       <div>
         <h3 id="abstraction-occurrence-pattern">Abstraction occurrence pattern</h3>
         <h4 id="context-8">Context</h4>
@@ -832,7 +811,7 @@ studentList.addUi(statusUi)<span class="hljs-comment">;</span>
             <p></p>
           </tab>
           <tab header="C++">
-            <pre><code class="hljs c++"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MetaBook</span> {</span>
+            <pre><code class="hljs c++"><span class="hljs-keyword">class</span> MetaBook {
     <span class="hljs-keyword">public</span>:
         <span class="hljs-built_in">string</span> name;
         <span class="hljs-built_in">string</span> author;
@@ -840,7 +819,7 @@ studentList.addUi(statusUi)<span class="hljs-comment">;</span>
         <span class="hljs-built_in">vector</span>&lt;BookCopy&gt; copies;
 };
 
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BookCopy</span> {</span>
+<span class="hljs-keyword">class</span> BookCopy {
     <span class="hljs-keyword">public</span>:
         <span class="hljs-built_in">string</span> serial;
         MetaBook meta;
@@ -850,7 +829,7 @@ studentList.addUi(statusUi)<span class="hljs-comment">;</span>
           </tab>
         </tabs>
         <h4 id="exercise-2">Exercise</h4>
-        <morph title="Question 1">
+        <panel header="Question 1" minimized="">
           <question has-input="">
             <p>What is the resulted Java class for the following relationship model using abstraction occurrence pattern?</p>
             <p><img src="abstraction-occurrence/question.png" alt=""></p>
@@ -874,15 +853,15 @@ studentList.addUi(statusUi)<span class="hljs-comment">;</span>
               <p></p>
             </div>
           </question>
-        </morph>
+        </panel>
+        <p></p>
       </div>
     </panel>
   </div>
   <div v-closeable="" alt="case study">
     <hr>
     <p><span class="dimmed">While we can learn each design pattern in isolation, in practice they are often applied in combination. Let us look at a case study that combines several design patterns.</span></p>
-    <panel header="**Case Study** :two:" expandable=""
-      type="seamless">
+    <panel header="**Case Study** :two:" type="seamless">
       <div>
         <h3 id="case-study">Case Study</h3>
         <p>Next, let us look at a case study that shows how design patterns are used in the design of a class structure for a Stock Inventory System (SIS) for a shop. The shop sells appliances, and accessories for the appliances. SIS simply stores information
@@ -912,7 +891,7 @@ studentList.addUi(statusUi)<span class="hljs-comment">;</span>
   <div v-closeable="" alt="patterns beyond software design">
     <hr>
     <p><span class="dimmed">Patterns go beyond software design. In fact, they did not even originate in software design.</span></p>
-    <panel header="**How patterns originated in building architecture domain** :zero:" expandable="" type="seamless">
+    <panel header="**How patterns originated in building architecture domain** :zero:" type="seamless">
       <div>
         <p>The notion of capturing design ideas as &quot;patterns&quot; is usually attributed to Christopher Alexander. He is a building architect noted for his theories about design. His book Timeless way of building talks about “design patterns” for constructing
           buildings.</p>
@@ -954,7 +933,7 @@ studentList.addUi(statusUi)<span class="hljs-comment">;</span>
         </ul>
       </div>
     </panel>
-    <panel header="**Patterns from other domains** :three:" expandable="" type="seamless">
+    <panel header="**Patterns from other domains** :three:" type="seamless">
       <div>
         <p>The notion of capturing design ideas as &quot;patterns&quot; is usually attributed to Christopher Alexander. He is a building architect noted for his theories about design. His book Timeless way of building talks about “design patterns” for constructing
           buildings.</p>
@@ -999,20 +978,20 @@ studentList.addUi(statusUi)<span class="hljs-comment">;</span>
   </div>
   <div v-closeable="" alt="extras">
     <hr>
-    <panel header=":paperclip: Extras" expandable="" type="seamless">
-      <panel header=":bulb: Test your knowledge" expandable="" type="seamless">
-        <morph title="Q1a :one:" src="e1._include_.html"></morph>
-        <morph title="Q1b :zero:" src="e2._include_.html"></morph>
-        <morph title="Q1c :zero:" src="e3._include_.html"></morph><br>
-        <morph title="Q2a :one:" src="e4._include_.html"></morph>
-        <morph title="Q2b :zero:" src="e5._include_.html"></morph>
+    <panel header=":paperclip: Extras" type="seamless">
+      <panel header=":bulb: Test your knowledge" type="seamless">
+        <panel header="Q1a :one:" src="e1._include_.html" minimized=""></panel>
+        <panel header="Q1b :zero:" src="e2._include_.html" minimized=""></panel>
+        <panel header="Q1c :zero:" src="e3._include_.html" minimized=""></panel><br>
+        <panel header="Q2a :one:" src="e4._include_.html" minimized=""></panel>
+        <panel header="Q2b :zero:" src="e5._include_.html" minimized=""></panel>
       </panel>
     </panel>
   </div>
 </div>
 </div>
 </body>
-<script src="..\..\markbind\js\vue.min.js"></script>
-<script src="..\..\markbind\js\vue-strap.min.js"></script>
-<script src="..\..\markbind\js\setup.js"></script>
+<script src="../../markbind/js/vue.min.js"></script>
+<script src="../../markbind/js/vue-strap.min.js"></script>
+<script src="../../markbind/js/setup.js"></script>
 </html>

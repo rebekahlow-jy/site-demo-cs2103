@@ -4,11 +4,11 @@
       <img src="images/brooks.png">
     </td>
     <td>
-   <Morph title="Slides">
+   <panel header="Slides" minimized>
 
 @[slideshare](aViiBclhe38n4W)
 
-   </Morph>
+   </panel>
 
   **Overview**: As a Software Engineer you can do great things.
     </td>

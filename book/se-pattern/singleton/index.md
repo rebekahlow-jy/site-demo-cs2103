@@ -3,8 +3,7 @@
 
 <include src="../../../common/header.md" />
 
-<div class="website-content">
-<div id="main">
+<div class="website-content" id="main">
 
 ### Singleton Pattern :one:
 
@@ -128,5 +127,4 @@ class GlobalClass
   </div>
 </tooltip>
 
-</div>
 </div>

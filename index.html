@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CS2103/T Website - Schedule</title>
-    <link rel="stylesheet" href="markbind\css\bootstrap.min.css">
-    <link rel="stylesheet" href="markbind\css\github.min.css">
+    <link rel="stylesheet" href="markbind/css/bootstrap.min.css">
+    <link rel="stylesheet" href="markbind/css/github.min.css">
 </head>
 <body>
 <div id="app" class="container-fluid">
     <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/schedule.css">
 <div>
   <navbar placement="top" type="default"><a slot="brand" href="index.html" title="Home" class="navbar-brand">CS2103/T</a>
     <li><a href="/site-demo-cs2103/index.html">Schedule</a></li>
@@ -20,9 +21,9 @@
 </div>
 <div class="website-content">
   <div>
-    <panel header="Overview" expandable="" class="overview" ctrl-lvl="-1">
-      <panel header="Some details common to all weeks" expandable="" class="todo">
-        <panel header="About this document" expandable="">
+    <panel header="Overview" expandable="" class="overview" ctrl-lvl="-1" no-close="">
+      <panel header="Some details common to all weeks" expandable="" class="todo" no-close="">
+        <panel class="item" header="About this document" expandable="">
           <div><img src="images/growingPlant.png" width="400">
             <ul>
               <li>This is your main source of information for CS2103/T. You will need to refer to it weekly.</li>
@@ -34,7 +35,7 @@
             <p></p>
           </div>
         </panel>
-        <panel header="A typical CS2103/T week" expandable="">
+        <panel class="item" header="A typical CS2103/T week" expandable="">
           <div>
             <ol>
               <li>
@@ -52,7 +53,7 @@
             </ol>
           </div>
         </panel>
-        <panel header="Tutorial Schedule" expandable="">
+        <panel class="item" header="Tutorial Schedule" expandable="">
           <div>
             <table class="markbind-table table">
               <thead>
@@ -150,13 +151,13 @@
     </panel>
   </div>
   <div>
-    <panel header="Week 1 [Jan 9]" expandable="" ctrl-lvl="-1" class="overview">
-      <panel header="Things to do" expandable="" class="todo" ctrl-lvl="1">
+    <panel header="Week 1 [Jan 9]" ctrl-lvl="-1" class="overview" no-close="">
+      <panel header="Things to do" class="todo" ctrl-lvl="1" no-close="">
         <div>
-          <panel header="[CS2103 students only] Forming teams" expandable="">
+          <panel class="item" header="[CS2103 students only] Forming teams" expandable="">
             <p><mark>Delay forming teams until your place in a tutorial is confirmed.</mark> Read the Teams section of the handbook before forming teams.</p>
           </panel>
-          <panel header="Have a look at the 'module handbook'" expandable="">
+          <panel class="item" header="Have a look at the 'module handbook'" expandable="">
             <p>Apart from this Schedule page, there are two other important sources of information.</p>
             <ul>
               <li>The 'module handout' (available from IVLE files) is a self-contained set of materials that has been compiled as an e-book. The purpose of the handout is to serve as a reference to the materials covered during the lectures. As the handout
@@ -165,45 +166,45 @@
             </ul>
             <p>Handbook sections to read around this time:</p>
             <tabs>
-              <tab header="General" class="book">
-                <dynamic-panel src="preliminaries._include_.html" name="Preliminaries" header="Preliminaries" isOpen="false"></dynamic-panel>
-                <dynamic-panel src="textBooks._include_.html" name="Text Books" header="Text Books" isOpen="false"></dynamic-panel>
-                <dynamic-panel src="programming-languages._include_.html" name="Programming Language" header="Programming Language" isOpen="false"></dynamic-panel>
-                <dynamic-panel src="appendixA-principles._include_.html" name="Module Principles" header="Module Principles" isOpen="false"></dynamic-panel>
+              <tab class="item" header="General">
+                <panel src="preliminaries._include_.html" name="Preliminaries" header="Preliminaries" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="textBooks._include_.html" name="Text Books" header="Text Books" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="programming-languages._include_.html" name="Programming Language" header="Programming Language" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="appendixA-principles._include_.html" name="Module Principles" header="Module Principles" isOpen="false" no-close="true" no-switch="true"></panel>
               </tab>
               <tab header="Project" class="book">
-                <dynamic-panel src="project-product._include_.html" name="The Product" header="The Product" isOpen="false"></dynamic-panel>
-                <dynamic-panel src="project-scope._include_.html" name="Project Scope" header="Project Scope" isOpen="false"></dynamic-panel>
-                <dynamic-panel src="project-constraints._include_.html" name="Project Constraints" header="Project Constraints" isOpen="false"></dynamic-panel>
+                <panel src="project-product._include_.html" name="The Product" header="The Product" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="project-scope._include_.html" name="Project Scope" header="Project Scope" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="project-constraints._include_.html" name="Project Constraints" header="Project Constraints" isOpen="false" no-close="true" no-switch="true"></panel>
               </tab>
               <tab header="FAQ" class="book">
-                <dynamic-panel src="appendixC-faq._include_.html" name="Why the workload is so high?" fragment="handbook-faq-highWorkload" header="Why the workload is so high?" isOpen="false"></dynamic-panel>
-                <dynamic-panel src="appendixC-faq._include_.html" name="Why so much bean counting?" fragment="handbook-faq-beanCounting" header="Why so much bean counting?" isOpen="false"></dynamic-panel>
-                <dynamic-panel src="appendixC-faq._include_.html" name="Why you force me to visit a separate website instead of using IVLE?" fragment="handbook-faq-separateWebsite" header="Why you force me to visit a separate website instead of using IVLE?"
-                  isOpen="false"></dynamic-panel>
+                <panel src="appendixC-faq._include_.html#handbook-faq-highWorkload" name="Why the workload is so high?" fragment="handbook-faq-highWorkload" header="Why the workload is so high?" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="appendixC-faq._include_.html#handbook-faq-beanCounting" name="Why so much bean counting?" fragment="handbook-faq-beanCounting" header="Why so much bean counting?" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="appendixC-faq._include_.html#handbook-faq-separateWebsite" name="Why you force me to visit a separate website instead of using IVLE?" fragment="handbook-faq-separateWebsite" header="Why you force me to visit a separate website instead of using IVLE?"
+                  isOpen="false" no-close="true" no-switch="true"></panel>
               </tab>
             </tabs>
           </panel>
-          <panel header="Brush up your Java" expandable="">
+          <panel class="item" header="Brush up your Java" expandable="">
             <p>You are going to start programming soon.</p>
             <p>Brush up your Java programming skills. This module requires you to write Java code almost every week.</p>
             <p>Advanced: Have a look at Java 8 new features.</p>
           </panel>
-          <panel header="Attend Lecture 1 ==(compulsory)== :star: :sheep:" expandable="">
+          <panel class="item" header="Attend Lecture 1 ==(compulsory)== :star: :sheep:" expandable="">
             <p>More about lectures</p>
           </panel>
         </div>
       </panel>
-      <panel header="Lecture 1: Starting from where we left off. Let's write a small program" expandable="" class="lecture" ctrl-lvl="1">
-        <panel header="[20 minutes] Part 1 - Software engineering rocks! : Introduction to Software Engineering" expandable="">
+      <panel header="Lecture 1: Starting from where we left off. Let's write a small program" class="lecture" ctrl-lvl="1" no-close="">
+        <panel class="item" header="[20 minutes] Part 1 - Software engineering rocks! : Introduction to Software Engineering">
           <div>
             <table class="padded-borderless lecture-content-table">
               <tr>
                 <td><img src="images/brooks.png"></td>
                 <td>
-                  <morph title="Slides">
+                  <panel header="Slides" minimized="">
                     <div class="block-embed block-embed-service-slideshare"><iframe type="text/html" src="//www.slideshare.net/slideshow/embed_code/key/aViiBclhe38n4W" frameborder="0" width="599" height="487" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-                  </morph>
+                  </panel>
                   <p><strong>Overview</strong>: As a Software Engineer you can do great things.
                   </p>
                 </td>
@@ -225,7 +226,7 @@
             <p>{If you know more useful resources, please let us know using this link so that we can share it with the class}</p>
           </div>
         </panel>
-        <panel header="[35 minutes] ... Detour [CS2103/T : Introduction to the module]" expandable="">
+        <panel class="item" header="[35 minutes] ... Detour [CS2103/T : Introduction to the module]">
           <div>
             <table class="padded-borderless lecture-content-table">
               <tr>
@@ -261,7 +262,7 @@
             </ul>
           </div>
         </panel>
-        <panel header="[15 minutes] Part 2 - Prime your primary weapon : Introducing IDEs" expandable="">
+        <panel class="item" header="[15 minutes] Part 2 - Prime your primary weapon : Introducing IDEs">
           <div>
             <table class="padded-borderless lecture-content-table">
               <tr>
@@ -294,7 +295,7 @@
             </ul>
           </div>
         </panel>
-        <panel header="[15 minutes] Part 3 - Stop butterflies from causing tornadoes: preventing regressions" expandable="">
+        <panel class="item" header="[15 minutes] Part 3 - Stop butterflies from causing tornadoes: preventing regressions">
           <div>
             <table class="padded-borderless lecture-content-table">
               <tr>
@@ -329,52 +330,54 @@
     </panel>
   </div>
   <div>
-    <panel header="Week 2 [Jan 16]" expandable="" class="overview" ctrl-lvl="-1">
-      <panel header="Things to do" expandable="" class="todo" ctrl-lvl="1">
+    <panel header="Week 2 [Jan 16]" expandable="" class="overview" ctrl-lvl="-1" no-close="">
+      <panel header="Things to do" expandable="" class="todo" ctrl-lvl="1" no-close="">
         <div>
-          <panel header="Handbook sections to read" expandable="">
+          <panel class="item" header="Handbook sections to read" expandable="">
             <tabs>
               <tab header="Project" class="book">
-                <dynamic-panel src="teams._include_.html" name="Forming Teams" header="Forming Teams" isOpen="false"></dynamic-panel>
-                <dynamic-panel src="peer-evaluations._include_.html" name="Peer Evaluations" header="Peer Evaluations" isOpen="false"></dynamic-panel>
-                <dynamic-panel src="participation._include_.html" name="Participation marks" header="Participation marks" isOpen="false"></dynamic-panel>
-                <dynamic-panel src="tools._include_.html" name="Tools" header="Tools" isOpen="false"></dynamic-panel>
+                <panel src="teams._include_.html" name="Forming Teams" header="Forming Teams" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="peer-evaluations._include_.html" name="Peer Evaluations" header="Peer Evaluations" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="participation._include_.html" name="Participation marks" header="Participation marks" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="tools._include_.html" name="Tools" header="Tools" isOpen="false" no-close="true" no-switch="true"></panel>
               </tab>
               <tab header="FAQ" class="book">
-                <dynamic-panel src="appendixC-faq._include_.html" name="Why slides are not detailed enough, handouts are wordy?" fragment="handbook-faq-slideFormat" header="Why slides are not detailed enough, handouts are wordy?" isOpen="false"></dynamic-panel>
-                <dynamic-panel src="appendixC-faq._include_.html" name="Why so much self-study?" fragment="handbook-faq-selfStudy" header="Why so much self-study?" isOpen="false"></dynamic-panel>
-                <dynamic-panel src="appendixC-faq._include_.html" name="Why I'm not allowed to use my favorite OS/IDE/etc?" fragment="handbook-faq-favoriteTool" header="Why I'm not allowed to use my favorite OS/IDE/etc?" isOpen="false"></dynamic-panel>
+                <panel src="appendixC-faq._include_.html#handbook-faq-slideFormat" name="Why slides are not detailed enough, handouts are wordy?" fragment="handbook-faq-slideFormat" header="Why slides are not detailed enough, handouts are wordy?" isOpen="false"
+                  no-close="true" no-switch="true"></panel>
+                <panel src="appendixC-faq._include_.html#handbook-faq-selfStudy" name="Why so much self-study?" fragment="handbook-faq-selfStudy" header="Why so much self-study?" isOpen="false" no-close="true" no-switch="true"></panel>
+                <panel src="appendixC-faq._include_.html#handbook-faq-favoriteTool" name="Why I'm not allowed to use my favorite OS/IDE/etc?" fragment="handbook-faq-favoriteTool" header="Why I'm not allowed to use my favorite OS/IDE/etc?" isOpen="false"
+                  no-close="true" no-switch="true"></panel>
               </tab>
             </tabs>
           </panel>
-          <panel header="Submit IVLE quiz" expandable="">
+          <panel class="item" header="Submit IVLE quiz" expandable="">
             <p>Note that IVLE quizzes open on Fridays just after the lecture and closes on the following Tuesday 2359.</p>
           </panel>
         </div>
       </panel>
-      <panel header="Pre-Tutorial Learning Activities" expandable="" class="activity" ctrl-lvl="1">
+      <panel header="Pre-Tutorial Learning Activities" expandable="" class="activity" ctrl-lvl="1" no-close="">
         <div>
-          <panel header="What is a _Pre-Tutorial Learning Activity_? :zero:" class="book" expandable="">
+          <panel class="item" header="What is a _Pre-Tutorial Learning Activity_? :zero:" expandable="">
             <p><strong>Pre-Tutorial Learning Activities</strong> are work to be done before coming to the tutorial. These can earn participation marks.</p>
-            <dynamic-panel name="More about participation marks :zero:" src="participation._include_.html" header="More about participation marks :zero:"
-              isOpen="false"></dynamic-panel>
+            <panel name="More about participation marks :zero:" src="participation._include_.html" header="More about participation marks :zero:"
+              isOpen="false" no-close="true" no-switch="true"></panel>
           </panel>
-          <panel header="T1A1. Singleton pattern :star:" expandable="">
+          <panel class="item" header="T1A1. Singleton pattern :star:" expandable="">
             <p>Learn the
-              <morph title="singleton pattern" src="index._include_.html"></morph>
+              <panel header="singleton pattern" src="index._include_.html#main" minimized="" fragment="main"></panel>
             </p>
             <p>Achieve the
-              <morph title="level :one: learning outcomes" src="Outcomes._include_.html"></morph>
+              <panel header="level :one: learning outcomes" src="Outcomes._include_.html" minimized=""></panel>
             </p>
           </panel>
-          <panel header="T1A2. Debugging in IDEs :star::star:" expandable="">
+          <panel class="item" header="T1A2. Debugging in IDEs :star::star:">
             <div>
               <p>Complete the exercise for the learning outcome:</p>
               <p><a href="https://github.com/nus-cs2103-AY1617S2/addressbook-level1#use-a-debugger-lo-debugging">AddressBook-Level1: Use a debugger [LO-Debugging]</a></p>
               <p>Submission: Demo your debugging skills to the tutor during the tutorial. There's no need to find a bug. Just show how you can insert break points, step through code, inspect variable values, step in to methods, etc.</p>
             </div>
           </panel>
-          <panel header="T1A3. Start using a task management tool :star::star:" expandable="">
+          <panel class="item" header="T1A3. Start using a task management tool :star::star:">
             <div>
               <p>If you don't use a scheduling/task tracking tool (also known as
                 <tooltip content="Getting things done"><a href="">GTD</a></tooltip> tools) to manage your schedules/tasks, start using one. There are many available (e.g. Google Calendar + Google Tasks, Todo.txt, Fantastical, Wunderlist, <a href="http://Any.do">Any.do</a>, Remember The Milk,
@@ -385,14 +388,14 @@
               <p>Submission: Show to the tutor your current schedule as seen on the UI of the software you are using.</p>
             </div>
           </panel>
-          <panel header="T1A4. Regression testing using text input/output :star::star:" expandable="">
+          <panel class="item" header="T1A4. Regression testing using text input/output :star::star:">
             <div>
               <p>Complete the exercise for the learning outcome:</p>
               <p><a href="https://github.com/nus-cs2103-AY1617S2/addressbook-level1#automate-cli-testing-lo-automatedclitesting">AddressBook-Level1: Automate CLI testing [LO-AutomatedCliTesting]</a></p>
               <p>Submission: Demo how you run the tests to the tutor.</p>
             </div>
           </panel>
-          <panel header="T1A5. Use Java Collections, Enums, Varargs :star::star:" expandable="">
+          <panel class="item" header="T1A5. Use Java Collections, Enums, Varargs :star::star:">
             <div>
               <p>If you have not used Java Collections classes (<code>ArrayList, HashMap, HashMap, etc.</code>), <code>Enums</code>, or <code>Varargs</code>, complete the exercises for the corresponding learning outcomes below:</p>
               <ul>
@@ -405,117 +408,117 @@
           </panel>
         </div>
       </panel>
-      <panel header="Tutorial 1: IDE Usage" expandable="" class="tutorial" ctrl-lvl="1">
+      <panel header="Tutorial 1: IDE Usage" expandable="" class="tutorial" ctrl-lvl="1" no-close="">
         <div>
-          <panel header="For CS2103 students only" expandable="">
+          <panel class="item" header="For CS2103 students only" expandable="">
             <div>
               <p>If you do not have confirmed tutorial group yet, attend the slot you chose in the 'Temporary Tutorial Registration' on IVLE.</p>
             </div>
           </panel>
-          <panel header="Forming teams" expandable="">
+          <panel class="item" header="Forming teams" expandable="">
             <div>
               <p><strong>CS2103T</strong>: Sit with members of your your phase A team (formed by CS2101).</p>
               <p><strong>CS2103</strong>: Form tentative phase A teams for this week. Teams will be finalized next week.</p>
             </div>
           </panel>
-          <panel header="Demo results of pre-tutorial learning activities" expandable="">
+          <panel class="item" header="Demo results of pre-tutorial learning activities" expandable="">
             <div>
               <p>Demo to the tutor results of your pre-tutorial learning activities.</p>
             </div>
           </panel>
-          <panel header="After the tutorial" expandable="">
+          <panel class="item" header="After the tutorial" expandable="">
             <div>
               <p>If you have further questions about the lecture topics that you could not resolve even after the tutorial, your can talk to the lecturer or find more in the handout section below.
-                <dynamic-panel class="book" name="Finding help" src="handbook-appendixD-help._include_.html" header="Finding help" isOpen="false"></dynamic-panel>
+                <panel class="book" name="Finding help" src="handbook-appendixD-help._include_.html" header="Finding help" isOpen="false" no-close="true" no-switch="true"></panel>
               </p>
             </div>
           </panel>
         </div>
       </panel>
-      <panel header="Lecture 2: The program can be small, but the code need not be smelly." expandable="" class="lecture" ctrl-lvl="1">
-        <panel header="L1 recap" expandable=""></panel>
-        <panel header="Part 1 - Design patterns" expandable=""></panel>
-        <panel header="Part 2 - Refactoring: from Turkey to Peacock in thousand steps" expandable=""></panel>
-        <panel header="Part 3 - Your own private time machine: Introduction to revision control" expandable=""></panel>
+      <panel header="Lecture 2: The program can be small, but the code need not be smelly." expandable="" class="lecture" ctrl-lvl="1" no-close="">
+        <panel class="item" header="L1 recap" expandable=""></panel>
+        <panel class="item" header="Part 1 - Design patterns" expandable=""></panel>
+        <panel class="item" header="Part 2 - Refactoring: from Turkey to Peacock in thousand steps" expandable=""></panel>
+        <panel class="item" header="Part 3 - Your own private time machine: Introduction to revision control" expandable=""></panel>
       </panel>
     </panel>
   </div>
   <div>
-    <panel header="Week 3 [Jan 23]" expandable="" class="overview" ctrl-lvl="-1">
-      <panel header="Things to do" expandable="" class="todo" ctrl-lvl="1"></panel>
-      <panel header="Pre-Tutorial Learning Activities" expandable="" class="activity" ctrl-lvl="1"></panel>
-      <panel header="Tutorial 2" expandable="" class="tutorial" ctrl-lvl="1"></panel>
-      <panel header="Lecture 3" expandable="" class="lecture" ctrl-lvl="1"></panel>
+    <panel header="Week 3 [Jan 23]" expandable="" class="overview" ctrl-lvl="-1" no-close="">
+      <panel header="Things to do" expandable="" class="todo" ctrl-lvl="1" no-close=""></panel>
+      <panel header="Pre-Tutorial Learning Activities" expandable="" class="activity" ctrl-lvl="1" no-close=""></panel>
+      <panel header="Tutorial 2" expandable="" class="tutorial" ctrl-lvl="1" no-close=""></panel>
+      <panel header="Lecture 3" expandable="" class="lecture" ctrl-lvl="1" no-close=""></panel>
     </panel>
   </div>
   <div>
-    <panel header="Week 4 [Jan 30]" expandable="" class="overview" ctrl-lvl="-1">
-      <panel header="Things to do" expandable="" class="todo" ctrl-lvl="1"></panel>
-      <panel header="Pre-Tutorial Learning Activities" expandable="" class="activity" ctrl-lvl="1"></panel>
-      <panel header="Tutorial 1: IDE Usage" expandable="" class="tutorial" ctrl-lvl="1"></panel>
-      <panel header="Lecture 2: The program can be small, but the code need not be smelly." expandable="" class="lecture" ctrl-lvl="1"></panel>
+    <panel header="Week 4 [Jan 30]" expandable="" class="overview" ctrl-lvl="-1" no-close="">
+      <panel header="Things to do" expandable="" class="todo" ctrl-lvl="1" no-close=""></panel>
+      <panel header="Pre-Tutorial Learning Activities" expandable="" class="activity" ctrl-lvl="1" no-close=""></panel>
+      <panel header="Tutorial 1: IDE Usage" expandable="" class="tutorial" ctrl-lvl="1" no-close=""></panel>
+      <panel header="Lecture 2: The program can be small, but the code need not be smelly." expandable="" class="lecture" ctrl-lvl="1" no-close=""></panel>
     </panel>
   </div>
   <div>
-    <panel header="Week 5 [Feb 6]" expandable="" class="overview" ctrl-lvl="-1">
-      <panel header="Things to do" expandable="" class="todo" ctrl-lvl="1"></panel>
-      <panel header="Pre-Tutorial Learning Activities" expandable="" class="activity" ctrl-lvl="1"></panel>
-      <panel header="Tutorial 1: IDE Usage" expandable="" class="tutorial" ctrl-lvl="1"></panel>
-      <panel header="Lecture 2: The program can be small, but the code need not be smelly." expandable="" class="lecture" ctrl-lvl="1"></panel>
+    <panel header="Week 5 [Feb 6]" expandable="" class="overview" ctrl-lvl="-1" no-close="">
+      <panel header="Things to do" expandable="" class="todo" ctrl-lvl="1" no-close=""></panel>
+      <panel header="Pre-Tutorial Learning Activities" expandable="" class="activity" ctrl-lvl="1" no-close=""></panel>
+      <panel header="Tutorial 1: IDE Usage" expandable="" class="tutorial" ctrl-lvl="1" no-close=""></panel>
+      <panel header="Lecture 2: The program can be small, but the code need not be smelly." expandable="" class="lecture" ctrl-lvl="1" no-close=""></panel>
     </panel>
   </div>
   <div>
-    <panel header="Week 6 [Feb 13]" expandable="" class="overview" ctrl-lvl="-1">
-      <panel header="Things to do" expandable="" class="todo" ctrl-lvl="1"></panel>
-      <panel header="Pre-Tutorial Learning Activities" expandable="" class="activity" ctrl-lvl="1"></panel>
-      <panel header="Tutorial 1: IDE Usage" expandable="" class="tutorial" ctrl-lvl="1"></panel>
-      <panel header="Lecture 2: The program can be small, but the code need not be smelly." expandable="" class="lecture" ctrl-lvl="1"></panel>
+    <panel header="Week 6 [Feb 13]" expandable="" class="overview" ctrl-lvl="-1" no-close="">
+      <panel header="Things to do" expandable="" class="todo" ctrl-lvl="1" no-close=""></panel>
+      <panel header="Pre-Tutorial Learning Activities" expandable="" class="activity" ctrl-lvl="1" no-close=""></panel>
+      <panel header="Tutorial 1: IDE Usage" expandable="" class="tutorial" ctrl-lvl="1" no-close=""></panel>
+      <panel header="Lecture 2: The program can be small, but the code need not be smelly." expandable="" class="lecture" ctrl-lvl="1" no-close=""></panel>
     </panel>
   </div>
   <div>
-    <panel header="Week 7 [Feb 27]" expandable="" class="overview" ctrl-lvl="-1">
-      <panel header="Things to do" expandable="" class="todo" ctrl-lvl="1"></panel>
-      <panel header="Pre-Tutorial Learning Activities" expandable="" class="activity" ctrl-lvl="1"></panel>
-      <panel header="Tutorial 1: IDE Usage" expandable="" class="tutorial" ctrl-lvl="1"></panel>
-      <panel header="Lecture 2: The program can be small, but the code need not be smelly." expandable="" class="lecture" ctrl-lvl="1"></panel>
+    <panel header="Week 7 [Feb 27]" expandable="" class="overview" ctrl-lvl="-1" no-close="">
+      <panel header="Things to do" expandable="" class="todo" ctrl-lvl="1" no-close=""></panel>
+      <panel header="Pre-Tutorial Learning Activities" expandable="" class="activity" ctrl-lvl="1" no-close=""></panel>
+      <panel header="Tutorial 1: IDE Usage" expandable="" class="tutorial" ctrl-lvl="1" no-close=""></panel>
+      <panel header="Lecture 2: The program can be small, but the code need not be smelly." expandable="" class="lecture" ctrl-lvl="1" no-close=""></panel>
     </panel>
   </div>
   <div>
-    <panel header="Week 8 [Mar 6]" expandable="" class="overview" ctrl-lvl="-1">
-      <panel header="Things to do" expandable="" class="todo" ctrl-lvl="1"></panel>
-      <panel header="Pre-Tutorial Learning Activities" expandable="" class="activity" ctrl-lvl="1"></panel>
-      <panel header="Tutorial 1: IDE Usage" expandable="" class="tutorial" ctrl-lvl="1"></panel>
-      <panel header="Lecture 2: The program can be small, but the code need not be smelly." expandable="" class="lecture" ctrl-lvl="1"></panel>
+    <panel header="Week 8 [Mar 6]" expandable="" class="overview" ctrl-lvl="-1" no-close="">
+      <panel header="Things to do" expandable="" class="todo" ctrl-lvl="1" no-close=""></panel>
+      <panel header="Pre-Tutorial Learning Activities" expandable="" class="activity" ctrl-lvl="1" no-close=""></panel>
+      <panel header="Tutorial 1: IDE Usage" expandable="" class="tutorial" ctrl-lvl="1" no-close=""></panel>
+      <panel header="Lecture 2: The program can be small, but the code need not be smelly." expandable="" class="lecture" ctrl-lvl="1" no-close=""></panel>
     </panel>
   </div>
   <div>
-    <panel header="Week 9 [Mar 13]" expandable="" class="overview" ctrl-lvl="-1">
-      <panel header="Things to do" expandable="" class="todo" ctrl-lvl="1"></panel>
-      <panel header="Pre-Tutorial Learning Activities" expandable="" class="activity" ctrl-lvl="1"></panel>
-      <panel header="Tutorial 1: IDE Usage" expandable="" class="tutorial" ctrl-lvl="1"></panel>
-      <panel header="Lecture 2: The program can be small, but the code need not be smelly." expandable="" class="lecture" ctrl-lvl="1"></panel>
+    <panel header="Week 9 [Mar 13]" expandable="" class="overview" ctrl-lvl="-1" no-close="">
+      <panel header="Things to do" expandable="" class="todo" ctrl-lvl="1" no-close=""></panel>
+      <panel header="Pre-Tutorial Learning Activities" expandable="" class="activity" ctrl-lvl="1" no-close=""></panel>
+      <panel header="Tutorial 1: IDE Usage" expandable="" class="tutorial" ctrl-lvl="1" no-close=""></panel>
+      <panel header="Lecture 2: The program can be small, but the code need not be smelly." expandable="" class="lecture" ctrl-lvl="1" no-close=""></panel>
     </panel>
   </div>
   <div>
-    <panel header="Week 10 [Mar 20]" expandable="" class="overview" ctrl-lvl="-1">
-      <panel header="Things to do" expandable="" class="todo" ctrl-lvl="1"></panel>
-      <panel header="Pre-Tutorial Learning Activities" expandable="" class="activity" ctrl-lvl="1"></panel>
-      <panel header="Tutorial 1: IDE Usage" expandable="" class="tutorial" ctrl-lvl="1"></panel>
-      <panel header="Lecture 2: The program can be small, but the code need not be smelly." expandable="" class="lecture" ctrl-lvl="1"></panel>
+    <panel header="Week 10 [Mar 20]" expandable="" class="overview" ctrl-lvl="-1" no-close="">
+      <panel header="Things to do" expandable="" class="todo" ctrl-lvl="1" no-close=""></panel>
+      <panel header="Pre-Tutorial Learning Activities" expandable="" class="activity" ctrl-lvl="1" no-close=""></panel>
+      <panel header="Tutorial 1: IDE Usage" expandable="" class="tutorial" ctrl-lvl="1" no-close=""></panel>
+      <panel header="Lecture 2: The program can be small, but the code need not be smelly." expandable="" class="lecture" ctrl-lvl="1" no-close=""></panel>
     </panel>
   </div>
   <div>
-    <panel header="Week 11 [Mar 27]" expandable="" class="overview" ctrl-lvl="-1">
-      <panel header="Things to do" expandable="" class="todo" ctrl-lvl="1"></panel>
-      <panel header="Pre-Tutorial Learning Activities" expandable="" class="activity" ctrl-lvl="1"></panel>
-      <panel header="Tutorial 1: IDE Usage" expandable="" class="tutorial" ctrl-lvl="1"></panel>
-      <panel header="Lecture 2: The program can be small, but the code need not be smelly." expandable="" class="lecture" ctrl-lvl="1"></panel>
+    <panel header="Week 11 [Mar 27]" expandable="" class="overview" ctrl-lvl="-1" no-close="">
+      <panel header="Things to do" expandable="" class="todo" ctrl-lvl="1" no-close=""></panel>
+      <panel header="Pre-Tutorial Learning Activities" expandable="" class="activity" ctrl-lvl="1" no-close=""></panel>
+      <panel header="Tutorial 1: IDE Usage" expandable="" class="tutorial" ctrl-lvl="1" no-close=""></panel>
+      <panel header="Lecture 2: The program can be small, but the code need not be smelly." expandable="" class="lecture" ctrl-lvl="1" no-close=""></panel>
     </panel>
   </div>
 </div>
 </div>
 </body>
-<script src="markbind\js\vue.min.js"></script>
-<script src="markbind\js\vue-strap.min.js"></script>
-<script src="markbind\js\setup.js"></script>
+<script src="markbind/js/vue.min.js"></script>
+<script src="markbind/js/vue-strap.min.js"></script>
+<script src="markbind/js/setup.js"></script>
 </html>

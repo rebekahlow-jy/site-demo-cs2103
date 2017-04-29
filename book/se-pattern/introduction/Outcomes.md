@@ -1,4 +1,4 @@
-<panel header=":one: Able to explain what is a design pattern" class="todo" expandable>
+<panel header=":one: Able to explain what is a design pattern" expandable>
   <include src="Questions.md" />
 </panel>
 
