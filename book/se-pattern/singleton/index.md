@@ -5,7 +5,7 @@
 
 <div class="website-content" id="main">
 
-### Singleton Pattern :one:
+### Singleton Pattern
 
 <div class="pull-right" v-closeable alt="Read lecture slides online">
 
@@ -44,7 +44,7 @@ As shown, the solution makes the constructor private (note the “-“ visibilit
 </tab>
 </tabs>
 
-#### Code Example
+<panel header=":computer: code examples"  type="seamless">
 
 <tabs>
 <tab header="Java">
@@ -96,6 +96,7 @@ class GlobalClass
 
 </tab>
 </tabs>
+</panel>
 
 <!-- extras ------------------------------------------------------------------------------------ -->
 

@@ -7,80 +7,59 @@
 
 # Software Design Patterns
 
-<div v-closeable alt="definition">
-
-<panel header="**What are _Software Design Patterns_?** :one:" type="seamless">
+<panel header="**What are _Software Design Patterns_?** :one:" type="seamless" alt="definition">
   <include src="introduction/index.md" />
 </panel>
 
-</div>
-<!-- --------------------------------------------------------------------------------------------------------- -->
-<div v-closeable alt="format"><hr>
+<hr><!-- ------------------------------------------------------------------------------------------------------- -->
 
 
-%%Because design patterns document design solutions meant to be shared, they are usually documented in a certain format.%%
-
-<panel header="**Format for documenting a design pattern** :one:" type="seamless">
+<panel header="**Format for documenting a design pattern** :one: %%-- Because design patterns document design solutions meant to be shared, they are usually documented in a certain format.%%" alt="format" type="seamless">
   <include src="format/index.md" />
 </panel>
 
-</div>
-<!-- --------------------------------------------------------------------------------------------------------- -->
-<div v-closeable alt="examples"><hr>
+<hr><!-- ------------------------------------------------------------------------------------------------------- -->
 
-%%There are many design patterns. Given below are some better known ones.%%
+<panel header="%%There are many design patterns. Given below are some better known ones.%%" alt="examples" type="seamless" expanded>
 
-<Panel header="**Singleton pattern** :one:" type="seamless">
+<Panel header="**_Singleton_ pattern** :one:" type="seamless">
   <include src="singleton/index.md#main" /><hr>
 </Panel>
-<Panel header="**Façade pattern** :one:" type="seamless">
+<Panel header="**_Façade_ pattern** :one:" type="seamless">
   <include src="facade/index.md" />
 </Panel>
 
-<Panel header="**Command pattern** :one:" type="seamless">
+<Panel header="**_Command_ pattern** :one:" type="seamless">
   <include src="command/index.md" />
 </Panel>
 
-<Panel header="**Mode-View-Controller pattern** :two:" type="seamless">
+<Panel header="**_Mode-View-Controller_ pattern** :two:" type="seamless">
   <include src="mvc/index.md" />
 </Panel>
 
-<Panel header="**Observer pattern** :two:" type="seamless">
+<Panel header="**_Observer_ pattern** :two:" type="seamless">
   <include src="observer/index.md" />
 </Panel>
 
-<Panel header="**Abstraction occurrence pattern** :three:" type="seamless">
+<Panel header="**_Abstraction Occurrence_ pattern** :three:" type="seamless">
   <include src="abstraction-occurrence/index.md" />
 </Panel>
 
-</div>
-<!-- --------------------------------------------------------------------------------------------------------- -->
-<div v-closeable alt="case study"><hr>
+</panel>
 
+<hr><!-- ------------------------------------------------------------------------------------------------------- -->
 
-%%While we can learn each design pattern in isolation, in practice they are often applied in combination. Let us look at a case study that combines several design patterns.%%
-
-<Panel header="**Case Study** :two:" type="seamless">
+<Panel header="**Case Study** :two: %%-- While we can learn each design pattern in isolation, in practice they are often applied in combination. Let us look at a case study that combines several design patterns.%%" alt="case study" type="seamless">
   <include src="case-study/index.md" />
 </Panel>
 
-</div>
-<!-- --------------------------------------------------------------------------------------------------------- -->
-<div v-closeable alt="patterns beyond software design"><hr>
+<hr><!-- ------------------------------------------------------------------------------------------------------- -->
 
-
-%%Patterns go beyond software design. In fact, they did not even originate in software design.%%
-
-<Panel header="**How patterns originated in building architecture domain** :zero:" type="seamless">
+<panel header="**The origin of patterns** :zero: %%-- Patterns go beyond software design. In fact, they did not even originate in software design.%%" alt="origin" type="seamless">
   <include src="beyond/index.md" />
-</Panel>
-<Panel header="**Patterns from other domains** :three:" type="seamless">
-  <include src="beyond/index.md" />
-</Panel>
+</panel>
 
-</div>
-<!-- --------------------------------------------------------------------------------------------------------- -->
-<div v-closeable alt="extras"><hr>
+<hr><!-- ------------------------------------------------------------------------------------------------------- -->
 
 <panel header=":paperclip: Extras" type="seamless">
 
@@ -93,7 +72,5 @@
   </panel>
 
 </panel>
-
-</div>
 
 </div>
