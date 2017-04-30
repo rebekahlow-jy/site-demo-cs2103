@@ -5,7 +5,7 @@
 
 <div class="website-content" id="main">
 
-### Singleton Pattern :one:
+### Singleton Pattern
 
 <div class="pull-right" v-closeable alt="Read lecture slides online">
 
@@ -31,7 +31,7 @@ Normally, any client can instantiate a class by calling the constructor. This me
 
 Make the *constructor* of the singleton class `private`. Provide a `public` method to access the *singleton* instance.
 
-<img class="center-block" src="{{baseUrl}}book/se-pattern/singleton/solution.png" />
+<img class="center-block" src="{{baseUrl}}/book/se-pattern/singleton/solution.png" />
 
 As shown, the solution makes the constructor private (note the “-“ visibility marker for the constructor), which prevents instantiation from outside the class. The single instance of the singleton class is maintained by a private class-level variable. Access to this object is provided by a public class-level operation `getInstance()`. In the skeleton code above, `getInstance()` instantiates a single copy of the singleton class when it is executed for the first time. Subsequent calls to this operation return the single instance of the class.
 
@@ -44,7 +44,7 @@ As shown, the solution makes the constructor private (note the “-“ visibilit
 </tab>
 </tabs>
 
-#### Code Example
+<panel header=":computer: code examples"  type="seamless">
 
 <tabs>
 <tab header="Java">
@@ -96,6 +96,7 @@ class GlobalClass
 
 </tab>
 </tabs>
+</panel>
 
 <!-- extras ------------------------------------------------------------------------------------ -->
 

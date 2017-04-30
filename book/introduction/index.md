@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="{{baseUrl}}css/main.css">
-<link rel="stylesheet" href="{{baseUrl}}css/textbook.css">
+<link rel="stylesheet" href="{{baseUrl}}/css/main.css">
+<link rel="stylesheet" href="{{baseUrl}}/css/textbook.css">
 
 <include src="../../common/header.md" />
 

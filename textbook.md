@@ -11,8 +11,9 @@
 
 ### Requirements
 
-* [Gathering requirements]()
-* [Specifying requirements]()
+<include src="book/requirements/topic.md" />
+
+* [Product design]()
 
 ### Design
 

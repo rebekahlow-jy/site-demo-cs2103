@@ -1,5 +1,5 @@
 {
-  "baseUrl": "/site-demo-cs2103/",
+  "baseUrl": "/site-demo-cs2103",
   "pages": [
     {
       "src": "index.md",
@@ -24,6 +24,10 @@
     {
       "src": "book/se-pattern/index.md",
       "title": "CS2103/T Textbook - Design Patterns"
+    },
+    {
+      "src": "book/requirements/index.md",
+      "title": "CS2103/T Textbook - Requirements"
     },
     {
       "src": "book/se-pattern/singleton/index.md",

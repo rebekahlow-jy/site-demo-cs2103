@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CS2103/T Website - Textbook</title>
-    <link rel="stylesheet" href="markbind/css/bootstrap.min.css">
-    <link rel="stylesheet" href="markbind/css/github.min.css">
+    <link rel="stylesheet" href="markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="markbind\css\github.min.css">
 </head>
 <body>
 <div id="app" class="container-fluid">
@@ -42,9 +42,29 @@
     </popover>
   </div>
   <h3 id="requirements">Requirements</h3>
+  <div>
+    <ul>
+      <li><a href="book/requirements/">Software requirements</a>
+        <trigger for="pop:requirements-preview">🔍</trigger>
+      </li>
+    </ul>
+    <popover id="pop:requirements-preview" title="Software Requirements :mag:" placement="right">
+      <div slot="content">
+        <p>Figuring out the requirements is one of the most important part of a software project.</p>
+        <p>This chapter covers:</p>
+        <ul>
+          <li>
+            <p>Gathering requirements</p>
+          </li>
+          <li>
+            <p>Software requirements</p>
+          </li>
+        </ul>
+      </div>
+    </popover>
+  </div>
   <ul>
-    <li><a href="">Gathering requirements</a></li>
-    <li><a href="">Specifying requirements</a></li>
+    <li><a href="">Product design</a></li>
   </ul>
   <h3 id="design">Design</h3>
   <ul>
@@ -98,7 +118,7 @@
 </div>
 </div>
 </body>
-<script src="markbind/js/vue.min.js"></script>
-<script src="markbind/js/vue-strap.min.js"></script>
-<script src="markbind/js/setup.js"></script>
+<script src="markbind\js\vue.min.js"></script>
+<script src="markbind\js\vue-strap.min.js"></script>
+<script src="markbind\js\setup.js"></script>
 </html>

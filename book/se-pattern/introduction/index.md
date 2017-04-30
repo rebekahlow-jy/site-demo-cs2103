@@ -1,4 +1,4 @@
-## What is a design pattern? :one:
+## What is a design pattern? 
 
 #### Some software design problems crop up repeatedly. After repeated attempts at solving such design problems, better solutions are discovered and refined over time. These solutions are collectively known as _design patterns_, a term popularized by the seminal <trigger trigger="click" for="modal:gofbook">_Gang of Four book_</trigger>.
 

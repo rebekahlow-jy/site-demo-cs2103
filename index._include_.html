@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="/site-demo-cs2103//css/main.css">
-<link rel="stylesheet" href="/site-demo-cs2103//css/textbook.css">
+<link rel="stylesheet" href="/site-demo-cs2103/css/main.css">
+<link rel="stylesheet" href="/site-demo-cs2103/css/textbook.css">
 <div>
   <navbar placement="top" type="default"><a slot="brand" href="index.html" title="Home" class="navbar-brand">CS2103/T</a>
     <li><a href="/site-demo-cs2103/index.html">Schedule</a></li>
@@ -8,7 +8,7 @@
   </navbar>
 </div>
 <div class="website-content" id="main">
-  <h3 id="singleton-pattern-one">Singleton Pattern <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h3>
+  <h3 id="singleton-pattern">Singleton Pattern</h3>
   <div class="pull-right" v-closeable="" alt="Read lecture slides online"><iframe src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212074&authkey=&em=2&wdAr=1.3333333333333333" width="350px" height="286px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe></div>
   <h4
     id="context">Context</h4>
@@ -32,10 +32,10 @@
             allowfullscreen></iframe></div>
       </tab>
     </tabs>
-    <h4 id="code-example">Code Example</h4>
-    <tabs>
-      <tab header="Java">
-        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassicSingleton</span> </span>{
+    <panel header=":computer: code examples" type="seamless">
+      <tabs>
+        <tab header="Java">
+          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassicSingleton</span> </span>{
    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> ClassicSingleton instance = <span class="hljs-keyword">null</span>;
    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">ClassicSingleton</span><span class="hljs-params">()</span> </span>{
       <span class="hljs-comment">// Exists only to defeat instantiation.</span>
@@ -48,10 +48,10 @@
    }
 }
 </code></pre>
-      </tab>
-      <tab header="C++">
-        <pre><code class="hljs c++"><span class="hljs-keyword">class</span> GlobalClass
-{
+        </tab>
+        <tab header="C++">
+          <pre><code class="hljs c++"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GlobalClass</span>
+{</span>
     <span class="hljs-keyword">int</span> m_value;
     <span class="hljs-keyword">static</span> GlobalClass *s_instance;
     GlobalClass(<span class="hljs-keyword">int</span> v = <span class="hljs-number">0</span>)
@@ -75,8 +75,9 @@
     }
 };
 </code></pre>
-      </tab>
-    </tabs>
+        </tab>
+      </tabs>
+    </panel>
     <panel header=":paperclip: Extras" expandable="" type="seamless">
       <panel header=":mortar_board: Learning Outcomes" expandable="" type="seamless">
         <div>
@@ -84,16 +85,16 @@
             <panel header="Question 1" minimized="">
               <question>
                 <p>Which of the following is an ideal situation for using Singleton pattern?</p>
-                <ul radio-group="i666z" class="radio-list">
-                  <li class="radio-list-item"><label><input class="radio-list-input" name="i666z" type="radio"> Utility methods used by many class in the application.</label></li>
-                  <li class="radio-list-item"><label><input class="radio-list-input" name="i666z" type="radio"> A database manager shared by different component of the application.</label></li>
-                  <li class="radio-list-item"><label><input class="radio-list-input" name="i666z" type="radio"> A constant String defined in every controller.</label></li>
+                <ul radio-group="yl4mf" class="radio-list">
+                  <li class="radio-list-item"><label><input class="radio-list-input" name="yl4mf" type="radio"> Utility methods used by many class in the application.</label></li>
+                  <li class="radio-list-item"><label><input class="radio-list-input" name="yl4mf" type="radio"> A database manager shared by different component of the application.</label></li>
+                  <li class="radio-list-item"><label><input class="radio-list-input" name="yl4mf" type="radio"> A constant String defined in every controller.</label></li>
                 </ul>
                 <div slot="answer">
-                  <ul radio-group="zbvhl" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="zbvhl" type="radio"> Utility methods used by many class in the application.</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" checked name="zbvhl" type="radio"> Database manager shared by different component of the application.</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="zbvhl" type="radio"> A constant String defined in every controller.</label></li>
+                  <ul radio-group="7ytkw" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="7ytkw" type="radio"> Utility methods used by many class in the application.</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" checked name="7ytkw" type="radio"> Database manager shared by different component of the application.</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="7ytkw" type="radio"> A constant String defined in every controller.</label></li>
                   </ul>
                   <p>Database is a shared resources here, and by using singleton pattern, we have better control over the database operations.</p>
                 </div>
