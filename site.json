@@ -36,6 +36,10 @@
     {
       "src": "book/common/Definitions.md",
       "title": "CS2103/T Textbook - Definitions"
+    },
+    {
+      "src": "book/common/References.md",
+      "title": "CS2103/T Textbook - References"
     }
   ],
   "ignore": [

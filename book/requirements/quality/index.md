@@ -1,6 +1,6 @@
 ## Quality of requirements
 
-Here are some characteristics of well-defined requirements (as given in [2]):
+Here are some characteristics of well-defined requirements <trigger for="pop:zielczynski"><sup>[:book: zielczynski]</sup></trigger>:
 * Unambiguous
 * Testable (verifiable)
 * Clear (concise, terse, simple, precise)
@@ -17,4 +17,11 @@ Besides these criteria for individual requirements, the set of requirements as a
 * Non-redundant
 * Complete
 
-   
+<!-- additional info ------------------------------------------------------------------------------------ -->
+
+<popover id="pop:zielczynski">
+  <div slot="content">
+    <include src="../../common/References.md#zielczynski" />
+  </div>
+</popover>
+
