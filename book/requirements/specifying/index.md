@@ -5,7 +5,7 @@
   <include src="../brainstorming/index.md" />
 </panel>
 <panel header="**User stories** :one:" type="seamless">
-  <include src="../brainstorming/index.md" />
+  <include src="../userStories/index.md#main" />
 </panel>
 <panel header="**Use cases** :one:" type="seamless">
   <include src="../brainstorming/index.md" />
