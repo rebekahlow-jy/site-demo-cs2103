@@ -1,5 +1,7 @@
 ## Quality of requirements
 
+<div id="main">
+
 Here are some characteristics of well-defined requirements <trigger for="pop:zielczynski"><sup>[:book: zielczynski]</sup></trigger>:
 * Unambiguous
 * Testable (verifiable)
@@ -25,3 +27,4 @@ Besides these criteria for individual requirements, the set of requirements as a
   </div>
 </popover>
 
+</div>

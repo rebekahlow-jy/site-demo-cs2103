@@ -1,19 +1,47 @@
-<panel header="**Prose** :one:" type="seamless">
+<panel type="seamless">
+  <span slot="header"> -----------------------------------------
+
+### Prose :one:
+
+  </span>
   <include src="../brainstorming/index.md" />
 </panel>
-<panel header="**Feature lists** :one:" type="seamless">
+
+<panel type="seamless">
+  <span slot="header"> -----------------------------------------
+
+### Feature lists :one:
+
+  </span>
   <include src="../brainstorming/index.md" />
 </panel>
-<panel header="**User stories** :one:" type="seamless">
-  <include src="../userStories/index.md#main" />
-</panel>
-<panel header="**Use cases** :one:" type="seamless">
+
+<include src="../userStories/TopicPanel.md" />
+
+<panel type="seamless">
+  <span slot="header"> -----------------------------------------
+
+### Use cases :one:
+
+  </span>
   <include src="../brainstorming/index.md" />
 </panel>
-<panel header="**Glossary** :one:" type="seamless">
+
+<panel type="seamless">
+  <span slot="header"> -----------------------------------------
+
+### Glossary :one:
+
+  </span>
   <include src="../brainstorming/index.md" />
 </panel>
-<panel header="**Supplementary requirements** :one:" type="seamless">
+
+<panel type="seamless">
+  <span slot="header"> -----------------------------------------
+
+### Supplementary requirements :one:
+
+  </span>
   <include src="../brainstorming/index.md" />
 </panel>
 

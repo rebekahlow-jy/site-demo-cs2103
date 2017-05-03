@@ -5,40 +5,82 @@
 
 <div class="website-content">
 
-# Software Requirements
+# Software requirements
 
-<panel header="**What are _Software Requirements_?** :one:" type="seamless" alt="definition">
-  <include src="introduction/index.md" />
+<panel type="seamless" alt="definition">
+  <span slot="header"> ================================================================
+
+## Introduction :one:
+
+%%:o: What are Software Requirements%%
+
+  </span>
+  <include src="introduction/index.md#main" />
 </panel>
 
-<hr><!-- ------------------------------------------------------------------------------------------------- -->
+<!-- ------------------------------------------------------------------------------------------------- -->
 
-<panel header="**Functional vs non-functional requirements** :one:" type="seamless" alt="non-functional">
-  <include src="non-functional/index.md" />
+<panel type="seamless" alt="non-functional">
+  <span slot="header"> ================================================================
+
+## Non-functional requirements :one:
+
+%%:o: Functional vs non-functional requirements%%
+
+  </span>
+  <include src="non-functional/index.md#main" />
 </panel>
 
-<hr><!-- ------------------------------------------------------------------------------------------------- -->
+<!-- ------------------------------------------------------------------------------------------------- -->
 
-<panel header="**Gathering requirements** :one: %%-- There are several techniques for gathering requirements%%" type="seamless" alt="gathering" expanded>
+<panel type="seamless" alt="gathering">
+  <span slot="header"> ================================================================
+
+## Gathering requirements :one:
+
+%%:o: Some tools and techniques used for gathering requirements%%
+
+  </span>
   <include src="gathering/index.md" />
 </panel>
 
-<hr><!-- ------------------------------------------------------------------------------------------------- -->
+<!-- ------------------------------------------------------------------------------------------------- -->
 
-<panel header="**Specifying requirements** :one: %%-- There are several techniques for specifying requirements%%" type="seamless" alt="specifing" expanded>
+<panel type="seamless" alt="specifing" expanded>
+  <span slot="header"> ================================================================
+
+## Specifying requirements :one:
+
+%%:o: Some tools and techniques used for specifying requirements%%
+
+  </span>
   <include src="specifying/index.md" />
 </panel>
 
-<hr><!-- ------------------------------------------------------------------------------------------------- -->
+<!-- ------------------------------------------------------------------------------------------------- -->
 
-<panel header="**Prioritizing requirements** :one:" type="seamless" alt="prioritizing" >
-  <include src="prioritizing/index.md" />
+<panel type="seamless" alt="prioritizing" >
+  <span slot="header"> ================================================================
+
+## Prioritizing requirements :one:
+
+%%:o: Deciding the relative importance of the requirements gathered%%
+
+  </span>
+  <include src="prioritizing/index.md#main" />
 </panel>
 
-<hr><!-- ------------------------------------------------------------------------------------------------- -->
+<!-- ------------------------------------------------------------------------------------------------- -->
 
-<panel header="**Quality of requirements** :one:" type="seamless" alt="quality" >
-  <include src="quality/index.md" />
+<panel type="seamless" alt="quality" >
+  <span slot="header"> ================================================================
+
+## Quality of requirements :three:
+
+%%:o: Guidance on writing good quality requirements%%
+
+  </span>
+  <include src="quality/index.md#main" />
 </panel>
 
 </div>

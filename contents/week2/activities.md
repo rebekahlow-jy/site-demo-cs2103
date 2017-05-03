@@ -6,11 +6,10 @@
 
 </panel>
 
-<Panel class="item" header="T1A1. Singleton pattern :star:" expandable>
+<Panel class="item" header="T1A1. User Stories :one:" expandable>
 
-Learn the <panel header="singleton pattern" src="../../book/se-pattern/singleton/index.md#main" minimized />
+Achieve level :one: learning outcomes of <panel header="user stories" src="../../book/requirements/userStories/index.md#main" minimized />
 
-Achieve the <panel header="level :one: learning outcomes" src="../../book/se-pattern/introduction/Outcomes.md" minimized />
 
 </Panel>
 <Panel class="item" header="T1A2. Debugging in IDEs :star::star:">

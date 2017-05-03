@@ -31,4 +31,16 @@
 
 </div>
 
+<div id="def-user-story">
+
+**User story**: User stories are short, simple descriptions of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. <sup>[[Mike Cohn](https://www.mountaingoatsoftware.com/agile/user-stories)]
+
+</div>
+
+<div id="def-user-story-format">
+
+**User story format**: `As a {user type/role} I can {function} so that {benefit}`
+
+</div>
+
 </div>

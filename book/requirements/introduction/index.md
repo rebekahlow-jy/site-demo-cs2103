@@ -1,5 +1,7 @@
 ## What are software requirements? 
 
+<div id="main">
+
 A requirement specifies a need to be fulfilled by the software product. 
 
 A software project may be,
@@ -12,3 +14,5 @@ Requirements come from _stakeholders_. {more}
 
 Identifying requirements is not as straightforward as it sounds. It is not as simple as writing a wish list.
   {more details}
+
+</div>

@@ -34,6 +34,10 @@
       "title": "CS2103/T Textbook - User Stories"
     },
     {
+      "src": "book/requirements/userStories/introduction/index.md",
+      "title": "CS2103/T Textbook - User Stories : Introduction"
+    },
+    {
       "src": "book/se-pattern/singleton/index.md",
       "title": "CS2103/T Textbook - Singleton Pattern"
     },
