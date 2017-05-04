@@ -1,5 +1,5 @@
 {
-  "baseUrl": "/site-demo-cs2103/",
+  "baseUrl": "/site-demo-cs2103",
   "pages": [
     {
       "src": "index.md",
@@ -14,7 +14,7 @@
       "title": "CS2103/T Website - Handbook"
     },
     {
-      "src": "textbook.md",
+      "src": "book/index.md",
       "title": "CS2103/T Website - Textbook"
     },
     {
@@ -24,6 +24,30 @@
     {
       "src": "book/se-pattern/index.md",
       "title": "CS2103/T Textbook - Design Patterns"
+    },
+    {
+      "src": "book/requirements/index.md",
+      "title": "CS2103/T Textbook - Requirements"
+    },
+    {
+      "src": "book/requirements/userStories/index.md",
+      "title": "CS2103/T Textbook - User Stories"
+    },
+    {
+      "src": "book/requirements/userStories/introduction/index.md",
+      "title": "CS2103/T Textbook - User Stories : Introduction"
+    },
+    {
+      "src": "book/se-pattern/singleton/index.md",
+      "title": "CS2103/T Textbook - Singleton Pattern"
+    },
+    {
+      "src": "book/common/Definitions.md",
+      "title": "CS2103/T Textbook - Definitions"
+    },
+    {
+      "src": "book/common/References.md",
+      "title": "CS2103/T Textbook - References"
     }
   ],
   "ignore": [

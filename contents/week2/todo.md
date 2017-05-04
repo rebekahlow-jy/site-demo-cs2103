@@ -1,4 +1,4 @@
-<Panel header="Handbook sections to read" expandable>
+<Panel class="item" header="Handbook sections to read" expandable>
 
 <tabs>
 
@@ -22,7 +22,7 @@
 </tabs>
 
 </Panel>
-<Panel header="Submit IVLE quiz" expandable>
+<Panel class="item" header="Submit IVLE quiz" expandable>
 
 Note that IVLE quizzes open on Fridays just after the lecture and closes on the following Tuesday 2359.
 

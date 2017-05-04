@@ -1,69 +1,72 @@
-<link rel="stylesheet" href="{{baseUrl}}/css/main.css">
-<link rel="stylesheet" href="{{baseUrl}}/css/textbook.css">
-
-<include src="../../common/header.md" />
+<link rel="stylesheet" href="{{baseUrl}}/book/css/textbook.css">
 
 <div class="website-content">
 
-## Déjà vu: Using patterns to solve recurring problems
+# Software Design Patterns
 
-<tip-box type="warning">
+<panel header="**What are _Software Design Patterns_?** :one:" type="seamless" alt="definition">
+  <include src="introduction/index.md" />
+</panel>
 
-**FAQ**: Why is this topic covered so late in the semester?    
-**Answer**: We want you to try a design without patterns first, and then, refactor the design to introduce patterns. That way, you can not only see the difference, but also get to practice refactoring.
+<hr><!-- ------------------------------------------------------------------------------------------------------- -->
 
-</tip-box>
+<panel header="**Format for documenting a design pattern** :one: %%-- Because design patterns document design solutions meant to be shared, they are usually documented in a certain format.%%" alt="format" type="seamless">
+  <include src="format/index.md" />
+</panel>
 
-### Lecture Slides
-<div v-closeable alt="Read lecture slides online">
+<hr><!-- ------------------------------------------------------------------------------------------------------- -->
 
-@[powerpoint](https://onedrive.live.com/embed?cid=880E9830B9B0E826&resid=880E9830B9B0E826%21858&authkey=AJ0VCSNC3KqA1_s&em=2)  
+<panel header="%%There are many design patterns. Given below are some better known ones.%%" alt="examples" type="seamless" expanded>
+
+<Panel header="**_Singleton_ pattern** :one:" type="seamless">
+  <include src="singleton/index.md#main" /><hr>
+</Panel>
+<Panel header="**_Façade_ pattern** :one:" type="seamless">
+  <include src="facade/index.md" />
+</Panel>
+
+<Panel header="**_Command_ pattern** :one:" type="seamless">
+  <include src="command/index.md" />
+</Panel>
+
+<Panel header="**_Mode-View-Controller_ pattern** :two:" type="seamless">
+  <include src="mvc/index.md" />
+</Panel>
+
+<Panel header="**_Observer_ pattern** :two:" type="seamless">
+  <include src="observer/index.md" />
+</Panel>
+
+<Panel header="**_Abstraction Occurrence_ pattern** :three:" type="seamless">
+  <include src="abstraction-occurrence/index.md" />
+</Panel>
+
+</panel>
+
+<hr><!-- ------------------------------------------------------------------------------------------------------- -->
+
+<Panel header="**Case Study** :two: %%-- While we can learn each design pattern in isolation, in practice they are often applied in combination. Let us look at a case study that combines several design patterns.%%" alt="case study" type="seamless">
+  <include src="case-study/index.md" />
+</Panel>
+
+<hr><!-- ------------------------------------------------------------------------------------------------------- -->
+
+<panel header="**The origin of patterns** :zero: %%-- Patterns go beyond software design. In fact, they did not even originate in software design.%%" alt="origin" type="seamless">
+  <include src="beyond/index.md" />
+</panel>
+
+<hr><!-- ------------------------------------------------------------------------------------------------------- -->
+
+<panel header=":paperclip: Extras" type="seamless">
+
+  <panel header=":bulb: Test your knowledge" type="seamless">
+    <panel header="Q1a :one:" src="./examples/e1.md" minimized></panel>
+    <panel header="Q1b :zero:" src="./examples/e2.md" minimized></panel>
+    <panel header="Q1c :zero:" src="./examples/e3.md" minimized></panel><br/>
+    <panel header="Q2a :one:" src="./examples/e4.md" minimized></panel>
+    <panel header="Q2b :zero:" src="./examples/e5.md" minimized></panel>
+  </panel>
+
+</panel>
 
 </div>
-
-<include src="introduction/index.md" />
-
-<Panel header="**Abstraction occurrence pattern** :star::star:" expandable>
-<include src="abstraction-occurrence/index.md" />
-</Panel>
-<Panel header="**Singleton pattern** :star::star::star:" expandable>
-<include src="singleton/index.md" />
-</Panel>
-<Panel header="**Façade pattern** :star:" expandable>
-<include src="facade/index.md" />
-</Panel>
-<Panel header="**Command pattern** :star::star::star:" expandable>
-<include src="command/index.md" />
-</Panel>
-<Panel header="**Mode-View-Controller pattern** :star:" expandable>
-<include src="mvc/index.md" />
-</Panel>
-<Panel header="**Observer pattern** :star::star:" expandable>
-<include src="observer/index.md" />
-</Panel>
-
-<include src="beyond/index.md" />
-
-<Panel header="**Case Study**" expandable>
-<include src="case-study/index.md" />
-</Panel>
-
-<tip-box type="success">
-
-#### What's more
-* You can learn more about design patterns by reading the GoF book, or [Head First Design Patterns](https://www.amazon.com/First-Design-Patterns-Elisabeth-Freeman/dp/0596007124/)
-* Consult free online resources like [Udemy](https://www.udemy.com/java-design-patterns-tutorial/)
-* Learn more about design patterns in CS3219: Software Engineering Principles and Patterns
-
-</tip-box>
-
-### Worked Examples
-
-<morph title="Q1" src="./examples/e1.md"></morph>
-<morph title="Q2" src="./examples/e2.md"></morph>
-<morph title="Q3" src="./examples/e3.md"></morph>
-<morph title="Q4" src="./examples/e4.md"></morph>
-<morph title="Q5" src="./examples/e5.md"></morph>
-
-</div>
-

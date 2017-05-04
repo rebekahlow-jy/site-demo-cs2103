@@ -1,4 +1,5 @@
-### Beyond design patterns
+### The origin of patterns
+
 The notion of capturing design ideas as "patterns" is usually attributed to Christopher Alexander. He is a building architect noted for his theories about design. His book Timeless way of building talks about “design patterns” for constructing buildings.
 
 Here is a sample pattern from that book:
