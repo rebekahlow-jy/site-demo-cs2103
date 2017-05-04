@@ -1,4 +1,4 @@
-* [Introduction to SE](book/introduction/) 
+* [Introduction to SE](./introduction/) 
   <trigger for="pop:intro-preview">:mag:</trigger>
   
 <popover id="pop:intro-preview" placement="right">

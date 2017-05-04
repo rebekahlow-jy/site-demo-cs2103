@@ -1,19 +1,16 @@
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/textbook.css">
-
-<include src="common/header.md" />
+<link rel="stylesheet" href="{{baseUrl}}/book/css/textbook.css">
 
 <div class="website-content">
 
-## Software Engineering: an Iterative Approach
+## Software Engineering for Self-Directed Learners
 
-<include src="book/introduction/topic.md" />
+<include src="introduction/topic.md" />
 
 ### Requirements
 
-<include src="book/requirements/TopicToc.md" />
+<include src="requirements/TopicToc.md" />
 
-<include src="book/requirements/userStories/TopicToc.md" />
+<include src="requirements/userStories/TopicToc.md" />
 
 * [Product design]()
 
@@ -23,7 +20,7 @@
 * [Architecture]()
 * [API design]()
 
-<include src="book/se-pattern/topic.md" />
+<include src="se-pattern/topic.md" />
 
 ### Implementation
 
@@ -45,6 +42,6 @@
 
 ### Supplementary
 
-* [Definitions](book/common/Definitions.html)
+* [Definitions](common/Definitions.html)
 
 </div>

@@ -1,4 +1,4 @@
-* __ [User stories](book/requirements/userStories) :one: <trigger for="pop:user-stories-preview">:mag:</trigger>
+* __ [User stories](./requirements/userStories) :one: <trigger for="pop:user-stories-preview">:mag:</trigger>
 
 
 <popover id="pop:user-stories-preview" title=":mag: User Stories" placement="right">

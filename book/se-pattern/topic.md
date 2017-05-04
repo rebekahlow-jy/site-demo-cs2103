@@ -1,4 +1,4 @@
-* [Design Patterns](book/se-pattern/) 
+* [Design Patterns](./se-pattern/) 
   <trigger for="pop:pattern-preview">:mag:</trigger>
   
 <popover id="pop:pattern-preview" title="Software Design Patterns :mag:" placement="right">
