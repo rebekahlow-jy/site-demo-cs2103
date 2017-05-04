@@ -10,15 +10,7 @@
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/site-demo-cs2103/css/main.css">
-<link rel="stylesheet" href="/site-demo-cs2103/css/textbook.css">
-<div>
-  <navbar placement="top" type="default"><a slot="brand" href="index.html" title="Home" class="navbar-brand">CS2103/T</a>
-    <li><a href="/site-demo-cs2103/index.html">Schedule</a></li>
-    <li><a href="/site-demo-cs2103/textbook.html">Textbook</a></li>
-    <li><a href="/site-demo-cs2103/handbook.html">Handbook</a></li>
-  </navbar>
-</div>
+    <link rel="stylesheet" href="/site-demo-cs2103/book/css/textbook.css">
 <div class="website-content" id="main">
   <h3 id="singleton-pattern">Singleton Pattern</h3>
   <div class="pull-right" v-closeable="" alt="Read lecture slides online"><iframe src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212074&authkey=&em=2&wdAr=1.3333333333333333" width="350px" height="286px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe></div>
@@ -97,16 +89,16 @@
             <panel header="Question 1" minimized="">
               <question>
                 <p>Which of the following is an ideal situation for using Singleton pattern?</p>
-                <ul radio-group="iak0v" class="radio-list">
-                  <li class="radio-list-item"><label><input class="radio-list-input" name="iak0v" type="radio"> Utility methods used by many class in the application.</label></li>
-                  <li class="radio-list-item"><label><input class="radio-list-input" name="iak0v" type="radio"> A database manager shared by different component of the application.</label></li>
-                  <li class="radio-list-item"><label><input class="radio-list-input" name="iak0v" type="radio"> A constant String defined in every controller.</label></li>
+                <ul radio-group="oa5ur" class="radio-list">
+                  <li class="radio-list-item"><label><input class="radio-list-input" name="oa5ur" type="radio"> Utility methods used by many class in the application.</label></li>
+                  <li class="radio-list-item"><label><input class="radio-list-input" name="oa5ur" type="radio"> A database manager shared by different component of the application.</label></li>
+                  <li class="radio-list-item"><label><input class="radio-list-input" name="oa5ur" type="radio"> A constant String defined in every controller.</label></li>
                 </ul>
                 <div slot="answer">
-                  <ul radio-group="w6rvd" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="w6rvd" type="radio"> Utility methods used by many class in the application.</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" checked name="w6rvd" type="radio"> Database manager shared by different component of the application.</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="w6rvd" type="radio"> A constant String defined in every controller.</label></li>
+                  <ul radio-group="4n7y6" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="4n7y6" type="radio"> Utility methods used by many class in the application.</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" checked name="4n7y6" type="radio"> Database manager shared by different component of the application.</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="4n7y6" type="radio"> A constant String defined in every controller.</label></li>
                   </ul>
                   <p>Database is a shared resources here, and by using singleton pattern, we have better control over the database operations.</p>
                 </div>
