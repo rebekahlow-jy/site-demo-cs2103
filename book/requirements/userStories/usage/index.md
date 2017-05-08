@@ -47,7 +47,7 @@ impatient user | to be able experience reasonable response time from the website
 
 <modal id="modal:xp-user-stories" title=":bookmark: User stories vs traditional requirement specifications, according to XP">
 
-<include src="../../../common/PopOvers.md#xp" /> uses User stories to capture requirements. 
+<include src="../../../common/PopOvers.md#xp" inline /> uses User stories to capture requirements. 
 
 [This page](http://www.extremeprogramming.org/rules/userstories.html) in their website explains the difference between user stories and traditional requirements.
 
