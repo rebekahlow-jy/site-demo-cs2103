@@ -1,8 +1,5 @@
-<panel type="seamless">
-  <span slot="header"> -----------------------------------------
-
 ### User stories :one:
 
-  </span>
+<panel type="seamless" header="%%-----------------------------------------%%">
   <include src="./index.md#main" />
 </panel>
