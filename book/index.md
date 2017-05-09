@@ -8,9 +8,9 @@
 
 ### Requirements
 
-<include src="requirements/TopicToc.md" />
+<include src="requirements/topicToc.md" />
 
-<include src="requirements/userStories/TopicToc.md" />
+<include src="requirements/userStories/topicToc.md" />
 
 * [Product design]()
 

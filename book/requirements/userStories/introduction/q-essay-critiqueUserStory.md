@@ -8,7 +8,7 @@ Critique the following user story taken from a software project to build an e-co
 <div slot="hint">
 
 Refer to the definition of a user story.
-<include src="../../../common/Definitions.md#def-user-story" />
+<include src="../../../common/definitions.md#def-user-story" />
 
 </div>
 <div slot="answer">

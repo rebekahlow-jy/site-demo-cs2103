@@ -6,7 +6,7 @@ Bill wants you to build a Human Resource Management (HRM) system. He mentions th
 <div slot="hint">
 
 Remember to follow the correct format when writing user stories.
-<include src="../../../common/Definitions.md#def-user-story-format" />
+<include src="../../../common/definitions.md#def-user-story-format" />
 
 </div>
 <div slot="answer">

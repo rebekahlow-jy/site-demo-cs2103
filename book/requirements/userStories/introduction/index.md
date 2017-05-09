@@ -7,13 +7,13 @@
 <div id="main">
 
 <tip-box type="primary">
-<include src="../../../common/Definitions.md#def-user-story" />
+<include src="../../../common/definitions.md#def-user-story" />
 </tip-box>
 
 **A common format** for writing user stories is:
 
 <tip-box type="primary">
-<include src="../../../common/Definitions.md#def-user-story-format" />
+<include src="../../../common/definitions.md#def-user-story-format" />
 </tip-box>
 
 <tip-box>
@@ -29,22 +29,22 @@ Examples (from a Learning Management System):
 
 **We can write user stories on** index cards or sticky notes, and arrange on walls or tables, to facilitate planning and discussion. Alternatively, we can use a software such as [GitHub Project Boards](https://help.github.com/articles/about-project-boards/) to manage user stories digitally.
 
-<include src="./UserStoriesInUse.md" />
+<include src="./userStoriesInUse.md" />
 
 <!-- extras ------------------------------------------------------------------------------------ -->
 
 <panel header=":paperclip: Extras" expandable type="seamless" expanded>
 
   <panel header=":mortar_board: Learning Outcomes" expandable type="seamless">
-    <include src="Exercises.md" />
+    <include src="exercises.md" />
   </panel>
 
   <panel header=":package: Resources" expandable type="seamless">
-    <include src="Resources.md" />
+    <include src="resources.md" />
   </panel>
 
   <panel header=":laughing: Humor" expandable type="seamless">
-    <include src="Humor.md" />
+    <include src="humor.md" />
   </panel>
 
 </panel>

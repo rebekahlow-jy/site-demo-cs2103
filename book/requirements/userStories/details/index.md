@@ -88,11 +88,11 @@ User stories for a travel website (credit: Mike Cohen)
 <panel header=":paperclip: Extras" expandable type="seamless" expanded>
 
   <panel header=":mortar_board: Learning Outcomes" expandable type="seamless">
-    <include src="Exercises.md" />
+    <include src="exercises.md" />
   </panel>
 
   <panel header=":package: Resources" expandable type="seamless">
-    <include src="Resources.md" />
+    <include src="resources.md" />
   </panel>
 
 </panel>

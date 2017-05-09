@@ -100,19 +100,19 @@ class GlobalClass
 <panel header=":paperclip: Extras" expandable type="seamless">
 
   <panel header=":mortar_board: Learning Outcomes" expandable type="seamless">
-    <include src="Outcomes.md" />
+    <include src="outcomes.md" />
   </panel>
 
   <panel header=":pencil: Apply your knowledge" expandable type="seamless">
-    <include src="Apply.md" />
+    <include src="apply.md" />
   </panel>
 
   <panel header=":package: Resources" expandable type="seamless">
-    <include src="Resources.md" />
+    <include src="resources.md" />
   </panel>
 
   <panel header=":laughing: Humor" expandable type="seamless">
-    <include src="Humor.md" />
+    <include src="humor.md" />
   </panel>
 
 </panel>
@@ -121,7 +121,7 @@ class GlobalClass
 
 <tooltip id="pop:client-code">
   <div slot="content">
-    <include src="../../common/Definitions.md#def-client-code" />
+    <include src="../../common/definitions.md#def-client-code" />
   </div>
 </tooltip>
 

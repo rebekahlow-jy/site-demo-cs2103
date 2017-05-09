@@ -23,7 +23,7 @@ Besides these criteria for individual requirements, the set of requirements as a
 
 <popover id="pop:zielczynski">
   <div slot="content">
-    <include src="../../common/References.md#zielczynski" />
+    <include src="../../common/references.md#zielczynski" />
   </div>
 </popover>
 

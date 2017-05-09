@@ -3,6 +3,6 @@
   
 <popover id="pop:requirements-preview" title="Software Requirements :mag:" placement="right">
   <div slot="content">
-    <include src="Preview.md" />
+    <include src="preview.md" />
   </div>
 </popover>

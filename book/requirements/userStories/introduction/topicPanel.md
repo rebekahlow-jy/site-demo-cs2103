@@ -2,7 +2,7 @@
 #### Introduction :one: 
 
 <tip-box type="success">
-  <include src="./Outcomes.md" />
+  <include src="./outcomes.md" />
 </tip-box>
 <panel type="seamless" header=" %%- - - - - - - - - -%%">
   <include src="./index.md#main"/>
