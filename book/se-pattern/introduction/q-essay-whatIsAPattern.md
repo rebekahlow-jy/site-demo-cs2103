@@ -9,7 +9,7 @@ Keywords: reusable, elegant, recurring, context
 </div>
 <div slot="answer">
 
-<include src="../../common/Definitions.md#def-se-design-pattern" />
+<include src="../../common/definitions.md#def-se-design-pattern" />
 
 </div>
 </Question>

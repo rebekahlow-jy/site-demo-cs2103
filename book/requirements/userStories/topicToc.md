@@ -3,7 +3,7 @@
 
 <popover id="pop:user-stories-preview" title=":mag: User Stories" placement="right">
   <div slot="content">
-    <include src=".\Preview.md" />
+    <include src=".\preview.md" />
   </div>
 </popover>
 

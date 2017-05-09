@@ -18,7 +18,7 @@
 </panel><br>
 
 <tip-box type="info">
-  <include src="../../common/Definitions.md#def-se-design-pattern"/>
+  <include src="../../common/definitions.md#def-se-design-pattern"/>
 </tip-box>
 
 <panel header="%%Above description is too abstract? Here is an illustrative example :zero:%%" expandable type="seamless">
@@ -30,23 +30,23 @@
 <panel header=":paperclip: Extras" expandable type="seamless">
 
   <panel header=":mortar_board: Learning Outcomes" expandable type="seamless">
-    <include src="Outcomes.md" />
+    <include src="outcomes.md" />
   </panel>
 
   <panel header=":bulb: Test your knowledge" expandable type="seamless">
-    <include src="Questions.md" />
+    <include src="questions.md" />
   </panel>
 
   <panel header=":pencil: Apply your knowledge" expandable type="seamless">
-    <include src="Apply.md" />
+    <include src="apply.md" />
   </panel>
 
   <panel header=":package: Resources" expandable type="seamless">
-    <include src="Resources.md" />
+    <include src="resources.md" />
   </panel>
 
   <panel header=":laughing: Humor" expandable type="seamless">
-    <include src="Humor.md" />
+    <include src="humor.md" />
   </panel>
 
 </panel>
@@ -56,16 +56,16 @@
 
 <popover id="pop:architecture">
   <div slot="content">
-    <include src="../../common/Definitions.md#def-architecture" />
+    <include src="../../common/definitions.md#def-architecture" />
   </div>
 </popover>
 
 <tooltip id="tt:coupling">
   <div slot="content">
-    <include src="../../common/Definitions.md#def-coupling" />
+    <include src="../../common/definitions.md#def-coupling" />
   </div>
 </tooltip>
 
 <modal title="**GoF Book** :zero:" id="modal:gofbook">
-  <include src="GoF.md" />
+  <include src="gof.md" />
 </modal>

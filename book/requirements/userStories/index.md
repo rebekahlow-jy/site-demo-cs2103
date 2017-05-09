@@ -6,9 +6,9 @@
 
 <div id="main">
 
-<include src="./introduction/TopicPanel.md" />
-<include src="./details/TopicPanel.md" />
-<include src="./usage/TopicPanel.md" />
+<include src="./introduction/topicPanel.md" />
+<include src="./details/topicPanel.md" />
+<include src="./usage/topicPanel.md" />
 
 </div>
 </div>

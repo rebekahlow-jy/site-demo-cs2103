@@ -16,7 +16,7 @@
   <include src="../brainstorming/index.md" />
 </panel>
 
-<include src="../userStories/TopicPanel.md" />
+<include src="../userStories/topicPanel.md" />
 
 <panel type="seamless">
   <span slot="header"> -----------------------------------------
