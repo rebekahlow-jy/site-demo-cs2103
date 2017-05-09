@@ -57,5 +57,10 @@
     "README.md",
     "contents/handbook/*",
     "*.md"
-  ]
+  ],
+  "deploy": {
+    "message": "Site Update.",
+    "repo": "https://github.com/rebekahlow-jy/site-demo-cs2103.git",
+    "branch": "gh-pages"
+  }
 }
