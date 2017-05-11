@@ -6,9 +6,7 @@
 
 <div id="main">
 
-<include src="./introduction/topicPanel.md" />
-<include src="./details/topicPanel.md" />
-<include src="./usage/topicPanel.md" />
+Focus groups are a kind of informal interview within an interactive group setting. A group of people (e.g. potential users, beta testers) are asked about their understanding of a specific issue or a process.  Focus groups can bring out undiscovered conflicts and misunderstandings among stakeholder interests which can then be resolved or clarified as necessary.  
 
 </div>
 </div>

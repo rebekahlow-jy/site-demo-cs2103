@@ -6,9 +6,7 @@
 
 <div id="main">
 
-<include src="./introduction/topicPanel.md" />
-<include src="./details/topicPanel.md" />
-<include src="./usage/topicPanel.md" />
+Carefully designed questionnaires can be used to solicit responses and opinions from a large number of users regarding any current system or a new innovation.
 
 </div>
 </div>
