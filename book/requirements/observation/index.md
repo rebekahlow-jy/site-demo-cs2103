@@ -2,7 +2,7 @@
 
 <div class="website-content">
 
-### Brainstorming
+### Observation
 
 <div id="main">
 

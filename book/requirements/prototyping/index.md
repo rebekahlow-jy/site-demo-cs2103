@@ -2,7 +2,7 @@
 
 <div class="website-content">
 
-### Brainstorming
+### Prototyping
 
 <div id="main">
 

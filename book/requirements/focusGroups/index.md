@@ -2,7 +2,7 @@
 
 <div class="website-content">
 
-### Brainstorming
+### Focus Groups
 
 <div id="main">
 
