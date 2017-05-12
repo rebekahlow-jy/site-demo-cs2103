@@ -2,11 +2,17 @@
 
 <div class="website-content">
 
-#### Introduction
+#### Introduction to Focus Groups
 
 <div id="main">
 
-Focus groups are a kind of informal interview within an interactive group setting. A group of people (e.g. potential users, beta testers) are asked about their understanding of a specific issue or a process.  Focus groups can bring out undiscovered conflicts and misunderstandings among stakeholder interests which can then be resolved or clarified as necessary.  
+<tip-box type="primary">
+<include src="../../../common/definitions.md#def-focus-group" />
+</tip-box>
+
+In a focus group, a group of people (e.g. potential users, beta testers) are _asked about their understanding of a specific issue or a process_.  Focus groups can bring out undiscovered conflicts and misunderstandings among stakeholder interests which can then be resolved or clarified as necessary.  
+
+<p/>
 
 <!-- extras ------------------------------------------------------------------------------------ -->
 

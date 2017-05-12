@@ -2,11 +2,13 @@
 
 <div class="website-content">
 
-#### Introduction
+#### Introduction to Interviews
 
 <div id="main">
 
-Interviewing potential stakeholders and domain experts can give us useful information about a domain. Interview is a good technique at getting users to explore what users feel about the required system.  Interviews also provide opportunities for the development team members to meet stakeholders and to make stakeholders feel involved in the development process.
+**Interviewing potential stakeholders and domain experts** can give us useful information about a domain, by getting users to _explore what users feel_ about the required system. Interviews also provide opportunities for the development team members to meet stakeholders and to _make stakeholders feel involved_ in the development process.
+
+<p/>
 
 <!-- extras ------------------------------------------------------------------------------------ -->
 

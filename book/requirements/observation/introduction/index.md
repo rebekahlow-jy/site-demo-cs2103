@@ -2,11 +2,13 @@
 
 <div class="website-content">
 
-#### Introduction
+#### Introduction to Observation
 
 <div id="main">
 
-Observation of users in their natural work environment is a common technique used to understand the tasks and the environment of the user. Interaction logging on an existing system can also be used to gather information about how an existing system is being used. 
+**Observation of users** in their natural work environment is commonly used to _understand the tasks and the environment of the user_. Interaction logging on an existing system can also be used to gather information about how an existing system is being used.
+
+<p/>
 
 <!-- extras ------------------------------------------------------------------------------------ -->
 

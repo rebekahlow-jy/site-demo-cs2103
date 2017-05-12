@@ -1,9 +1,11 @@
-%%Other names for _requirement gathering_%%
+<tip-box>
+Requirement gathering may also be known as:
 
 * establishing requirements
 * requirements elicitation
 * requirements analysis
 * requirements capture
+</tip-box>
 
 <!-- ------------------------------------------------------------------------------------------------- -->
 

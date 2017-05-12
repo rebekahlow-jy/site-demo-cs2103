@@ -1,2 +1,1 @@
-* <span id="outcome-introduction-one">:trophy: Outcome 1 :one:</span>
-* <span id="outcome-introduction-two">:trophy: Outcome 2 :one:</span>
+* <span id="outcome-observation-introduction-one">:trophy: Able to explain what observation is for :one:</span>

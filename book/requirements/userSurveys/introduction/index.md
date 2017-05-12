@@ -2,11 +2,13 @@
 
 <div class="website-content">
 
-#### Introduction
+#### Introduction to User Surveys
 
 <div id="main">
 
-Carefully designed questionnaires can be used to solicit responses and opinions from a large number of users regarding any current system or a new innovation.
+Carefully designed **questionnaires** can be used to _solicit responses and opinions_ from a large number of users regarding any current system or a new innovation.
+
+<p/>
 
 <!-- extras ------------------------------------------------------------------------------------ -->
 

@@ -2,11 +2,17 @@
 
 <div class="website-content">
 
-#### Introduction
+#### Introduction to Brainstorming
 
 <div id="main">
 
-Brainstorming is a group activity designed to generate a large number of diverse and creative ideas for the solution of a problem. In a brainstorming session there are no "bad" ideas. The aim is to generate ideas; not to validate them. Brainstorming encourages you to "think outside the box" and put "crazy" ideas on the table without fear of rejection.
+<tip-box type="primary">
+<include src="../../../common/definitions.md#def-brainstorming" />
+</tip-box>
+
+In a brainstorming session there are no "bad" ideas. The aim is to _generate ideas; not to validate_ them. Brainstorming encourages you to "think outside the box" and put "crazy" ideas on the table without fear of rejection.
+
+<p/>
 
 <!-- extras ------------------------------------------------------------------------------------ -->
 
