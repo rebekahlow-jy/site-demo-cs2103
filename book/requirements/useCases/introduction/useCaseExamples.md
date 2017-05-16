@@ -1,25 +1,18 @@
 <panel header="%%Use case examples%%" expanded>
 
-<panel header="Example 1" type="seamless" expanded>
+<panel header="Example 1: ‘check account balance’ use case for an ATM" type="seamless" expanded>
 
-Example: ‘check account balance’ use case for an
-<popover effect="fade" placement="right" content="Automated Teller Machine">
-  ATM
-</popover>
+System: <popover effect="fade" placement="right" content="Automated Teller Machine">
+ATM </popover>
 
-<p/>
-
-```
-System: ATM
 Use Case: Check account balance
-        1. User inserts an ATM card
-        2. ATM prompts for PIN
-        3. User enters PIN
-        4. ATM prompts for withdrawal amount
-        5. User enters the amount
-        6. ATM ejects the ATM card and issues cash
-        7. User collects the card and the cash.
-```
+  1. User inserts an ATM card
+  2. ATM prompts for PIN
+  3. User enters PIN
+  4. ATM prompts for withdrawal amount
+  5. User enters the amount
+  6. ATM ejects the ATM card and issues cash
+  7. User collects the card and the cash.
 
 </panel>
 

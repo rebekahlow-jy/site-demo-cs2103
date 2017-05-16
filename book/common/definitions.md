@@ -4,6 +4,10 @@
 
 # Definitions
 
+<div id="def-actor">
+**Actor**: An actor (in a use case) is a role played by a user.  An actor can be a human or another system. Actors are not part of the system; they reside outside the system.
+</div>
+
 <div id="def-architecture">
 
 **Software Architecture**: The high level structures of a software system, the discipline of creating such structures, and the documentation of these structures. These structures are needed to reason about the software system. Each structure comprises software elements, relations among them, and properties of both elements and relations. The architecture of a software system is a metaphor, analogous to the architecture of a building.
@@ -78,9 +82,11 @@
 <div id="def-use-case">
 
 **Use Case**: A description of a set of sequences of actions, including variants, that a system performs to yield an observable result of value to an
-<popover effect="fade" placement="top" content="The Unified Modeling Language User Guide, 2e, G Booch, J Rumbaugh, and I Jacobson">
-  actor
+<popover effect="fade" placement="top" >actor
+  <span slot="content"><include src="./definitions.md#def-actor" inline /></span>
 </popover>
+
+<span class="pull-right">[ :book: : <popover effect="fade" placement="top" >uml-user-guide<span slot="content"><include src="./references.md#uml-user-guide" inline/></span></popover>]</span>
 
 </div>
 
