@@ -6,7 +6,7 @@
 
 <div id="main">
 
-**The `{benefit}` can be omitted** if it is obvious. 
+**The `{benefit}` can be omitted** if it is obvious.
 
 <tip-box>
 
@@ -31,19 +31,19 @@ We can add more characteristics to the `{user role}` to provide more context to 
 
 **We can write user stories at various levels**. High-level user stories, called _**epics**_ (or _themes_) cover bigger functionality. We can then break down these epics to multiple user stories of normal size.
 
-</tip-box>
+<tip-box>
 
-[Epic] As a lecturer, I can monitor student participation levels 
-  * As a lecturer, I can view the forum post count of each student 
+[Epic] As a lecturer, I can monitor student participation levels
+  * As a lecturer, I can view the forum post count of each student
     so that I can identify the activity level of students in the forum
-  * As a lecturer, I can view webcast view records of each student 
+  * As a lecturer, I can view webcast view records of each student
     so that I can identify the students who did not view webcasts
   * As a lecturer, I can view file download statistics of each student
     so that I can identify the students who do not download lecture materials
 
 </tip-box>
 
-**We can add _conditions of satisfaction_ to a user story** to specify things that need to be true for the user story implementation to be accepted as ‘done’. 
+**We can add _conditions of satisfaction_ to a user story** to specify things that need to be true for the user story implementation to be accepted as ‘done’.
 
 <tip-box>
 
@@ -55,8 +55,8 @@ We can add more characteristics to the `{user role}` to provide more context to 
 
 </tip-box>
 
-**Other useful info that can be added to a user story** includes (but not limited to) 
- 
+**Other useful info that can be added to a user story** includes (but not limited to)
+
 * Priority: how important the user story is
 * Size: the estimated effort to implement the user story
 * Urgency: how soon the feature is needed

@@ -1,32 +1,36 @@
-<panel header="%%Other names for _requirement gathering_%%" type="seamless" alt="aka">
+<tip-box>
+Requirement gathering may also be known as:
 
 * establishing requirements
 * requirements elicitation
 * requirements analysis
 * requirements capture
+</tip-box>
 
-</panel>
+<!-- ------------------------------------------------------------------------------------------------- -->
 
-<panel header="**Brainstorming** :one:" type="seamless">
-  <include src="../brainstorming/index.md" />
-</panel>
-<panel header="**User serveys** :one:" type="seamless">
-  <include src="../brainstorming/index.md" />
-</panel>
-<panel header="**Observation** :one:" type="seamless">
-  <include src="../brainstorming/index.md" />
-</panel>
-<panel header="**Interviews** :one:" type="seamless">
-  <include src="../brainstorming/index.md" />
-</panel>
-<panel header="**Focus groups** :one:" type="seamless">
-  <include src="../brainstorming/index.md" />
-</panel>
-<panel header="**Product surveys** :one:" type="seamless">
-  <include src="../brainstorming/index.md" />
-</panel>
-<panel header="**Prototyping** :one:" type="seamless">
-  <include src="../brainstorming/index.md" />
-</panel>
+<include src="../brainstorming/topicPanel.md" />
 
+<!-- ------------------------------------------------------------------------------------------------- -->
 
+<include src="../userSurveys/topicPanel.md" />
+
+<!-- ------------------------------------------------------------------------------------------------- -->
+
+<include src="../observation/topicPanel.md" />
+
+<!-- ------------------------------------------------------------------------------------------------- -->
+
+<include src="../interviews/topicPanel.md" />
+
+<!-- ------------------------------------------------------------------------------------------------- -->
+
+<include src="../focusGroups/topicPanel.md" />
+
+<!-- ------------------------------------------------------------------------------------------------- -->
+
+<include src="../prototyping/topicPanel.md" />
+
+<!-- ------------------------------------------------------------------------------------------------- -->
+
+<include src="../productSurveys/topicPanel.md" />
