@@ -110,6 +110,14 @@
       "title": "CS2103/T Textbook - User Stories : Introduction"
     },
     {
+      "src": "book/requirements/useCases/index.md",
+      "title": "CS2103/T Textbook - Use Cases"
+    },
+    {
+      "src": "book/requirements/useCases/introduction/index.md",
+      "title": "CS2103/T Textbook - Use Cases : Introduction"
+    },
+    {
       "src": "book/requirements/glossary/index.md",
       "title": "CS2103/T Textbook - Glossary"
     },

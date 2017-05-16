@@ -1,1 +1,1 @@
-* <span id="outcome-usage-one">:trophy: Outcome 1 :three:</span>
+* <span id="outcome-useCases-usage-one">:trophy: Able to optimize the use of use cases :three:</span>

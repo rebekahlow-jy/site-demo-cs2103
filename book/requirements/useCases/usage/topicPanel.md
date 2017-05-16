@@ -1,4 +1,4 @@
-#### Usage :three:
+#### Putting use cases into good use :three:
 
 <tip-box type="success">
   <include src="./outcomes.md" />

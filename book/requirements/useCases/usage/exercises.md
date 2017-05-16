@@ -1,4 +1,4 @@
 <panel type="success" expandable>
-<span slot="header"><include src="outcomes.md#outcome-usage-one" /></span>
+<span slot="header"><include src="outcomes.md#outcome-useCases-usage-one" /></span>
   ...
 </panel>

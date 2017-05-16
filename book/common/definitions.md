@@ -63,4 +63,25 @@
 
 </div>
 
+<div id="def-feature-list">
+
+**Feature List**: A list of features (or functionalities) _grouped according to some criteria_ such as priority (e.g. must-have, nice-to-have, etc. ), order of delivery, object or process related (e.g. order-related, invoice-related, etc.)
+
+</div>
+
+<div id="def-glossary">
+
+**Glossary**: A glossary serves to ensure that _all stakeholders have a common understanding_ of the noteworthy terms, abbreviation, acronyms etc.
+
+</div>
+
+<div id="def-use-case">
+
+**Use Case**: A description of a set of sequences of actions, including variants, that a system performs to yield an observable result of value to an
+<popover effect="fade" placement="top" content="The Unified Modeling Language User Guide, 2e, G Booch, J Rumbaugh, and I Jacobson">
+  actor
+</popover>
+
+</div>
+
 </div>

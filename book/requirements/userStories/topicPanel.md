@@ -1,4 +1,4 @@
-### User stories :one:
+### User Stories :one:
 
 <panel type="seamless" header="%%-----------------------------------------%%">
   <include src="./index.md#main" />

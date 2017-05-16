@@ -1,1 +1,1 @@
-* <span id="outcome-details-one">:trophy: Outcome 1 :two:</span>
+* <span id="outcome-useCases-details-one">:trophy: Able to specify details of a use case in a structured format :two:</span>

@@ -1,4 +1,4 @@
-#### Details :two:
+#### Writing detailed use cases :two:
 
 <tip-box type="success">
   <include src="./outcomes.md" />
