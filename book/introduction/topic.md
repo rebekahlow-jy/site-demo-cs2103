@@ -10,7 +10,7 @@ It covers topics:
 * topics one :two:
 * topic two :one:
 
-<pic src="{{baseurl}}/book/introduction/images/img1.png" width="100">
+<pic src="{{baseUrl}}/book/introduction/images/img1.png" width="100">
 
   </div>
 </popover>

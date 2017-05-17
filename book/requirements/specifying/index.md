@@ -1,48 +1,21 @@
-<panel type="seamless">
-  <span slot="header"> -----------------------------------------
+<include src="../prose/topicPanel.md" />
 
-### Prose :one:
+<!-- ------------------------------------------------------------------------------------------------- -->
 
-  </span>
-  <include src="../brainstorming/index.md" />
-</panel>
+<include src="../featureList/topicPanel.md" />
 
-<panel type="seamless">
-  <span slot="header"> -----------------------------------------
-
-### Feature lists :one:
-
-  </span>
-  <include src="../brainstorming/index.md" />
-</panel>
+<!-- ------------------------------------------------------------------------------------------------- -->
 
 <include src="../userStories/topicPanel.md" />
 
-<panel type="seamless">
-  <span slot="header"> -----------------------------------------
+<!-- ------------------------------------------------------------------------------------------------- -->
 
-### Use cases :one:
+<include src="../useCases/topicPanel.md" />
 
-  </span>
-  <include src="../brainstorming/index.md" />
-</panel>
+<!-- ------------------------------------------------------------------------------------------------- -->
 
-<panel type="seamless">
-  <span slot="header"> -----------------------------------------
+<include src="../glossary/topicPanel.md" />
 
-### Glossary :one:
+<!-- ------------------------------------------------------------------------------------------------- -->
 
-  </span>
-  <include src="../brainstorming/index.md" />
-</panel>
-
-<panel type="seamless">
-  <span slot="header"> -----------------------------------------
-
-### Supplementary requirements :one:
-
-  </span>
-  <include src="../brainstorming/index.md" />
-</panel>
-
-
+<include src="../supplementaryRequirements/topicPanel.md" />

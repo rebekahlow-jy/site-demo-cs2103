@@ -13,5 +13,7 @@
   [http://www.extremeprogramming.org/rules/userstories.html]() : This is the main website for eXtreme Programming (XP), an approach to software development currently popular among practitioners. User stories are commonly used among XP practitioners to capture requirements.
 
   </div>
+* [uml-user-guide]
 
+  <span id="uml-user-guide">_**The Unified Modeling Language User Guide**_, 2e, G Booch, J Rumbaugh, and I Jacobson </span>
 </div>

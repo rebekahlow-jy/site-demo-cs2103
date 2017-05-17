@@ -42,6 +42,7 @@
 
 ### Supplementary
 
-* [Definitions](common/Definitions.html)
+* [Definitions](common/definitions.html)
+* [References](common/references.html)
 
 </div>
