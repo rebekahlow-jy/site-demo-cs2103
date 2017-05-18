@@ -30,32 +30,34 @@
           <tip-box type="primary">
             <div>
               <p><strong>Use Case</strong>: A description of a set of sequences of actions, including variants, that a system performs to yield an observable result of value to an
-                <popover effect="fade" placement="top" content="The Unified Modeling Language User Guide, 2e, G Booch, J Rumbaugh, and I Jacobson">
-                  actor
+                <popover effect="fade" placement="top">actor
+                  <span slot="content"><span><strong>Actor</strong>: An actor (in a use case) is a role played by a user.  An actor can be a human or another system. Actors are not part of the system; they reside outside the system.
+</span></span>
                 </popover>
+              </p>
+              <p><span class="pull-right">[ 📖 : <popover effect="fade" placement="top">uml-user-guide<span slot="content"><span><em><strong>The Unified Modeling Language User Guide</strong></em>, 2e, G Booch, J Rumbaugh, and I Jacobson </span></span>
+                </popover>]</span>
               </p>
             </div>
           </tip-box>
           <p>A <strong>use case</strong> describes an <em>interaction between the user and the system</em> for a <em>specific functionality</em> of the system.</p>
           <div>
             <panel header="%%Use case examples%%" expanded="">
-              <panel header="Example 1" type="seamless" expanded="">
-                <p>Example: ‘check account balance’ use case for an
+              <panel header="Example 1: ‘check account balance’ use case for an ATM" type="seamless" expanded="">
+                <p>System:
                   <popover effect="fade" placement="right" content="Automated Teller Machine">
-                    ATM
-                  </popover>
+                    ATM </popover>
                 </p>
-                <p></p>
-                <pre class="hljs"><code>System: ATM
-Use Case: Check account balance
-        <span class="hljs-number">1</span>. <span class="hljs-keyword">User</span> <span class="hljs-title">inserts</span> an ATM card
-        <span class="hljs-number">2</span>. ATM prompts for PIN
-        <span class="hljs-number">3</span>. <span class="hljs-keyword">User</span> <span class="hljs-title">enters</span> PIN
-        <span class="hljs-number">4</span>. ATM prompts for withdrawal amount
-        <span class="hljs-number">5</span>. <span class="hljs-keyword">User</span> <span class="hljs-title">enters</span> the amount
-        <span class="hljs-number">6</span>. ATM ejects the ATM card <span class="hljs-keyword">and</span> issues cash
-        <span class="hljs-number">7</span>. <span class="hljs-keyword">User</span> <span class="hljs-title">collects</span> the card <span class="hljs-keyword">and</span> the cash.
-</code></pre>
+                <p>Use Case: Check account balance</p>
+                <ol>
+                  <li>User inserts an ATM card</li>
+                  <li>ATM prompts for PIN</li>
+                  <li>User enters PIN</li>
+                  <li>ATM prompts for withdrawal amount</li>
+                  <li>User enters the amount</li>
+                  <li>ATM ejects the ATM card and issues cash</li>
+                  <li>User collects the card and the cash.</li>
+                </ol>
               </panel>
               <panel header="Example 2" type="seamless">
                 ...
@@ -176,54 +178,71 @@ Use Case: Check account balance
         <div>
           <p>A use case is an interaction between a system and its <em>actors</em>.</p>
           <p><strong>Actors in Use Cases</strong></p>
-          <p>An actor is a role played by a user. An actor can be a human or another system. Actors are not part of the system; they reside outside the system.</p>
-          <p>For example, consider the software system: LearnSys (a fictitious
-            <popover effect="fade" placement="right" content="Learning Management System">
-              LMS
-            </popover>
-            ).</p>
+          <tip-box type="primary">
+            <div>
+              <p><strong>Actor</strong>: An actor (in a use case) is a role played by a user. An actor can be a human or another system. Actors are not part of the system; they reside outside the system.</p>
+            </div>
+          </tip-box>
           <tip-box>
-            <p>Some of its actors would be: Guest, Student, Staff, Admin, ExamSys (an exam management system), LibSys (a library management system).</p>
+            <p>Software system: <em>LearnSys</em> (a fictitious
+              <popover effect="fade" placement="right" content="Learning Management System">
+                LMS
+              </popover>
+              ).</p>
+            <p>Actors: <code>Guest</code>, <code>Student</code>, <code>Staff</code>, <code>Admin</code>, <code>ExamSys</code> (an exam management system), <code>LibSys</code> (a library management system).</p>
           </tip-box>
           <p>A use case can involve multiple actors.</p>
           <tip-box>
-            <pre class="hljs"><code>Software <span class="hljs-string">System:</span> LearnSys
-Use <span class="hljs-string">case:</span>  UC01 conduct survey
-<span class="hljs-string">Actors:</span> Staff, Student
-</code></pre>
+            <ul>
+              <li>Software System: <code>LearnSys</code></li>
+              <li>Use case: <code>UC01 conduct survey</code></li>
+              <li>Actors: <mark><code>Staff</code>, <code>Student</code></mark></li>
+            </ul>
           </tip-box>
           <p>An actor can be involved in many use cases.</p>
           <tip-box>
-            <pre class="hljs"><code>Software System: LearnSys
-Actor: Staff
-<span class="hljs-keyword">Use</span> cases: UC01 conduct survey, UC02 <span class="hljs-keyword">Set</span> Up Course Schedule, UC03 Email <span class="hljs-keyword">Class</span>, ...
-</code></pre>
+            <ul>
+              <li>Software System: <code>LearnSys</code></li>
+              <li>Actor: <code>Staff</code></li>
+              <li>Use cases: <mark><code>UC01 conduct survey</code>, <code>UC02 Set Up Course Schedule</code>, <code>UC03 Email Class</code>, ...</mark></li>
+            </ul>
           </tip-box>
           <p>A single person/system can play many roles.</p>
           <tip-box>
-            <pre class="hljs"><code><span class="hljs-attribute">Software System</span>: LearnSys
-<span class="hljs-attribute">Person</span>: a student
-<span class="hljs-attribute">Actors (or Roles)</span>: Student, Guest, Tutor
-</code></pre>
+            <ul>
+              <li>Software System: <code>LearnSys</code></li>
+              <li>Person: <mark><code>a student</code></mark></li>
+              <li>Actors (or Roles): <code>Student</code>, <code>Guest</code>, <code>Tutor</code></li>
+            </ul>
           </tip-box>
           <p>Many persons/systems can play a single role.</p>
           <tip-box>
-            <pre class="hljs"><code>Software System: LearnSys
-<span class="hljs-function"><span class="hljs-title">Actor</span><span class="hljs-params">(or role)</span></span> : Student
-Persons that can play this role : undergraduate student, graduate student, <span class="hljs-selector-tag">a</span> staff member doing <span class="hljs-selector-tag">a</span> part-<span class="hljs-selector-tag">time</span> course, exchange student.
-</code></pre>
+            <ul>
+              <li>Software System: <code>LearnSys</code></li>
+              <li>Actor(or role) : <code>Student</code></li>
+              <li>Persons that can play this role : <mark><code>undergraduate student</code>, <code>graduate student</code>, <code>a staff member doing a part-time course</code>, <code>exchange student</code></mark></li>
+            </ul>
           </tip-box>
           <p>{some guidance on identifying actors and use cases}</p>
           <p>Use cases can be specified at <em>various levels of detail</em>.</p>
           <tip-box>
-            <p>Consider the three use cases given below for the LearnSys system.</p>
-            <ol type="a">
-              <li>Conduct a survey</li>
-              <li>Take the survey</li>
-              <li>Answer survey question</li>
-            </ol>
-            <p>Clearly, (a) is at a higher level than (b) and (b) is at a higher level than (c). While modeling user-system interactions, start with high level use cases and progressively work toward lower level use cases. It is also important to be mindful
-              at which level of details you are working on and not to mix use cases of different levels.</p>
+            <ul>
+              <li>System: <code>LearnSys</code></li>
+              <li>Use cases:
+                <ul>
+                  <li>a. <code>Conduct a survey</code></li>
+                  <li>b. <code>Take the survey</code></li>
+                  <li>c. <code>Answer survey question</code></li>
+                </ul>
+              </li>
+            </ul>
+          </tip-box>
+          <p>Consider the three use cases given above for the LearnSys system. Clearly, (a) is at a higher level than (b) and (b) is at a higher level than (c).</p>
+          <tip-box type="warning">
+            <p>While modeling user-system interactions,</p>
+            <p>💡 Start with high level use cases and progressively work toward lower level use cases.
+              <p></p>
+              💡 Be mindful at which level of details you are working on and not to mix use cases of different levels.</p>
           </tip-box>
           <p>{some guidance on using diagrams vs other means}</p>
           <panel header=":paperclip: Extras" expandable="" type="seamless" expanded="">
@@ -339,44 +358,60 @@ Actors: Player (multiple players)
           </div>
           <p><strong>Main success scenario</strong></p>
           <div>
+            <link rel="stylesheet" href="/site-demo-cs2103/book/requirements/useCases/css/useCases.css">
             <p>The Main Success Scenario (MSS) describes the most straightforward interaction for a given use case, which assumes that nothing goes wrong. This is also called the <em>Basic Course of Action</em> or the <em>Main Flow of Events</em> of a use
               case. Given below is another example of an MSS.</p>
             <tip-box>
-              <pre class="hljs"><code>System: Online Banking System (OBS)
-<span class="hljs-keyword">Use</span> <span class="hljs-keyword">case</span>: UC23 - Transfer Money
-Actor: <span class="hljs-keyword">User</span>
-MSS:
-	<span class="hljs-number">1.</span> <span class="hljs-keyword">User</span> chooses <span class="hljs-keyword">to</span> transfer money.
-	<span class="hljs-number">2.</span> OBS requests <span class="hljs-keyword">for</span> details <span class="hljs-keyword">of</span> the transfer.
-	<span class="hljs-number">3.</span> <span class="hljs-keyword">User</span> enters the requested details.
-	<span class="hljs-number">4.</span> OBS requests <span class="hljs-keyword">for</span> confirmation.
-	<span class="hljs-number">5.</span> <span class="hljs-keyword">User</span> confirms transfer.
-	<span class="hljs-number">6.</span> OBS transfers the money <span class="hljs-keyword">and</span> displays the <span class="hljs-keyword">new</span> <span class="hljs-keyword">account</span> balance.
-         <span class="hljs-keyword">Use</span> <span class="hljs-keyword">case</span> ends.
-
-Extensions:
-	<span class="hljs-number">3</span>a. OBS detects an <span class="hljs-keyword">error</span> <span class="hljs-keyword">in</span> the entered data.
-		<span class="hljs-number">3</span>a1. OBS requests <span class="hljs-keyword">for</span> the correct data.
-		<span class="hljs-number">3</span>a2. <span class="hljs-keyword">User</span> enters <span class="hljs-keyword">new</span> data.
-	Steps <span class="hljs-number">3</span>a1<span class="hljs-number">-3</span>a2 <span class="hljs-keyword">are</span> repeated <span class="hljs-keyword">until</span> the <span class="hljs-keyword">data</span> entered <span class="hljs-keyword">are</span> correct.
-	<span class="hljs-keyword">Use</span> <span class="hljs-keyword">case</span> resumes <span class="hljs-keyword">from</span> step <span class="hljs-number">4.</span>
-
-	<span class="hljs-number">3</span>b. <span class="hljs-keyword">User</span> requests <span class="hljs-keyword">to</span> effect the transfer <span class="hljs-keyword">in</span> a future date.
-    		<span class="hljs-number">3</span>b1. OBS requests <span class="hljs-keyword">for</span> confirmation.
-    		<span class="hljs-number">3</span>b2. <span class="hljs-keyword">User</span> confirms future transfer.
-    		<span class="hljs-keyword">Use</span> <span class="hljs-keyword">case</span> ends.
-
- 	*a. <span class="hljs-keyword">At</span> <span class="hljs-keyword">any</span> <span class="hljs-keyword">time</span>, <span class="hljs-keyword">User</span> chooses <span class="hljs-keyword">to</span> <span class="hljs-keyword">cancel</span> the transfer
-		*a1. OBS requests <span class="hljs-keyword">to</span> <span class="hljs-keyword">confirm</span> the cancellation
-		*a2. <span class="hljs-keyword">User</span> confirms the cancellation
-		<span class="hljs-keyword">Use</span> <span class="hljs-keyword">case</span> ends.
-
-	*b. <span class="hljs-keyword">At</span> <span class="hljs-keyword">any</span> <span class="hljs-keyword">time</span>, <span class="hljs-number">120</span> seconds lapse <span class="hljs-keyword">without</span> <span class="hljs-keyword">any</span> <span class="hljs-keyword">input</span> <span class="hljs-keyword">from</span> the <span class="hljs-keyword">User</span>
-		*b1. OBS cancels the transfer
-		*b2. OBS informs the <span class="hljs-keyword">User</span> <span class="hljs-keyword">of</span> the cancellation
-		<span class="hljs-keyword">Use</span> <span class="hljs-keyword">case</span> ends.
-
-</code></pre>
+              <div>
+                <ul>
+                  <li>System: Online Banking System (OBS)</li>
+                  <li> Use case: UC23 - Transfer Money </li>
+                  <li> Actor: User </li>
+                  <li> MSS:
+                    <ol>
+                      <li>User chooses to transfer money.</li>
+                      <li>OBS requests for details of the transfer.</li>
+                      <li>User enters the requested details.</li>
+                      <li>OBS requests for confirmation.</li>
+                      <li>OBS transfers the money and displays the new account balance.</li>
+                      <li class="custom-bullet-point">Use case ends.</li>
+                    </ol>
+                  </li>
+                  <li> Extensions:
+                    <ol>
+                      <li class="custom-bullet-point">3a. OBS detects an error in the entered data.
+                        <ol>
+                          <li class="custom-bullet-point">3a1. OBS requests for the correct data.</li>
+                          <li class="custom-bullet-point">3a2. User enters new data.</li>
+                          <li class="custom-bullet-point ">Steps 3a1-3a2 are repeated until the data entered are correct.</li>
+                          <li class="custom-bullet-point ">Use case resumes from step 4.</li>
+                        </ol>
+                      </li>
+                      <li class="custom-bullet-point">3b. User requests to effect the transfer in a future date.
+                        <ol>
+                          <li class="custom-bullet-point">3b1. OBS requests for confirmation.</li>
+                          <li class="custom-bullet-point">3b2. User confirms future transfer.</li>
+                          <li class="custom-bullet-point">Use case ends.</li>
+                        </ol>
+                      </li>
+                      <li class="custom-bullet-point">*a. At any time, User chooses to cancel the transfer.
+                        <ol>
+                          <li class="custom-bullet-point">*a1. OBS requests to confirm the cancellation.</li>
+                          <li class="custom-bullet-point">*a2. User confirms the cancellation.</li>
+                          <li class="custom-bullet-point">Use case ends.</li>
+                        </ol>
+                      </li>
+                      <li class="custom-bullet-point">*b. At any time, 120 seconds lapse without any input from the User.
+                        <ol>
+                          <li class="custom-bullet-point">*b1. OBS cancels the transfer.</li>
+                          <li class="custom-bullet-point">*b2. OBS informs the User of the cancellation.</li>
+                          <li class="custom-bullet-point">Use case ends.</li>
+                        </ol>
+                      </li>
+                    </ol>
+                  </li>
+                </ul>
+              </div>
               <p>Note how the MSS assumes that all entered details are correct and ignores problems such as timeouts, network outages etc. MSS does not tell us what happens if the user enters incorrect data.</p>
             </tip-box>
           </div>

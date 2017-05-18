@@ -17,32 +17,34 @@
     <tip-box type="primary">
       <div>
         <p><strong>Use Case</strong>: A description of a set of sequences of actions, including variants, that a system performs to yield an observable result of value to an
-          <popover effect="fade" placement="top" content="The Unified Modeling Language User Guide, 2e, G Booch, J Rumbaugh, and I Jacobson">
-            actor
+          <popover effect="fade" placement="top">actor
+            <span slot="content"><span><strong>Actor</strong>: An actor (in a use case) is a role played by a user.  An actor can be a human or another system. Actors are not part of the system; they reside outside the system.
+</span></span>
           </popover>
+        </p>
+        <p><span class="pull-right">[ 📖 : <popover effect="fade" placement="top">uml-user-guide<span slot="content"><span><em><strong>The Unified Modeling Language User Guide</strong></em>, 2e, G Booch, J Rumbaugh, and I Jacobson </span></span>
+          </popover>]</span>
         </p>
       </div>
     </tip-box>
     <p>A <strong>use case</strong> describes an <em>interaction between the user and the system</em> for a <em>specific functionality</em> of the system.</p>
     <div>
       <panel header="%%Use case examples%%" expanded="">
-        <panel header="Example 1" type="seamless" expanded="">
-          <p>Example: ‘check account balance’ use case for an
+        <panel header="Example 1: ‘check account balance’ use case for an ATM" type="seamless" expanded="">
+          <p>System:
             <popover effect="fade" placement="right" content="Automated Teller Machine">
-              ATM
-            </popover>
+              ATM </popover>
           </p>
-          <p></p>
-          <pre class="hljs"><code>System: ATM
-Use Case: Check account balance
-        <span class="hljs-number">1</span>. <span class="hljs-keyword">User</span> <span class="hljs-title">inserts</span> an ATM card
-        <span class="hljs-number">2</span>. ATM prompts for PIN
-        <span class="hljs-number">3</span>. <span class="hljs-keyword">User</span> <span class="hljs-title">enters</span> PIN
-        <span class="hljs-number">4</span>. ATM prompts for withdrawal amount
-        <span class="hljs-number">5</span>. <span class="hljs-keyword">User</span> <span class="hljs-title">enters</span> the amount
-        <span class="hljs-number">6</span>. ATM ejects the ATM card <span class="hljs-keyword">and</span> issues cash
-        <span class="hljs-number">7</span>. <span class="hljs-keyword">User</span> <span class="hljs-title">collects</span> the card <span class="hljs-keyword">and</span> the cash.
-</code></pre>
+          <p>Use Case: Check account balance</p>
+          <ol>
+            <li>User inserts an ATM card</li>
+            <li>ATM prompts for PIN</li>
+            <li>User enters PIN</li>
+            <li>ATM prompts for withdrawal amount</li>
+            <li>User enters the amount</li>
+            <li>ATM ejects the ATM card and issues cash</li>
+            <li>User collects the card and the cash.</li>
+          </ol>
         </panel>
         <panel header="Example 2" type="seamless">
           ...
